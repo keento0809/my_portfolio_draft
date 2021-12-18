@@ -18,6 +18,27 @@ body {
   font-family: "Abhaya Libre", serif;
   background: #231e1b;
   color: #fff;
+  margin: 0;
   letter-spacing: 0.5px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+#global-container {
+  height: 100%;
+}
+
+.ml-header {
+  min-height: 54px;
+  background: #12e3e3;
+}
+
+.ml-footer {
+  height: 50px;
+  background: inherit;
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */
