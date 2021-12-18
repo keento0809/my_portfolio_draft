@@ -27,6 +27,15 @@ h2 {
   margin: 0;
 }
 
+button {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #global-container {
   height: 100%;
 }
@@ -34,25 +43,37 @@ h2 {
 .ml-header {
   min-height: 54px;
   background: #12e3e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.ml-wrapper {
+.ml-header__wrapper {
   max-width: 100%;
   padding: 0 15px;
 }
 
-.toggle-menu-btn {
-  background: #fff;
-  border: none;
-  cursor: pointer;
-  width: 40px;
+.ml-header__brand-logo > a {
+  padding: 1px;
+  border: 1px solid #fff;
 }
 
-.toggle-menu-btn > span {
+.ml-header__toggle-btn .toggle-btn-container {
+  /* reset style for button */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.ml-header__toggle-btn .toggle-btn-container .bar {
   display: block;
-  width: 100%;
-  height: 3px;
-  color: #231e1b;
+  background-color: #fff;
+  width: 25px;
+  height: 2px;
+  margin-bottom: 4px;
 }
 
 .ml-footer {
