@@ -1,0 +1,23 @@
+$cBase: #231e1b;
+$cText: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Abhaya Libre", serif;
+  background: $cBase;
+  color: $cText;
+  letter-spacing: 0.5px;
+}

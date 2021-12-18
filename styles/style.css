@@ -1,0 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Abhaya Libre", serif;
+  background: #231e1b;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+/*# sourceMappingURL=style.css.map */
