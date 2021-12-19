@@ -1,6 +1,7 @@
 $cBase: #231e1b;
 $cText: #fff;
 $cTest: #12e3e3;
+$cGrey: #8d8d8d;
 
 * {
   box-sizing: border-box;
@@ -43,20 +44,34 @@ a {
 }
 
 .ml-header {
-  min-height: 54px;
-  background: $cTest;
+  min-height: 64px;
+  background: inherit;
   display: flex;
-  justify-content: space-between;
+  justify-self: center;
+  align-items: center;
 
   &__wrapper {
-    max-width: 100%;
+    width: 100%;
+    // max-width: 100%;
     padding: 0 15px;
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__brand-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     & > a {
-      padding: 1px;
       border: 1px solid $cText;
+
+      & > span {
+        display: inline-block;
+        padding: 4px 8px;
+      }
     }
   }
 
@@ -66,6 +81,9 @@ a {
       background-color: transparent;
       border: none;
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       & .bar {
         display: block;
@@ -74,7 +92,37 @@ a {
         height: 2px;
         margin-bottom: 4px;
       }
+
+      & .bar:last-child {
+        margin-bottom: 0;
+      }
     }
+  }
+}
+
+/* main section */
+.ml-main {
+  &__wrapper {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+
+  &__title {
+    & > h1 {
+      font-size: 2.5em;
+    }
+
+    & > h2 {
+      color: $cGrey;
+    }
+  }
+
+  &__description {
+    height: 20vh;
+    // background: $cTest;
+    border: solid 1px $cText;
+    border-radius: 12px;
   }
 }
 
