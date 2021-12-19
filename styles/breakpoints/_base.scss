@@ -2,6 +2,11 @@ $cBase: #231e1b;
 $cText: #fff;
 $cTest: #12e3e3;
 $cGrey: #8d8d8d;
+// $sBgColor: #3a3d55;
+$slideBgColor: rgba(255, 255, 255, 0.3);
+$slideBallColor: $cText;
+$slideBallIconColor: $cBase;
+$slideTextColor: $cGrey;
 
 * {
   box-sizing: border-box;
@@ -10,6 +15,7 @@ $cGrey: #8d8d8d;
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 ::before,
@@ -44,7 +50,7 @@ a {
 }
 
 .ml-header {
-  min-height: 64px;
+  min-height: 60px;
   background: inherit;
   display: flex;
   justify-self: center;
@@ -126,8 +132,57 @@ a {
   }
 }
 
+.swipe {
+  &__btn {
+    @include center;
+  }
+
+  & #button-background {
+    position: relative;
+    background: inherit;
+    width: 200px;
+    height: 50px;
+    border: 1px solid $cText;
+    border-radius: 25px;
+    @include center;
+
+    & #slider {
+      transition: width 0.3s, border-radius 0.3s, height 0.3s;
+      position: absolute;
+      left: -10px;
+      background: $slideBallColor;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      @include center;
+
+      &.unlocked {
+        transition: all 0.3s;
+        width: inherit;
+        left: 0 !important;
+        height: inherit;
+        border-radius: inherit;
+      }
+    }
+  }
+}
+
+.material-icons {
+  color: $slideBallIconColor;
+  font-size: 50px;
+  @include nonSelect;
+}
+
+.slide-text {
+  color: $slideTextColor;
+  font-size: 24px;
+  text-transform: uppercase;
+  @include nonSelect;
+}
+
+/* footer section */
 .ml-footer {
-  height: 50px;
+  min-height: 60px;
   background: inherit;
   border: 1px solid $cText;
 }

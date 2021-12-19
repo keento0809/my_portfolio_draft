@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 ::before,
@@ -41,7 +42,7 @@ a {
 }
 
 .ml-header {
-  min-height: 64px;
+  min-height: 60px;
   background: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,8 +139,91 @@ a {
   border-radius: 12px;
 }
 
-.ml-footer {
+.swipe__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swipe #button-background {
+  position: relative;
+  background: inherit;
+  width: 200px;
   height: 50px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swipe #button-background #slider {
+  -webkit-transition: width 0.3s, border-radius 0.3s, height 0.3s;
+  transition: width 0.3s, border-radius 0.3s, height 0.3s;
+  position: absolute;
+  left: -10px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swipe #button-background #slider.unlocked {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: inherit;
+  left: 0 !important;
+  height: inherit;
+  border-radius: inherit;
+}
+
+.material-icons {
+  color: #231e1b;
+  font-size: 50px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.slide-text {
+  color: #8d8d8d;
+  font-size: 24px;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+/* footer section */
+.ml-footer {
+  min-height: 60px;
   background: inherit;
   border: 1px solid #fff;
 }
