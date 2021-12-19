@@ -43,6 +43,75 @@ a {
   height: 100%;
 }
 
+.cover-slide {
+  position: relative;
+  height: 100vh;
+  background: #231e1b;
+}
+
+.cover-slide::after {
+  content: "";
+  background: #bf07db;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  -webkit-animation-name: kf-cover-slide;
+          animation-name: kf-cover-slide;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.cover-slide__contents {
+  opacity: 0;
+}
+
+.inview .cover-slide__contents {
+  opacity: 1;
+}
+
+@-webkit-keyframes kf-cover-slide {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+
+@keyframes kf-cover-slide {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+
 .ml-header {
   min-height: 60px;
   background: inherit;
@@ -83,7 +152,7 @@ a {
 }
 
 .ml-header__brand-logo > a {
-  border: 1px solid #fff;
+  border: 1.5px solid #fff;
 }
 
 .ml-header__brand-logo > a > span {
@@ -137,7 +206,7 @@ a {
 
 .ml-main__description {
   height: 20vh;
-  border: 1px solid #fff;
+  border: 1.5px solid #fff;
   border-radius: 12px;
 }
 
@@ -159,7 +228,7 @@ a {
   background: inherit;
   width: 200px;
   height: 50px;
-  border: 1px solid #fff;
+  border: 1.5px solid #fff;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,9 +249,9 @@ a {
   transition: width 0.3s, border-radius 0.3s, height 0.3s;
   position: absolute;
   left: -10px;
-  background: #fff;
   width: 50px;
   height: 50px;
+  border: 1.5px solid #fff;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,6 +274,22 @@ a {
   left: 0 !important;
   height: inherit;
   border-radius: inherit;
+}
+
+#button-background {
+  border-color: #bf07db !important;
+}
+
+#button-background #slider {
+  border-color: #bf07db !important;
+}
+
+#button-background2 {
+  border-color: #ffff00 !important;
+}
+
+#button-background2 #slider2 {
+  border-color: #ffff00 !important;
 }
 
 .material-icons {
@@ -263,7 +348,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #fff;
+  border: solid 1.5px #8d8d8d;
   border-radius: 30px;
 }
 

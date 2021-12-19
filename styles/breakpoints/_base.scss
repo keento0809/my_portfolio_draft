@@ -2,13 +2,14 @@ $cBase: #231e1b;
 $cText: #fff;
 $cTest: #12e3e3;
 $cGrey: #8d8d8d;
-// $sBgColor: #3a3d55;
+$cYellow: #ffff00;
+$cPurple: #bf07db;
 $slideBgColor: rgba(255, 255, 255, 0.3);
 $slideBallColor: $cText;
 $slideBallIconColor: $cBase;
 $slideTextColor: $cGrey;
 
-$borderBase: 1px solid $cText;
+$borderBase: 1.5px solid $cText;
 
 * {
   box-sizing: border-box;
@@ -51,6 +52,58 @@ a {
 
 #global-container {
   height: 100%;
+}
+
+.cover {
+  //   display: none;
+  //   visibility: hidden;
+}
+
+.cover-slide {
+  position: relative;
+  height: 100vh;
+  background: $cBase;
+
+  &::after {
+    content: "";
+    background: $cPurple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    @include animation($name: kf-cover-slide, $duration: 1.2s);
+  }
+
+  &__contents {
+    opacity: 0;
+
+    .inview & {
+      opacity: 1;
+    }
+  }
+
+  &.inview {
+    &::after {
+      //
+    }
+  }
+}
+
+@keyframes kf-cover-slide {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
 }
 
 .ml-header {
@@ -156,9 +209,10 @@ a {
       transition: width 0.3s, border-radius 0.3s, height 0.3s;
       position: absolute;
       left: -10px;
-      background: $slideBallColor;
+      //   background: $slideBallColor;
       width: 50px;
       height: 50px;
+      border: $borderBase;
       border-radius: 50%;
       @include center;
 
@@ -170,6 +224,22 @@ a {
         border-radius: inherit;
       }
     }
+  }
+}
+
+#button-background {
+  border-color: $cPurple !important;
+
+  & #slider {
+    border-color: $cPurple !important;
+  }
+}
+
+#button-background2 {
+  border-color: $cYellow !important;
+
+  & #slider2 {
+    border-color: $cYellow !important;
   }
 }
 
@@ -207,7 +277,7 @@ a {
     flex-direction: column;
     // align-items: center;
     justify-content: center;
-    border: $borderBase;
+    border: solid 1.5px $cGrey;
     border-radius: 30px;
   }
 }
