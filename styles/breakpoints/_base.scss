@@ -8,6 +8,8 @@ $slideBallColor: $cText;
 $slideBallIconColor: $cBase;
 $slideTextColor: $cGrey;
 
+$borderBase: 1px solid $cText;
+
 * {
   box-sizing: border-box;
 }
@@ -31,11 +33,13 @@ body {
   letter-spacing: 0.5px;
 }
 
+ul,
 h1,
 h2 {
   margin: 0;
 }
 
+ul,
 button {
   padding: 0;
 }
@@ -72,7 +76,7 @@ a {
     justify-content: center;
 
     & > a {
-      border: 1px solid $cText;
+      border: $borderBase;
 
       & > span {
         display: inline-block;
@@ -127,7 +131,7 @@ a {
   &__description {
     height: 20vh;
     // background: $cTest;
-    border: solid 1px $cText;
+    border: $borderBase;
     border-radius: 12px;
   }
 }
@@ -137,16 +141,18 @@ a {
     @include center;
   }
 
-  & #button-background {
+  & #button-background,
+  & #button-background2 {
     position: relative;
     background: inherit;
     width: 200px;
     height: 50px;
-    border: 1px solid $cText;
+    border: $borderBase;
     border-radius: 25px;
     @include center;
 
-    & #slider {
+    & #slider,
+    & #slider2 {
       transition: width 0.3s, border-radius 0.3s, height 0.3s;
       position: absolute;
       left: -10px;
@@ -182,7 +188,38 @@ a {
 
 /* footer section */
 .ml-footer {
-  min-height: 60px;
+  //   height: ;
   background: inherit;
-  border: 1px solid $cText;
+  //   border: $borderBase;
+
+  &__wrapper {
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__container {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    border: $borderBase;
+    border-radius: 30px;
+  }
+}
+
+.social-media-list {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & > li {
+    display: block;
+  }
 }
