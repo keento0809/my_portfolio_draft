@@ -33,9 +33,7 @@ body {
   background: $cBase;
   color: $cText;
   margin: 0;
-  margin-top: 55px;
   letter-spacing: 0.5px;
-  //   position: relative;
 }
 
 ul,
@@ -221,22 +219,27 @@ a {
 
 /* header section */
 #header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   width: 100%;
-  //   min-height: 60px;
   z-index: 2;
 }
 
 .ml-header {
-  background: $cGrey;
+  //   background: $cGrey;
   min-height: 55px;
   display: flex;
   justify-self: center;
   align-items: center;
+  transition: all 0.4s ease;
+
+  &.visible2 {
+    // opacity: 0;
+    background: inherit;
+  }
 
   &__wrapper {
     width: 100%;

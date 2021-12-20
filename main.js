@@ -3,11 +3,20 @@ const cover = document.querySelector(".cover");
 const toggleBtn = document.querySelector(".toggleB");
 const crossBtn = document.querySelector(".fa-times");
 
+const header = document.querySelector(".ml-header");
+console.log(header);
 const mlFooter = document.querySelector(".ml-footer");
 
 function toggleButton() {
   if (cover.classList.contains("visible")) cover.classList.remove("visible");
   else cover.classList.add("visible");
+}
+function toggleButton2() {
+  if (cover.classList.contains("visible")) {
+    cover.classList.remove("visible");
+  } else {
+    cover.classList.add("visible");
+  }
 }
 
 toggleBtn.addEventListener("click", toggleButton);
@@ -20,33 +29,9 @@ let mouseIsDown = false;
 
 let slider = document.querySelector("#slider");
 
-function swipeStart(e) {
-  mouseIsDown = true;
-  slideMovementTotal = `${"#button-background"}`.width() - this.width() + 10;
-  initialMouse = e.clientX || e.originalEvent.touches[0].pageX;
-  console.log("hekeheke");
-}
+let timer = null;
 
 // Build out functions
-function swipeEnd(e) {
-  mouseIsDown = false;
-  let currentMouse = e.clientX || e.changedTouches[0].pageX;
-  let relativeMouse = currentMouse - initialMouse;
-
-  if (relativeMouse < slideMovementTotal) {
-    slider.animate(
-      {
-        left: "-10px",
-      },
-      300
-    );
-    return;
-  }
-
-  slider.classList.add("unlocked");
-}
-
-let timer = null;
 function scrollDelay(e) {
   clearTimeout(timer);
   timer = setTimeout(() => {
@@ -54,14 +39,18 @@ function scrollDelay(e) {
   }, 50);
 }
 
-// Hook up the event
-slider.addEventListener("mousedown touchstart", swipeStart);
-slider.addEventListener("mouseup touched", swipeEnd);
+function toggleBg() {
+  if (window.scrollY !== 0) header.style.background = "#8d8d8d";
+  else header.style.background = "none";
+}
 
+// Hook up the event
 try {
   window.addEventListener("scroll", scrollDelay, false);
+  window.addEventListener("scroll", toggleBg);
 } catch (e) {
   window.addEventListener("onscroll", scrollDelay);
+  window.addEventListener("onscroll", toggleBg);
 }
 
 AOS.init();
