@@ -1,3 +1,17 @@
+// toggle btn
+const cover = document.querySelector(".cover");
+const toggleBtn = document.querySelector(".toggleB");
+const crossBtn = document.querySelector(".fa-times");
+
+function toggleButton() {
+  if (cover.classList.contains("visible")) cover.classList.remove("visible");
+  else cover.classList.add("visible");
+}
+
+toggleBtn.addEventListener("click", toggleButton);
+crossBtn.addEventListener("click", toggleButton);
+
+// swipe btn
 let initialMouse = 0;
 let slideMovementTotal = 0;
 let mouseIsDown = false;

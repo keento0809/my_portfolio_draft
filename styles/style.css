@@ -58,6 +58,11 @@ a {
   visibility: hidden;
 }
 
+.cover.visible {
+  display: block;
+  visibility: visible;
+}
+
 .cover__header {
   height: 10vh;
 }
