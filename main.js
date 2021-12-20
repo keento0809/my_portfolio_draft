@@ -45,3 +45,5 @@ function swipeEnd(e) {
 
 slider.addEventListener("mousedown touchstart", swipeStart);
 slider.addEventListener("mouseup touched", swipeEnd);
+
+AOS.init();

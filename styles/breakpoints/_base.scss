@@ -68,12 +68,14 @@ a {
 .cover {
   /* temporary */
   display: none;
-  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .cover.visible {
   display: block;
-  visibility: visible;
+  //   visibility: visible;
+  opacity: 1;
 }
 
 .cover__header {
@@ -117,7 +119,12 @@ a {
 
     &.inview {
       opacity: 1;
-      @include animation($name: kf-contents-show, $fill-mode: forwards);
+      @include animation(
+        $name: kf-contents-show,
+        $duration: 1s,
+        $timing-function: ease-in-out,
+        $fill-mode: forwards
+      );
     }
 
     & .contents-list {
@@ -145,7 +152,11 @@ a {
 
   &.inview {
     &::after {
-      @include animation($name: kf-cover-slide, $duration: 1.2s);
+      @include animation(
+        $name: kf-cover-slide,
+        $duration: 1.2s,
+        $timing-function: ease-out
+      );
     }
   }
 }
@@ -168,15 +179,15 @@ a {
 @keyframes kf-contents-show {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0;
+    transform: translateY(100%);
   }
   50.1% {
     opacity: 1;
+    transform: translateY(30%);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 

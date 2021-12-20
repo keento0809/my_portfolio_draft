@@ -55,12 +55,14 @@ a {
 .cover {
   /* temporary */
   display: none;
-  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .cover.visible {
   display: block;
-  visibility: visible;
+  opacity: 1;
 }
 
 .cover__header {
@@ -131,8 +133,8 @@ a {
           animation-name: kf-contents-show;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0;
           animation-delay: 0;
   -webkit-animation-iteration-count: 1;
@@ -185,8 +187,8 @@ a {
           animation-name: kf-cover-slide;
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   -webkit-animation-delay: 0;
           animation-delay: 0;
   -webkit-animation-iteration-count: 1;
@@ -230,30 +232,36 @@ a {
 @-webkit-keyframes kf-contents-show {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   50.1% {
     opacity: 1;
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes kf-contents-show {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   50.1% {
     opacity: 1;
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

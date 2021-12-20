@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/2f86e9d358.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,9 +25,13 @@
           <section class="cover__header">
             <i class="fas fa-times fa-2x"></i>
           </section>
-          <div class="cover-slide__contents inview">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="cover-slide__contents inview"
+          >
             <ul class="contents-list">
-              <li>
+              <li data-aos="fade-up">
                 <i class="fas fa-home"></i>
                 <span>HOME</span>
               </li>
@@ -75,7 +80,9 @@
         <main class="ml-main">
           <div class="ml-main__wrapper">
             <section class="ml-main__title">
-              <h1>Hi, I'm KENTO.</h1>
+              <h1 data-aos="fade-up" data-aos-duration="3000">
+                Hi, I'm KENTO.
+              </h1>
               <h2>-Front end Developer-</h2>
             </section>
             <section class="ml-main__description">
@@ -150,6 +157,7 @@
         </footer>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
