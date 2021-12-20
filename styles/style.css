@@ -19,6 +19,7 @@ body {
   background: #231e1b;
   color: #fff;
   margin: 0;
+  margin-top: 55px;
   letter-spacing: 0.5px;
 }
 
@@ -58,6 +59,10 @@ a {
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .cover.visible {
@@ -77,6 +82,44 @@ a {
   margin: 0 auto;
   height: 100%;
   line-height: 10vh;
+  -webkit-animation-name: kf-contents-appear;
+          animation-name: kf-contents-appear;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes kf-contents-appear {
+  0% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kf-contents-appear {
+  0% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cover-slide {
@@ -267,9 +310,19 @@ a {
 }
 
 /* header section */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 .ml-header {
-  min-height: 60px;
-  background: inherit;
+  background: #8d8d8d;
+  min-height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,7 +406,7 @@ a {
   width: 100%;
   height: 100%;
   padding: 0 15px;
-  margin-top: 15px;
+  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
