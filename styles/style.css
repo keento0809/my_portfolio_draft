@@ -55,6 +55,7 @@ a {
 .cover {
   /* temporary */
   display: none;
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -62,6 +63,7 @@ a {
 
 .cover.visible {
   display: block;
+  visibility: visible;
   opacity: 1;
 }
 
@@ -168,7 +170,7 @@ a {
   font-size: 1.7em;
 }
 
-.cover-slide__contents .contents-list > li > span {
+.cover-slide__contents .contents-list > li > a > span {
   padding-left: 10px;
 }
 
@@ -538,7 +540,7 @@ a {
           align-items: center;
 }
 
-.social-media-list > li {
+.social-media-list > li > a {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */
