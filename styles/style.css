@@ -438,14 +438,14 @@ a {
   color: #8d8d8d;
 }
 
-.ml-main__description {
+.disc {
   margin: 0 auto;
   height: 20vh;
   border: 1.5px solid #fff;
   border-radius: 12px;
 }
 
-.ml-main__description > p {
+.disc > p {
   text-align: left;
   font-size: 1em;
 }
@@ -593,7 +593,30 @@ a {
   cursor: default;
 }
 
-/* contact form */
+/* about me section */
+.aboutMe {
+  height: 88vh;
+}
+
+.aboutMe__wrapper {
+  padding: 0 15px;
+}
+
+.title-sub {
+  color: #ffff00;
+}
+
+/* myWork section */
+.myWork {
+  height: 88vh;
+}
+
+.myWork__wrapper {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* contact form section */
 .contact {
   height: 88vh;
 }

@@ -1,4 +1,7 @@
 // Get DOM
+const body = document.querySelector("body");
+body.style.height = document.body.scrollHeight + "px";
+console.log(body.style.height);
 
 // Cover menu
 const cover = document.querySelector(".cover");
