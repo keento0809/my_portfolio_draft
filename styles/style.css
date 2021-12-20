@@ -6,7 +6,6 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
 }
 
 ::before,
@@ -267,6 +266,7 @@ a {
   }
 }
 
+/* header section */
 .ml-header {
   min-height: 60px;
   background: inherit;
@@ -345,10 +345,31 @@ a {
 }
 
 /* main section */
+.ml-main {
+  height: 88vh;
+}
+
 .ml-main__wrapper {
   width: 100%;
+  height: 100%;
   padding: 0 15px;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ml-main__title {
+  -webkit-box-flex: 0.3;
+      -ms-flex-positive: 0.3;
+          flex-grow: 0.3;
 }
 
 .ml-main__title > h1 {
@@ -360,9 +381,31 @@ a {
 }
 
 .ml-main__description {
+  margin: 0 auto;
   height: 20vh;
   border: 1.5px solid #fff;
   border-radius: 12px;
+}
+
+.ml-main__description > p {
+  text-align: left;
+  font-size: 1em;
+}
+
+.swipe {
+  -webkit-box-flex: 2.5;
+      -ms-flex-positive: 2.5;
+          flex-grow: 2.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .swipe__btn {
@@ -375,6 +418,22 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 25px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swipe__btn.link-to-aboutMe {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.swipe__btn.link-to-myWork {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .swipe #button-background,
@@ -400,6 +459,7 @@ a {
 .swipe #button-background #slider2,
 .swipe #button-background2 #slider,
 .swipe #button-background2 #slider2 {
+  visibility: hidden;
   -webkit-transition: width 0.3s, border-radius 0.3s, height 0.3s;
   transition: width 0.3s, border-radius 0.3s, height 0.3s;
   position: absolute;
@@ -439,12 +499,17 @@ a {
   border-color: #bf07db !important;
 }
 
-#button-background2 {
+.swipe #button-background2 {
+  width: 300px;
+  height: 100px;
+  border-radius: 60px;
   border-color: #ffff00 !important;
 }
 
-#button-background2 #slider2 {
+.swipe #button-background2 #slider2 {
   border-color: #ffff00 !important;
+  height: 100px;
+  width: 100px;
 }
 
 .material-icons {
@@ -492,12 +557,29 @@ a {
 
 /* footer section */
 .ml-footer {
-  background: inherit;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  background: #231e1b;
+  -webkit-animation-name: sc-slideIn;
+          animation-name: sc-slideIn;
+  -webkit-animation-duration: 0.15s;
+          animation-duration: 0.15s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .ml-footer__wrapper {
-  width: 100%;
-  height: 60px;
+  height: 90px;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,7 +594,7 @@ a {
 }
 
 .ml-footer__container {
-  height: 90%;
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,6 +607,75 @@ a {
           justify-content: center;
   border: solid 1.5px #8d8d8d;
   border-radius: 30px;
+}
+
+.ml-footer.scrollDone {
+  -webkit-animation-name: sc-slideOut;
+          animation-name: sc-slideOut;
+  -webkit-animation-duration: 0.15s;
+          animation-duration: 0.15s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes sc-slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes sc-slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@-webkit-keyframes sc-slideOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes sc-slideOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
 }
 
 .social-media-list {
