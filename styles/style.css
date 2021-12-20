@@ -39,6 +39,10 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -46,6 +50,12 @@ a {
 
 #global-container {
   height: 100%;
+}
+
+.cover {
+  /* temporary */
+  display: none;
+  visibility: hidden;
 }
 
 .cover__header {
@@ -149,6 +159,10 @@ a {
 
 .cover-slide__contents .contents-list > li {
   font-size: 1.7em;
+}
+
+.cover-slide__contents .contents-list > li > span {
+  padding-left: 10px;
 }
 
 .cover-slide__contents .social-media-list {
@@ -439,6 +453,26 @@ a {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+}
+
+/* contact form */
+.contact__wrapper {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.contactMe__list {
+  display: block;
+}
+
+.contactMe__list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* footer section */
