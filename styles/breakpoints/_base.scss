@@ -375,7 +375,7 @@ a {
       @include center;
 
       &.unlocked {
-        transition: all 0.3s;
+        transition: all 0.3s ease;
         width: inherit;
         left: 0 !important;
         height: inherit;
@@ -421,6 +421,8 @@ a {
 
 /* contact form */
 .contact {
+  height: 88vh;
+
   &__wrapper {
     width: 100%;
     padding: $paddingBase;
@@ -475,7 +477,7 @@ a {
 .ml-footer.scrollDone {
   @include animation(
     $name: sc-slideOut,
-    $duration: 0.15s,
+    $duration: 0.3s,
     $timing-function: ease-out,
     $fill-mode: both
   );

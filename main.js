@@ -1,11 +1,16 @@
-// toggle btn
+// Get DOM
+
+// Cover menu
 const cover = document.querySelector(".cover");
 const toggleBtn = document.querySelector(".toggleB");
 const crossBtn = document.querySelector(".fa-times");
 
+// toggle header and footer
 const header = document.querySelector(".ml-header");
-console.log(header);
 const mlFooter = document.querySelector(".ml-footer");
+
+// scroll
+const bottom = document.querySelector("#bottom");
 
 function toggleButton() {
   if (cover.classList.contains("visible")) cover.classList.remove("visible");
@@ -35,6 +40,13 @@ let timer = null;
 function scrollDelay(e) {
   clearTimeout(timer);
   timer = setTimeout(() => {
+    if (
+      window.scrollY == 0 ||
+      window.scrollY + window.offsetHeight == document.body.scrollHeight
+    ) {
+      if (!mlFooter.classList.contains("scrollDone"))
+        mlFooter.classList.add("scrollDone");
+    }
     mlFooter.classList.toggle("scrollDone");
   }, 50);
 }
