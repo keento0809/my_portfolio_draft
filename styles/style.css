@@ -602,8 +602,42 @@ a {
   padding: 0 15px;
 }
 
+.aboutMe__skills .skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .title-sub {
   color: #ffff00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-sub img {
+  width: 100px;
+  height: 100px;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  border-radius: 50px;
+}
+
+.title-sub h2 {
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
 }
 
 /* myWork section */

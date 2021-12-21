@@ -39,13 +39,17 @@ let slider = document.querySelector("#slider");
 
 let timer = null;
 
+console.log(window.scrollY + window.offsetHeight);
+// console.log(document.body.scrollHeight);
+
 // Build out functions
 function scrollDelay(e) {
   clearTimeout(timer);
   timer = setTimeout(() => {
     if (
       window.scrollY == 0 ||
-      window.scrollY + window.offsetHeight == document.body.scrollHeight
+      window.scrollY + window.offsetHeight >
+        document.body.scrollHeight - mlFooter.offsetTop
     ) {
       if (!mlFooter.classList.contains("scrollDone"))
         mlFooter.classList.add("scrollDone");

@@ -429,11 +429,35 @@ a {
   }
 
   &__description {
+    // vertical-align: middle;
+  }
+
+  &__skills {
+    & .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   }
 }
 
 .title-sub {
   color: $cYellow;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+
+  & img {
+    width: 100px;
+    height: 100px;
+    flex-basis: 1;
+    border-radius: 50px;
+  }
+
+  & h2 {
+    flex-basis: 1;
+  }
 }
 
 /* myWork section */
