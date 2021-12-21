@@ -640,6 +640,27 @@ a {
           flex-direction: column;
 }
 
+/* BackTop button section */
+#backTopBtn {
+  /* temporary */
+  position: fixed;
+  bottom: 20%;
+  right: 10%;
+  border: 1.5px solid #fff;
+  border-color: #bf07db;
+  text-align: center;
+  padding: 0 2px;
+}
+
+#backTopBtn > a {
+  color: #bf07db;
+}
+
+#toTop {
+  display: block;
+  font-size: 0.8em;
+}
+
 /* footer section */
 .ml-footer {
   position: fixed;

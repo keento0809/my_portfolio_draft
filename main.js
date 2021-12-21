@@ -12,8 +12,8 @@ const crossBtn = document.querySelector(".fa-times");
 const header = document.querySelector(".ml-header");
 const mlFooter = document.querySelector(".ml-footer");
 
-// scroll
-const bottom = document.querySelector("#bottom");
+// Back to Top Button
+const btt = document.querySelector("#backTopBtn");
 
 function toggleButton() {
   if (cover.classList.contains("visible")) cover.classList.remove("visible");
@@ -59,6 +59,13 @@ function toggleBg() {
   else header.style.background = "none";
 }
 
+function backTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 // Hook up the event
 try {
   window.addEventListener("scroll", scrollDelay, false);
@@ -67,5 +74,7 @@ try {
   window.addEventListener("onscroll", scrollDelay);
   window.addEventListener("onscroll", toggleBg);
 }
+
+btt.addEventListener("click", backTop);
 
 AOS.init();

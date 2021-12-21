@@ -467,6 +467,28 @@ a {
   }
 }
 
+/* BackTop button section */
+#backTopBtn {
+  /* temporary */
+  //   display: none;
+  position: fixed;
+  bottom: 20%;
+  right: 10%;
+  border: $borderBase;
+  border-color: $cPurple;
+  text-align: center;
+  padding: 0 2px;
+
+  & > a {
+    color: $cPurple;
+  }
+}
+
+#toTop {
+  display: block;
+  font-size: 0.8em;
+}
+
 /* footer section */
 .ml-footer {
   position: fixed;
