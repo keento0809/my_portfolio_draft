@@ -8,6 +8,10 @@ body {
   height: 100%;
 }
 
+:focus {
+  outline: none;
+}
+
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
@@ -440,6 +444,7 @@ a {
 
 .disc {
   margin: 0 auto;
+  margin-bottom: 20px;
   height: 20vh;
   border: 1.5px solid #fff;
   border-radius: 12px;
@@ -451,9 +456,9 @@ a {
 }
 
 .swipe {
-  -webkit-box-flex: 2.5;
-      -ms-flex-positive: 2.5;
-          flex-grow: 2.5;
+  -webkit-box-flex: 0.2;
+      -ms-flex-positive: 0.2;
+          flex-grow: 0.2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,6 +558,10 @@ a {
   border-color: #bf07db !important;
 }
 
+#button-background > .slide-text {
+  color: #bf07db;
+}
+
 #button-background #slider {
   border-color: #bf07db !important;
 }
@@ -562,6 +571,10 @@ a {
   height: 100px;
   border-radius: 60px;
   border-color: #ffff00 !important;
+}
+
+.swipe #button-background2 > .slide-text {
+  color: #ffff00;
 }
 
 .swipe #button-background2 #slider2 {
@@ -602,6 +615,12 @@ a {
   padding: 0 15px;
 }
 
+.aboutMe__skills {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid #fff;
+}
+
 .aboutMe__skills .skill-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,6 +630,48 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.aboutMe__toLink {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe__toLink .circle {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.circle.to-contact {
+  border-color: #bf07db;
+  color: #bf07db;
+}
+
+.circle.to-myWork {
+  border-color: #ffff00;
+  color: #ffff00;
 }
 
 .title-sub {
@@ -628,11 +689,10 @@ a {
 }
 
 .title-sub img {
-  width: 100px;
+  display: inline-block;
+  width: 180px;
   height: 100px;
-  -ms-flex-preferred-size: 1;
-      flex-basis: 1;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .title-sub h2 {
@@ -653,10 +713,13 @@ a {
 /* contact form section */
 .contact {
   height: 88vh;
+  /* temporary */
+  border: 1.5px solid #fff;
 }
 
 .contact__wrapper {
   width: 100%;
+  height: 85%;
   padding: 0 15px;
 }
 
@@ -680,10 +743,12 @@ a {
   position: fixed;
   bottom: 20%;
   right: 10%;
+  background: #231e1b;
   border: 1.5px solid #fff;
   border-color: #bf07db;
   text-align: center;
   padding: 0 2px;
+  cursor: pointer;
 }
 
 #backTopBtn > a {
@@ -719,7 +784,7 @@ a {
 }
 
 .ml-footer__wrapper {
-  height: 90px;
+  height: 100px;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;

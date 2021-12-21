@@ -55,7 +55,7 @@ function scrollDelay(e) {
         mlFooter.classList.add("scrollDone");
     }
     mlFooter.classList.toggle("scrollDone");
-  }, 50);
+  }, 80);
 }
 
 function toggleBg() {
