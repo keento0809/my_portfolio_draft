@@ -59,7 +59,7 @@ function scrollDelay(e) {
 }
 
 function toggleBg() {
-  if (window.scrollY !== 0) header.style.background = "#8d8d8d";
+  if (window.scrollY !== 0) header.style.background = "rgba(35, 30, 27,0.8)";
   else header.style.background = "none";
 }
 

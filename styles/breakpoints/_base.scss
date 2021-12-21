@@ -1,4 +1,5 @@
 $cBase: #231e1b;
+$cBaseTransparent: rgba(35, 30, 27, 0.8);
 $cText: #fff;
 $cTest: #12e3e3;
 $cGrey: #8d8d8d;
@@ -265,6 +266,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: inherit;
 
     & > a {
       border: $borderBase;
@@ -279,7 +281,7 @@ a {
   &__toggle-btn {
     & .toggle-btn-container {
       /* reset style for button */
-      background-color: transparent;
+      background-color: inherit;
       border: none;
       cursor: pointer;
       display: flex;
@@ -362,8 +364,8 @@ a {
     flex-grow: 2;
   }
 
-  & #button-background,
-  & #button-background2 {
+  & .button-background,
+  & .button-background2 {
     position: relative;
     background: inherit;
     width: 200px;
@@ -396,11 +398,12 @@ a {
   }
 }
 
-#button-background {
+.button-background {
   border-color: $cPurple !important;
 
   & > .slide-text {
     color: $cPurple;
+    border: none;
   }
 
   & #slider {
@@ -408,18 +411,20 @@ a {
   }
 }
 
-.swipe #button-background2 {
+.swipe .button-background2 {
   width: 300px;
   height: 100px;
   border-radius: 60px;
-  border-color: $cYellow !important;
+  border-color: $cYellow;
 
   & > .slide-text {
     color: $cYellow;
+    border: none;
+    font-size: 27px;
   }
 
   & #slider2 {
-    border-color: $cYellow !important;
+    // border-color: $cYellow !important;
     height: 100px;
     width: 100px;
   }
@@ -554,12 +559,14 @@ a {
 
 .input-f,
 .textarea-f {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: 15px;
 }
 
-input::placeholder,
+.input-f::placeholder,
 textarea::placeholder {
+  font-size: 1em;
+  font-weight: 400;
   position: relative;
   top: 0.1em;
   //   bottom: 0.1em;
@@ -685,4 +692,45 @@ textarea::placeholder {
   & > li > a {
     display: block;
   }
+}
+
+/* test neon color */
+.gas {
+  //   --blur: 1.75rem;
+  --blur: 1rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  --size: 12rem;
+
+  align-items: center;
+  border-radius: 25px;
+  border: 2px solid currentColor;
+  box-shadow: 
+      /* --- "glass" tube --- */
+      /* inside */ inset 0 0 0 1px
+      rgba(0, 0, 0, 0.15),
+    /* outside */ 0 0 0 1px rgba(0, 0, 0, 0.15),
+    /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),
+    /* outside */ 0 0 var(--box-blur) var(--glow);
+  color: var(--color, white);
+
+  &.he {
+    --color: #f3d574;
+    filter: saturate(120%);
+  }
+
+  &.ne {
+    --color: #fda802;
+    filter: brightness(110%);
+  }
+
+  &.ar {
+    --color: #e555c7;
+    filter: brightness(120%);
+  }
+}
+
+.input-f,
+.textarea-f {
+  border-color: $cYellow;
 }
