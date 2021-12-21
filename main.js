@@ -27,9 +27,6 @@ function toggleButton2() {
   }
 }
 
-toggleBtn.addEventListener("click", toggleButton);
-crossBtn.addEventListener("click", toggleButton);
-
 // swipe btn
 let initialMouse = 0;
 let slideMovementTotal = 0;
@@ -71,6 +68,9 @@ function backTop() {
 }
 
 // Hook up the event
+toggleBtn.addEventListener("click", toggleButton);
+crossBtn.addEventListener("click", toggleButton);
+
 try {
   window.addEventListener("scroll", scrollDelay, false);
   window.addEventListener("scroll", toggleBg);

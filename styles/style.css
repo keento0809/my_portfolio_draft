@@ -1021,4 +1021,14 @@ textarea::placeholder {
 .textarea-f {
   border-color: #ffff00;
 }
+
+.input-f.gas.ar {
+  border-color: #bf07db;
+}
+
+/* target section */
+#target2,
+#target3 {
+  padding-top: 80px;
+}
 /*# sourceMappingURL=style.css.map */

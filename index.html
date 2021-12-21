@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/styles/style.css" />
     <title>My Portfolio draft</title>
   </head>
-  <body>
+  <body id="target5">
     <div id="global-container">
       <div class="cover">
         <section class="cover-slide">
@@ -86,7 +86,7 @@
           <div class="ml-header__wrapper">
             <!-- brand_logo section -->
             <section class="ml-header__brand-logo">
-              <a href="#target"><span>K.H.</span></a>
+              <a href="#target5"><span>K.H.</span></a>
             </section>
             <!-- toggle_menu section -->
             <!-- select button tag -->
@@ -121,25 +121,29 @@
             <section class="swipe">
               <div class="swipe__btn link-to-aboutMe">
                 <div class="button-background gas ar">
-                  <span class="slide-text">About ME</span>
-                  <div id="slider">
-                    <i id="locker" class="material-icons"></i>
-                  </div>
+                  <a href="#target2">
+                    <span class="slide-text">About ME</span>
+                    <div id="slider">
+                      <i id="locker" class="material-icons"></i>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="swipe__btn link-to-myWork">
                 <div class="button-background2 gas he">
-                  <span class="slide-text">Contact ME</span>
-                  <div id="slider2">
-                    <i id="locker2" class="material-icons"></i>
-                  </div>
+                  <a href="#target3">
+                    <span class="slide-text">Check My Work</span>
+                    <div id="slider2">
+                      <i id="locker2" class="material-icons"></i>
+                    </div>
+                  </a>
                 </div>
               </div>
             </section>
           </div>
         </main>
       </div>
-      <div>
+      <div id="target2">
         <div class="aboutMe">
           <div class="aboutMe__wrapper">
             <section class="aboutMe__title">
@@ -180,7 +184,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div id="target3">
         <div class="myWork">
           <div class="myWork__wrapper">
             <section class="myWork__title">
@@ -195,7 +199,7 @@
           </div>
         </div>
       </div>
-      <div id="target">
+      <div id="target4">
         <div class="contact">
           <div class="contact__wrapper">
             <section class="contact__title">
@@ -236,7 +240,7 @@
           </div>
         </div>
       </div>
-      <div id="backTopBtn">
+      <div id="backTopBtn" class="gas ar">
         <a href="">
           <i class="fas fa-chevron-up fa-2x"></i>
           <span id="toTop">TOP</span>
