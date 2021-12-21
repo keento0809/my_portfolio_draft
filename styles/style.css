@@ -42,6 +42,13 @@ ul {
   list-style: none;
 }
 
+input,
+textarea {
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+}
+
 h1 {
   font-size: 2.5em;
 }
@@ -714,13 +721,16 @@ a {
 .contact {
   height: 88vh;
   /* temporary */
-  border: 1.5px solid #fff;
 }
 
 .contact__wrapper {
   width: 100%;
   height: 85%;
   padding: 0 15px;
+}
+
+.contactMe {
+  font-size: 1.4em;
 }
 
 .contactMe__list {
@@ -735,6 +745,68 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.input-f,
+.textarea-f {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  position: relative;
+  top: 0.1em;
+  left: 0.1em;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  position: relative;
+  top: 0.1em;
+  left: 0.1em;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  position: relative;
+  top: 0.1em;
+  left: 0.1em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  position: relative;
+  top: 0.1em;
+  left: 0.1em;
+}
+
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.submit__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 50px;
+  border: 1.5px solid #fff;
+  border-radius: 25px;
+  font-size: 24px;
+  text-align: center;
 }
 
 /* BackTop button section */

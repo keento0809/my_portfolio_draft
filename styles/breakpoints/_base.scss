@@ -57,6 +57,13 @@ ul {
   list-style: none;
 }
 
+input,
+textarea {
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+}
+
 h1 {
   font-size: $h1FontSize;
 }
@@ -523,7 +530,7 @@ a {
 .contact {
   height: 88vh;
   /* temporary */
-  border: $borderBase;
+  //   border: $borderBase;
 
   &__wrapper {
     width: 100%;
@@ -533,6 +540,8 @@ a {
 }
 
 .contactMe {
+  font-size: 1.4em;
+
   &__list {
     display: block;
 
@@ -540,6 +549,40 @@ a {
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+.input-f,
+.textarea-f {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  position: relative;
+  top: 0.1em;
+  //   bottom: 0.1em;
+  left: 0.1em;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+
+  &__btn {
+    // display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border: $borderBase;
+    border-radius: 25px;
+    font-size: 24px;
+    text-align: center;
+    // vertical-align: middle;
+    // line-height: 24px;
   }
 }
 
