@@ -867,7 +867,7 @@ textarea::placeholder {
 }
 
 .ml-footer__wrapper {
-  height: 100px;
+  height: 90px;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1029,6 +1029,6 @@ textarea::placeholder {
 /* target section */
 #target2,
 #target3 {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 /*# sourceMappingURL=style.css.map */

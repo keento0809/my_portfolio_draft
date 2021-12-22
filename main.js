@@ -15,16 +15,13 @@ const mlFooter = document.querySelector(".ml-footer");
 // Back to Top Button
 const btt = document.querySelector("#backTopBtn");
 
+// Cover menu button triggers
+const triggers = document.querySelectorAll(".btn-trigger");
+
+// Toggle cover
 function toggleButton() {
   if (cover.classList.contains("visible")) cover.classList.remove("visible");
   else cover.classList.add("visible");
-}
-function toggleButton2() {
-  if (cover.classList.contains("visible")) {
-    cover.classList.remove("visible");
-  } else {
-    cover.classList.add("visible");
-  }
 }
 
 // swipe btn
@@ -40,6 +37,8 @@ console.log(window.scrollY + window.offsetHeight);
 // console.log(document.body.scrollHeight);
 
 // Build out functions
+
+// control scroll delay
 function scrollDelay(e) {
   clearTimeout(timer);
   timer = setTimeout(() => {
@@ -55,11 +54,14 @@ function scrollDelay(e) {
   }, 80);
 }
 
+// toggle header's background
 function toggleBg() {
   if (window.scrollY !== 0) header.style.background = "rgba(35, 30, 27,0.8)";
   else header.style.background = "none";
+  //   appearFooter();
 }
 
+// Back to TOP from anywhere you are
 function backTop() {
   window.scrollTo({
     top: 0,
@@ -80,5 +82,7 @@ try {
 }
 
 btt.addEventListener("click", backTop);
+
+triggers.forEach((trigger) => trigger.addEventListener("click", toggleButton));
 
 AOS.init();

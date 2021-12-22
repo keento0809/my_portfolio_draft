@@ -633,7 +633,7 @@ textarea::placeholder {
 
   &__wrapper {
     // width: 100%;
-    height: 100px;
+    height: 90px;
     padding: $paddingBase;
     display: flex;
     flex-direction: column;
@@ -742,5 +742,5 @@ textarea::placeholder {
 /* target section */
 #target2,
 #target3 {
-  padding-top: 80px;
+  padding-top: 70px;
 }
