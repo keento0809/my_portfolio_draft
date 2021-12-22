@@ -12,7 +12,43 @@ $slideTextColor: $cGrey;
 $h1FontSize: 2.5em;
 $paddingBase: 0 15px;
 
-$borderBase: 1.5px solid $cText;
+$borderBase: 2px solid $cText;
+
+/* test neon color */
+.gas {
+  //   --blur: 1.75rem;
+  --blur: 1rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  --size: 12rem;
+
+  align-items: center;
+  border-radius: 25px;
+  border: 2px solid currentColor;
+  box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0
+      1px rgba(0, 0, 0, 0.15),
+    /* outside */ 0 0 0 1px rgba(0, 0, 0, 0.15),
+    /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),
+    /* outside */ 0 0 var(--box-blur) var(--glow);
+  color: var(--color, white);
+
+  &.he {
+    --color: #f3d574;
+    filter: saturate(120%);
+  }
+
+  &.ne {
+    --color: #fda802;
+    filter: brightness(110%);
+  }
+
+  &.ar {
+    --color: #e555c7;
+    filter: brightness(120%);
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -529,6 +565,28 @@ a {
     width: 100%;
     padding: $paddingBase;
   }
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.work {
+  height: 140px;
+  border-radius: 12px;
+
+  &:nth-child(1) {
+    border-color: $cYellow;
+  }
+
+  &:nth-child(2) {
+    border-color: $cPurple;
+  }
+
+  &:nth-child(3) {
+    border-color: $cYellow;
+  }
 }
 
 /* contact form section */
@@ -561,6 +619,7 @@ a {
 .textarea-f {
   font-size: 1.2em;
   margin-bottom: 15px;
+  background: inherit;
 }
 
 .input-f::placeholder,
@@ -586,6 +645,7 @@ textarea::placeholder {
     height: 50px;
     border: $borderBase;
     border-radius: 25px;
+    border-color: $cPurple;
     font-size: 24px;
     text-align: center;
     // vertical-align: middle;
@@ -694,42 +754,7 @@ textarea::placeholder {
   }
 }
 
-/* test neon color */
-.gas {
-  //   --blur: 1.75rem;
-  --blur: 1rem;
-  --box-blur: calc(0.5 * var(--blur));
-  --glow: var(--color);
-  --size: 12rem;
-
-  align-items: center;
-  border-radius: 25px;
-  border: 2px solid currentColor;
-  box-shadow: 
-      /* --- "glass" tube --- */
-      /* inside */ inset 0 0 0 1px
-      rgba(0, 0, 0, 0.15),
-    /* outside */ 0 0 0 1px rgba(0, 0, 0, 0.15),
-    /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),
-    /* outside */ 0 0 var(--box-blur) var(--glow);
-  color: var(--color, white);
-
-  &.he {
-    --color: #f3d574;
-    filter: saturate(120%);
-  }
-
-  &.ne {
-    --color: #fda802;
-    filter: brightness(110%);
-  }
-
-  &.ar {
-    --color: #e555c7;
-    filter: brightness(120%);
-  }
-}
-
+/* 補足 */
 .input-f,
 .textarea-f {
   border-color: $cYellow;

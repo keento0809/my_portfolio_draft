@@ -1,3 +1,38 @@
+@charset "UTF-8";
+/* test neon color */
+.gas {
+  --blur: 1rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  --size: 12rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  border: 2px solid currentColor;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
+  color: var(--color, white);
+}
+
+.gas.he {
+  --color: #f3d574;
+  -webkit-filter: saturate(120%);
+          filter: saturate(120%);
+}
+
+.gas.ne {
+  --color: #fda802;
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.gas.ar {
+  --color: #e555c7;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -377,7 +412,7 @@ a {
 }
 
 .ml-header__brand-logo > a {
-  border: 1.5px solid #fff;
+  border: 2px solid #fff;
 }
 
 .ml-header__brand-logo > a > span {
@@ -454,7 +489,7 @@ a {
   margin: 0 auto;
   margin-bottom: 20px;
   height: 20vh;
-  border: 1.5px solid #fff;
+  border: 2px solid #fff;
   border-radius: 12px;
 }
 
@@ -513,7 +548,7 @@ a {
   background: inherit;
   width: 200px;
   height: 50px;
-  border: 1.5px solid #fff;
+  border: 2px solid #fff;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,7 +572,7 @@ a {
   left: -10px;
   width: 50px;
   height: 50px;
-  border: 1.5px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,7 +663,7 @@ a {
 .aboutMe__skills {
   text-align: center;
   padding-bottom: 20px;
-  border-bottom: 1.5px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .aboutMe__skills .skill-list {
@@ -660,7 +695,7 @@ a {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 1.5px solid #fff;
+  border: 2px solid #fff;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,6 +755,33 @@ a {
   padding: 0 15px;
 }
 
+.myWork__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work {
+  height: 140px;
+  border-radius: 12px;
+}
+
+.work:nth-child(1) {
+  border-color: #ffff00;
+}
+
+.work:nth-child(2) {
+  border-color: #bf07db;
+}
+
+.work:nth-child(3) {
+  border-color: #ffff00;
+}
+
 /* contact form section */
 .contact {
   height: 88vh;
@@ -754,6 +816,7 @@ a {
 .textarea-f {
   font-size: 1.2em;
   margin-bottom: 15px;
+  background: inherit;
 }
 
 .input-f::-webkit-input-placeholder,
@@ -814,8 +877,9 @@ textarea::placeholder {
           justify-content: center;
   width: 150px;
   height: 50px;
-  border: 1.5px solid #fff;
+  border: 2px solid #fff;
   border-radius: 25px;
+  border-color: #bf07db;
   font-size: 24px;
   text-align: center;
 }
@@ -827,7 +891,7 @@ textarea::placeholder {
   bottom: 20%;
   right: 10%;
   background: #231e1b;
-  border: 1.5px solid #fff;
+  border: 2px solid #fff;
   border-color: #bf07db;
   text-align: center;
   padding: 0 2px;
@@ -983,40 +1047,7 @@ textarea::placeholder {
   display: block;
 }
 
-/* test neon color */
-.gas {
-  --blur: 1rem;
-  --box-blur: calc(0.5 * var(--blur));
-  --glow: var(--color);
-  --size: 12rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 25px;
-  border: 2px solid currentColor;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
-          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
-  color: var(--color, white);
-}
-
-.gas.he {
-  --color: #f3d574;
-  -webkit-filter: saturate(120%);
-          filter: saturate(120%);
-}
-
-.gas.ne {
-  --color: #fda802;
-  -webkit-filter: brightness(110%);
-          filter: brightness(110%);
-}
-
-.gas.ar {
-  --color: #e555c7;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
-}
-
+/* 補足 */
 .input-f,
 .textarea-f {
   border-color: #ffff00;
