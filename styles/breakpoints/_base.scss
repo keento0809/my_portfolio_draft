@@ -561,6 +561,10 @@ a {
 .myWork {
   height: 88vh;
 
+  &__title {
+    margin-bottom: 5px;
+  }
+
   &__wrapper {
     width: 100%;
     padding: $paddingBase;
@@ -573,19 +577,39 @@ a {
 }
 
 .work {
+  margin-bottom: 5px;
   height: 140px;
   border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   flex-basis: 60px;
 
   &:nth-child(1) {
     border-color: $cYellow;
   }
 
   &:nth-child(2) {
+    flex-direction: row-reverse;
     border-color: $cPurple;
   }
 
   &:nth-child(3) {
     border-color: $cYellow;
+  }
+
+  &__image {
+    & > img {
+      flex-grow: 2;
+      display: inline-block;
+      width: 147px;
+      height: 124px;
+    }
+  }
+
+  &__description {
+    flex-basis: 160px;
+    text-align: center;
   }
 }
 
