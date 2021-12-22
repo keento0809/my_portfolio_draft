@@ -13,6 +13,7 @@ $h1FontSize: 2.5em;
 $paddingBase: 0 15px;
 
 $borderBase: 2px solid $cText;
+$borderRadiusBase: 12px;
 
 /* test neon color */
 .gas {
@@ -23,7 +24,7 @@ $borderBase: 2px solid $cText;
   --size: 12rem;
 
   align-items: center;
-  border-radius: 25px;
+  border-radius: $borderRadiusBase;
   border: 2px solid currentColor;
   box-shadow: 
         /* --- "glass" tube --- */
@@ -47,6 +48,11 @@ $borderBase: 2px solid $cText;
   &.ar {
     --color: #e555c7;
     filter: brightness(120%);
+  }
+
+  &.xe {
+    --color: #c4c4c6;
+    filter: brightness(105%);
   }
 }
 
@@ -98,7 +104,6 @@ input,
 textarea {
   padding: 0;
   border: 0;
-  border-radius: 2px;
 }
 
 h1 {
@@ -372,7 +377,6 @@ a {
   height: 20vh;
   // background: $cTest;
   border: $borderBase;
-  border-radius: 12px;
 
   & > p {
     text-align: left;
@@ -383,12 +387,13 @@ a {
 .swipe {
   flex-grow: 0.2;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 
   &__btn {
     @include center;
-    margin-top: 25px;
+    // margin-top: 25px;
     align-items: flex-start;
   }
 
@@ -404,11 +409,13 @@ a {
   & .button-background2 {
     position: relative;
     background: inherit;
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 70px;
     border: $borderBase;
-    border-radius: 25px;
+    border-radius: $borderRadiusBase;
     @include center;
+    flex-grow: 0.5;
+    text-align: center;
 
     & #slider,
     & #slider2 {
@@ -420,7 +427,7 @@ a {
       width: 50px;
       height: 50px;
       border: $borderBase;
-      border-radius: 50%;
+      border-radius: $borderRadiusBase;
       @include center;
 
       &.unlocked {
@@ -428,7 +435,7 @@ a {
         width: inherit;
         left: 0 !important;
         height: inherit;
-        border-radius: inherit;
+        // border-radius: inherit;
       }
     }
   }
@@ -448,10 +455,11 @@ a {
 }
 
 .swipe .button-background2 {
-  width: 300px;
+  width: 140px;
   height: 100px;
-  border-radius: 60px;
+  border-radius: $borderRadiusBase;
   border-color: $cYellow;
+  flex-grow: 0.7;
 
   & > .slide-text {
     color: $cYellow;
@@ -473,10 +481,18 @@ a {
 }
 
 .slide-text {
-  color: $slideTextColor;
+  //   color: $cYellow;
   font-size: 24px;
   text-transform: uppercase;
   @include nonSelect;
+}
+
+.slide-text.ab {
+  color: $cPurple;
+}
+
+.slide-text.mine {
+  color: $cYellow;
 }
 
 /* about me section */
@@ -494,6 +510,7 @@ a {
   &__skills {
     text-align: center;
     padding-bottom: 20px;
+    border: none;
     border-bottom: $borderBase;
 
     & .skill-list {
@@ -516,7 +533,7 @@ a {
       display: inline-block;
       width: 80px;
       height: 80px;
-      border-radius: 50%;
+      border-radius: $borderRadiusBase;
       border: $borderBase;
       text-align: center;
       //   line-height: 1em;
@@ -549,7 +566,7 @@ a {
     width: 100px;
     height: 100px;
     // flex-grow: 2;
-    border-radius: 50%;
+    border-radius: $borderRadiusBase;
   }
 
   & h2 {
@@ -579,11 +596,9 @@ a {
 .work {
   margin-bottom: 5px;
   height: 140px;
-  border-radius: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //   flex-basis: 60px;
 
   &:nth-child(1) {
     border-color: $cYellow;
@@ -652,7 +667,6 @@ textarea::placeholder {
   font-weight: 400;
   position: relative;
   top: 0.1em;
-  //   bottom: 0.1em;
   left: 0.1em;
 }
 
@@ -668,7 +682,7 @@ textarea::placeholder {
     width: 150px;
     height: 50px;
     border: $borderBase;
-    border-radius: 25px;
+    border-radius: $borderRadiusBase;
     border-color: $cPurple;
     font-size: 24px;
     text-align: center;
@@ -682,13 +696,13 @@ textarea::placeholder {
   /* temporary */
   //   display: none;
   position: fixed;
-  bottom: 20%;
+  bottom: 14.2%;
   right: 10%;
   background: $cBase;
   border: $borderBase;
   border-color: $cPurple;
   text-align: center;
-  padding: 0 2px;
+  padding: 2px 5px;
   cursor: pointer;
 
   & > a {
@@ -730,8 +744,8 @@ textarea::placeholder {
     flex-direction: column;
     // align-items: center;
     justify-content: center;
-    border: solid 1.5px $cGrey;
-    border-radius: 30px;
+    border: $borderBase;
+    border-radius: $borderRadiusBase;
   }
 }
 

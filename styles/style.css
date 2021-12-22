@@ -8,7 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 25px;
+  border-radius: 12px;
   border: 2px solid currentColor;
   -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
           box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
@@ -31,6 +31,12 @@
   --color: #e555c7;
   -webkit-filter: brightness(120%);
           filter: brightness(120%);
+}
+
+.gas.xe {
+  --color: #c4c4c6;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
 }
 
 * {
@@ -81,7 +87,6 @@ input,
 textarea {
   padding: 0;
   border: 0;
-  border-radius: 2px;
 }
 
 h1 {
@@ -490,7 +495,6 @@ a {
   margin-bottom: 20px;
   height: 20vh;
   border: 2px solid #fff;
-  border-radius: 12px;
 }
 
 .disc > p {
@@ -505,13 +509,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .swipe__btn {
@@ -524,7 +531,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 25px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -546,10 +552,10 @@ a {
 .swipe .button-background2 {
   position: relative;
   background: inherit;
-  width: 200px;
-  height: 50px;
+  width: 100px;
+  height: 70px;
   border: 2px solid #fff;
-  border-radius: 25px;
+  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,6 +565,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+  text-align: center;
 }
 
 .swipe .button-background #slider,
@@ -573,7 +583,7 @@ a {
   width: 50px;
   height: 50px;
   border: 2px solid #fff;
-  border-radius: 50%;
+  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,7 +604,6 @@ a {
   width: inherit;
   left: 0 !important;
   height: inherit;
-  border-radius: inherit;
 }
 
 .button-background {
@@ -611,10 +620,13 @@ a {
 }
 
 .swipe .button-background2 {
-  width: 300px;
+  width: 140px;
   height: 100px;
-  border-radius: 60px;
+  border-radius: 12px;
   border-color: #ffff00;
+  -webkit-box-flex: 0.7;
+      -ms-flex-positive: 0.7;
+          flex-grow: 0.7;
 }
 
 .swipe .button-background2 > .slide-text {
@@ -640,7 +652,6 @@ a {
 }
 
 .slide-text {
-  color: #8d8d8d;
   font-size: 24px;
   text-transform: uppercase;
   -webkit-touch-callout: none;
@@ -649,6 +660,14 @@ a {
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+}
+
+.slide-text.ab {
+  color: #bf07db;
+}
+
+.slide-text.mine {
+  color: #ffff00;
 }
 
 /* about me section */
@@ -663,6 +682,7 @@ a {
 .aboutMe__skills {
   text-align: center;
   padding-bottom: 20px;
+  border: none;
   border-bottom: 2px solid #fff;
 }
 
@@ -694,7 +714,7 @@ a {
   display: inline-block;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 12px;
   border: 2px solid #fff;
   text-align: center;
   display: -webkit-box;
@@ -737,7 +757,7 @@ a {
   display: inline-block;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 12px;
 }
 
 .title-sub h2 {
@@ -772,7 +792,6 @@ a {
 .work {
   margin-bottom: 5px;
   height: 140px;
-  border-radius: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,7 +930,7 @@ textarea::placeholder {
   width: 150px;
   height: 50px;
   border: 2px solid #fff;
-  border-radius: 25px;
+  border-radius: 12px;
   border-color: #bf07db;
   font-size: 24px;
   text-align: center;
@@ -921,13 +940,13 @@ textarea::placeholder {
 #backTopBtn {
   /* temporary */
   position: fixed;
-  bottom: 20%;
+  bottom: 14.2%;
   right: 10%;
   background: #231e1b;
   border: 2px solid #fff;
   border-color: #bf07db;
   text-align: center;
-  padding: 0 2px;
+  padding: 2px 5px;
   cursor: pointer;
 }
 
@@ -990,8 +1009,8 @@ textarea::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: solid 1.5px #8d8d8d;
-  border-radius: 30px;
+  border: 2px solid #fff;
+  border-radius: 12px;
 }
 
 .ml-footer.scrollDone {
