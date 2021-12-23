@@ -5,7 +5,9 @@ console.log(body.style.height);
 
 // Cover menu
 const cover = document.querySelector(".cover");
-const toggleBtn = document.querySelector(".toggleB");
+
+// Menu button (hamburger menu)
+const menuBtn = document.querySelector(".toggleB");
 const crossBtn = document.querySelector(".fa-times");
 
 // toggle header and footer
@@ -20,8 +22,13 @@ const triggers = document.querySelectorAll(".btn-trigger");
 
 // Toggle cover
 function toggleButton() {
-  if (cover.classList.contains("visible")) cover.classList.remove("visible");
-  else cover.classList.add("visible");
+  if (cover.classList.contains("visible")) {
+    header.style.display = "flex";
+    cover.classList.remove("visible");
+  } else {
+    header.style.display = "none";
+    cover.classList.add("visible");
+  }
 }
 
 // swipe btn
@@ -32,6 +39,9 @@ let mouseIsDown = false;
 let slider = document.querySelector("#slider");
 
 let timer = null;
+
+// Javascript event on scroll up or scroll down
+let lastScrollTop = 0;
 
 console.log(window.scrollY + window.offsetHeight);
 // console.log(document.body.scrollHeight);
@@ -56,6 +66,7 @@ function scrollDelay(e) {
 
 // toggle header's background
 function toggleBg() {
+  //   header.style.visibility = "hidden";
   if (window.scrollY !== 0) header.style.background = "rgba(35, 30, 27,0.8)";
   else header.style.background = "none";
   //   appearFooter();
@@ -69,8 +80,40 @@ function backTop() {
   });
 }
 
+// Doesn't work so far
+function detectScrollUpOrDown() {
+  let st = window.pageYOffset || document.documentElement.scrollTop;
+  if (st > lastScrollTop) {
+    console.log("scrolling down");
+    if (mlFooter.classList.contains("scrollDone"))
+      mlFooter.classList.remove("scrollDone");
+    // return;
+  } else {
+    if (mlFooter.classList.contains("scrollDone"))
+      mlFooter.classList.remove("scrollDone");
+    // return;
+    console.log("scrolling up");
+  }
+  lastScrollTop = st <= 0 ? 0 : st;
+}
+
+// Emerge back to TOP button
+function emergeButton() {
+  let pageTop = btt;
+  // 要素の位置座標を取得
+  let rect = pageTop.getBoundingClientRect();
+  // topからの距離
+  let scrollTop = rect.top + window.pageYOffset;
+
+  if (scrollTop > 680) {
+    pageTop.classList.add("startShow");
+  } else {
+    pageTop.classList.remove("startShow");
+  }
+}
+
 // Hook up the event
-toggleBtn.addEventListener("click", toggleButton);
+menuBtn.addEventListener("click", toggleButton);
 crossBtn.addEventListener("click", toggleButton);
 
 try {
@@ -82,6 +125,7 @@ try {
 }
 
 btt.addEventListener("click", backTop);
+window.addEventListener("scroll", emergeButton);
 
 triggers.forEach((trigger) => trigger.addEventListener("click", toggleButton));
 

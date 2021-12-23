@@ -60,7 +60,7 @@ body {
 }
 
 body {
-  font-family: "Abhaya Libre", serif;
+  font-family: "Exo 2", serif;
   background: #231e1b;
   color: #fff;
   margin: 0;
@@ -569,6 +569,7 @@ a {
       -ms-flex-positive: 0.5;
           flex-grow: 0.5;
   text-align: center;
+  font-family: "Bad Script", cursive;
 }
 
 .swipe .button-background #slider,
@@ -652,7 +653,7 @@ a {
 }
 
 .slide-text {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -677,6 +678,10 @@ a {
 
 .aboutMe__wrapper {
   padding: 0 15px;
+}
+
+.aboutMe__title {
+  margin-bottom: 10px;
 }
 
 .aboutMe__skills {
@@ -727,6 +732,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Bad Script", cursive;
 }
 
 .circle.to-contact {
@@ -761,8 +767,7 @@ a {
 }
 
 .title-sub h2 {
-  -ms-flex-preferred-size: 1;
-      flex-basis: 1;
+  font-family: "Bad Script", cursive;
 }
 
 /* myWork section */
@@ -934,29 +939,75 @@ textarea::placeholder {
   border-color: #bf07db;
   font-size: 24px;
   text-align: center;
+  font-family: "Bad Script", cursive;
 }
 
 /* BackTop button section */
 #backTopBtn {
-  /* temporary */
+  width: 90px;
+  height: 90px;
   position: fixed;
   bottom: 14.2%;
   right: 10%;
-  background: #231e1b;
-  border: 2px solid #fff;
-  border-color: #bf07db;
   text-align: center;
   padding: 2px 5px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
   cursor: pointer;
 }
 
+#backTopBtn.startShow {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
 #backTopBtn > a {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+
+#backTopBtn > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f102";
+  font-size: 30px;
   color: #bf07db;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#backTopBtn > a::after {
+  content: "TOP";
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #bf07db;
+}
+
+#backTopBtn.startShow {
+  opacity: 0.6;
 }
 
 #toTop {
   display: block;
   font-size: 0.8em;
+  font-family: "Bad Script", cursive;
 }
 
 /* footer section */
@@ -1112,6 +1163,6 @@ textarea::placeholder {
 /* target section */
 #target2,
 #target3 {
-  padding-top: 70px;
+  padding-top: 65px;
 }
 /*# sourceMappingURL=style.css.map */

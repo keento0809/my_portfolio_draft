@@ -11,6 +11,8 @@ $slideBallIconColor: $cBase;
 $slideTextColor: $cGrey;
 $h1FontSize: 2.5em;
 $paddingBase: 0 15px;
+$neonFontFamily: "Bad Script", cursive;
+// $neonTextShadow:;
 
 $borderBase: 2px solid $cText;
 $borderRadiusBase: 12px;
@@ -77,7 +79,7 @@ body {
 }
 
 body {
-  font-family: "Abhaya Libre", serif;
+  font-family: "Exo 2", serif;
   background: $cBase;
   color: $cText;
   margin: 0;
@@ -369,6 +371,10 @@ a {
       color: $cGrey;
     }
   }
+
+  &__description {
+    // display: none;
+  }
 }
 
 .disc {
@@ -416,6 +422,7 @@ a {
     @include center;
     flex-grow: 0.5;
     text-align: center;
+    font-family: $neonFontFamily;
 
     & #slider,
     & #slider2 {
@@ -482,7 +489,7 @@ a {
 
 .slide-text {
   //   color: $cYellow;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   @include nonSelect;
 }
@@ -501,6 +508,10 @@ a {
 
   &__wrapper {
     padding: $paddingBase;
+  }
+
+  &__title {
+    margin-bottom: 10px;
   }
 
   &__description {
@@ -540,6 +551,7 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      font-family: $neonFontFamily;
     }
   }
 }
@@ -570,7 +582,7 @@ a {
   }
 
   & h2 {
-    flex-basis: 1;
+    font-family: $neonFontFamily;
   }
 }
 
@@ -686,6 +698,7 @@ textarea::placeholder {
     border-color: $cPurple;
     font-size: 24px;
     text-align: center;
+    font-family: $neonFontFamily;
     // vertical-align: middle;
     // line-height: 24px;
   }
@@ -693,26 +706,71 @@ textarea::placeholder {
 
 /* BackTop button section */
 #backTopBtn {
-  /* temporary */
-  //   display: none;
+  width: 90px;
+  height: 90px;
   position: fixed;
   bottom: 14.2%;
   right: 10%;
-  background: $cBase;
-  border: $borderBase;
-  border-color: $cPurple;
+  //   background: $cBase;
+  //   border: $borderBase;
+  //   border-color: $cPurple;
   text-align: center;
   padding: 2px 5px;
+  transition: all 1s ease;
+  opacity: 0;
   cursor: pointer;
 
+  &.startShow {
+    opacity: 1;
+    transform: none;
+  }
+
   & > a {
-    color: $cPurple;
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f102";
+      font-size: 30px;
+      color: $cPurple;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -40px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+    }
+
+    &::after {
+      content: "TOP";
+      position: absolute;
+      top: 45px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+      color: $cPurple;
+    }
+  }
+
+  &.startShow {
+    opacity: 0.6;
   }
 }
 
 #toTop {
   display: block;
   font-size: 0.8em;
+  font-family: $neonFontFamily;
 }
 
 /* footer section */
@@ -722,6 +780,9 @@ textarea::placeholder {
   left: 0%;
   width: 100%;
   background: $cBase;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
   @include animation(
     $name: sc-slideIn,
     $duration: 0.15s,
@@ -805,5 +866,5 @@ textarea::placeholder {
 /* target section */
 #target2,
 #target3 {
-  padding-top: 70px;
+  padding-top: 65px;
 }
