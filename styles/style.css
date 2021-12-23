@@ -477,9 +477,9 @@ a {
 }
 
 .ml-main__title {
-  -webkit-box-flex: 0.3;
-      -ms-flex-positive: 0.3;
-          flex-grow: 0.3;
+  -webkit-box-flex: 0.1;
+      -ms-flex-positive: 0.1;
+          flex-grow: 0.1;
 }
 
 .ml-main__title > h1 {
@@ -490,9 +490,14 @@ a {
   color: #8d8d8d;
 }
 
+.ml-main__description {
+  -webkit-box-flex: 0.4;
+      -ms-flex-positive: 0.4;
+          flex-grow: 0.4;
+}
+
 .disc {
   margin: 0 auto;
-  margin-bottom: 20px;
   height: 20vh;
   border: 2px solid #fff;
 }
@@ -503,9 +508,9 @@ a {
 }
 
 .swipe {
-  -webkit-box-flex: 0.2;
-      -ms-flex-positive: 0.2;
-          flex-grow: 0.2;
+  -webkit-box-flex: 0.3;
+      -ms-flex-positive: 0.3;
+          flex-grow: 0.3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,7 +777,7 @@ a {
 
 /* myWork section */
 .myWork {
-  height: 88vh;
+  height: 180vh;
 }
 
 .myWork__title {
@@ -781,10 +786,8 @@ a {
 
 .myWork__wrapper {
   width: 100%;
+  height: 100%;
   padding: 0 15px;
-}
-
-.myWork__contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,6 +795,27 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.myWork__contents {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.myWork__contents .work {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
 }
 
 .work {
@@ -944,16 +968,16 @@ textarea::placeholder {
 
 /* BackTop button section */
 #backTopBtn {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   position: fixed;
   bottom: 14.2%;
   right: 10%;
   text-align: center;
-  padding: 2px 5px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 0;
+  background: #231e1b;
   cursor: pointer;
 }
 
@@ -966,9 +990,10 @@ textarea::placeholder {
 #backTopBtn > a {
   position: relative;
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   text-decoration: none;
+  text-align: center;
 }
 
 #backTopBtn > a::before {
@@ -980,18 +1005,19 @@ textarea::placeholder {
   position: absolute;
   width: 30px;
   height: 30px;
-  top: -40px;
+  top: -30px;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 0px;
   margin: auto;
   text-align: center;
 }
 
 #backTopBtn > a::after {
   content: "TOP";
+  font-family: "Bad Script", cursive;
   position: absolute;
-  top: 45px;
+  top: 35px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -1001,7 +1027,7 @@ textarea::placeholder {
 }
 
 #backTopBtn.startShow {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 #toTop {
