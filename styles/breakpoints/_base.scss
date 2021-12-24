@@ -314,6 +314,7 @@ a {
 
     & > a {
       border: $borderBase;
+      border-radius: 8px;
 
       & > span {
         display: inline-block;
@@ -335,8 +336,8 @@ a {
       & .bar {
         display: block;
         background-color: $cText;
-        width: 25px;
-        height: 2px;
+        width: 28px;
+        height: 3px;
         margin-bottom: 4px;
       }
 
@@ -409,7 +410,6 @@ a {
 
   &__btn {
     @include center;
-    // margin-top: 25px;
     align-items: flex-start;
   }
 

@@ -12,21 +12,43 @@ p {
   font-size: 2em;
 }
 
+a {
+  //   font-size: 1.5em;
+}
+
 .cover-slide {
   &__contents {
     & .contents-list {
       & > li {
-        font-size: 2em;
+        font-size: 2.5em;
       }
     }
   }
 }
 
 .ml-header {
-  min-height: 80px;
+  min-height: 90px;
 
   &__wrapper {
     padding: $padding768up;
+  }
+
+  &__brand-logo {
+    & > a {
+      padding: 6px 12px;
+      font-size: 2em;
+      border-radius: $borderRadiusBase;
+    }
+  }
+
+  &__toggle-btn {
+    & .toggle-btn-container {
+      & > .bar {
+        width: 45px;
+        height: 5px;
+        margin-bottom: 6px;
+      }
+    }
   }
 }
 
@@ -67,6 +89,8 @@ p {
 }
 
 .myWork {
+  height: 141vh;
+
   &__wrapper {
     padding: $padding768up;
   }
@@ -83,4 +107,12 @@ p {
     height: 140px;
     padding: $padding768up;
   }
+}
+
+.fab {
+  font-size: 3em;
+}
+
+#target4 {
+  padding-top: 0;
 }

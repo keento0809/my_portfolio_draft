@@ -419,6 +419,7 @@ a {
 
 .ml-header__brand-logo > a {
   border: 2px solid #fff;
+  border-radius: 8px;
 }
 
 .ml-header__brand-logo > a > span {
@@ -446,8 +447,8 @@ a {
 .ml-header__toggle-btn .toggle-btn-container .bar {
   display: block;
   background-color: #fff;
-  width: 25px;
-  height: 2px;
+  width: 28px;
+  height: 3px;
   margin-bottom: 4px;
 }
 
@@ -1249,13 +1250,23 @@ textarea::placeholder {
     font-size: 2em;
   }
   .cover-slide__contents .contents-list > li {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .ml-header {
-    min-height: 80px;
+    min-height: 90px;
   }
   .ml-header__wrapper {
     padding: 0 35px;
+  }
+  .ml-header__brand-logo > a {
+    padding: 6px 12px;
+    font-size: 2em;
+    border-radius: 12px;
+  }
+  .ml-header__toggle-btn .toggle-btn-container > .bar {
+    width: 45px;
+    height: 5px;
+    margin-bottom: 6px;
   }
   .ml-main__wrapper {
     padding: 0 35px;
@@ -1287,6 +1298,9 @@ textarea::placeholder {
   .aboutMe__wrapper {
     padding: 0 35px;
   }
+  .myWork {
+    height: 141vh;
+  }
   .myWork__wrapper {
     padding: 0 35px;
   }
@@ -1296,6 +1310,12 @@ textarea::placeholder {
   .ml-footer__wrapper {
     height: 140px;
     padding: 0 35px;
+  }
+  .fab {
+    font-size: 3em;
+  }
+  #target4 {
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
