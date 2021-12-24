@@ -99,6 +99,10 @@ button {
   padding: 0;
 }
 
+label {
+  font-family: $neonFontFamily;
+}
+
 ul {
   list-style: none;
 }
@@ -534,6 +538,9 @@ a {
     text-align: center;
     border: none;
     --color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   &__skills {
@@ -543,7 +550,7 @@ a {
     // border-bottom: $borderBase;
 
     & .skill-list {
-      padding-bottom: 20px;
+      padding: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;

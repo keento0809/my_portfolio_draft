@@ -80,6 +80,10 @@ button {
   padding: 0;
 }
 
+label {
+  font-family: "Bad Script", cursive;
+}
+
 ul {
   list-style: none;
 }
@@ -725,6 +729,16 @@ a {
   text-align: center;
   border: none;
   --color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .aboutMe__skills {
@@ -736,7 +750,7 @@ a {
 }
 
 .aboutMe__skills .skill-list {
-  padding-bottom: 20px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1244,9 +1258,10 @@ textarea::placeholder {
     font-size: 4em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
-  p {
+  p,
+  label {
     font-size: 2em;
   }
   .cover-slide__contents .contents-list > li {
@@ -1303,6 +1318,45 @@ textarea::placeholder {
   .aboutMe__wrapper {
     padding: 0 35px;
   }
+  .aboutMe__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .aboutMe__skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutMe__skills h3 {
+    font-size: 1.8em;
+  }
+  .aboutMe__skills .skill-list {
+    padding: 40px;
+  }
+  .title-sub {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .title-sub img {
+    width: 280px;
+    height: 280px;
+  }
   .myWork {
     height: 141vh;
   }
@@ -1319,6 +1373,53 @@ textarea::placeholder {
   }
   .contact__wrapper {
     padding: 0 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contact__form {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contact__form .contactMe {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .contactMe__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contactMe__list > li:nth-child(1) {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
   .ml-footer__wrapper {
     height: 140px;
