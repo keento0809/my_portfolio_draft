@@ -222,7 +222,7 @@ a {
       align-items: center;
 
       & > li {
-        font-size: 1.7em;
+        font-size: 1.5em;
 
         & > a > span {
           padding-left: 10px;
@@ -717,10 +717,12 @@ a {
 .input-f::placeholder,
 textarea::placeholder {
   font-size: 16px;
+  font-family: $neonFontFamily;
   font-weight: 400;
   position: absolute;
-  top: 0.5em;
+  top: 0.2em;
   left: 1em;
+  // bottom: -0.5em;
   padding-bottom: 0.1em;
 }
 

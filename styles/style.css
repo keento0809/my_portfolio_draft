@@ -264,7 +264,7 @@ a {
 }
 
 .cover-slide__contents .contents-list > li {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .cover-slide__contents .contents-list > li > a > span {
@@ -966,9 +966,10 @@ a {
 .input-f::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font-size: 16px;
+  font-family: "Bad Script", cursive;
   font-weight: 400;
   position: absolute;
-  top: 0.5em;
+  top: 0.2em;
   left: 1em;
   padding-bottom: 0.1em;
 }
@@ -976,9 +977,10 @@ textarea::-webkit-input-placeholder {
 .input-f:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   font-size: 16px;
+  font-family: "Bad Script", cursive;
   font-weight: 400;
   position: absolute;
-  top: 0.5em;
+  top: 0.2em;
   left: 1em;
   padding-bottom: 0.1em;
 }
@@ -986,9 +988,10 @@ textarea:-ms-input-placeholder {
 .input-f::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   font-size: 16px;
+  font-family: "Bad Script", cursive;
   font-weight: 400;
   position: absolute;
-  top: 0.5em;
+  top: 0.2em;
   left: 1em;
   padding-bottom: 0.1em;
 }
@@ -996,9 +999,10 @@ textarea::-ms-input-placeholder {
 .input-f::placeholder,
 textarea::placeholder {
   font-size: 16px;
+  font-family: "Bad Script", cursive;
   font-weight: 400;
   position: absolute;
-  top: 0.5em;
+  top: 0.2em;
   left: 1em;
   padding-bottom: 0.1em;
 }
@@ -1281,7 +1285,7 @@ textarea::placeholder {
   }
   .ml-header__brand-logo > a {
     padding: 4px 9px;
-    font-size: 2em;
+    font-size: 1em;
     border-radius: 12px;
   }
   .ml-header__toggle-btn .toggle-btn-container > .bar {
@@ -1353,6 +1357,10 @@ textarea::placeholder {
   }
   .aboutMe__skills .skill-list {
     padding: 40px;
+  }
+  .aboutMe__toLink .circle {
+    width: 140px;
+    height: 140px;
   }
   .title-sub {
     -webkit-box-flex: 2;
@@ -1426,6 +1434,32 @@ textarea::placeholder {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+  }
+  .input-f,
+  .textarea-f {
+    font-size: 2em;
+    padding-left: 0.55em;
+  }
+  .input-f::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    font-size: 24px;
+  }
+  .input-f:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    font-size: 24px;
+  }
+  .input-f::-ms-input-placeholder,
+  textarea::-ms-input-placeholder {
+    font-size: 24px;
+  }
+  .input-f::placeholder,
+  textarea::placeholder {
+    font-size: 24px;
+  }
+  .submit__btn {
+    width: 220px;
+    height: 70px;
+    font-size: 2em;
   }
   .ml-footer__wrapper {
     height: 140px;
