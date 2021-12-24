@@ -35,7 +35,7 @@ a {
 
   &__brand-logo {
     & > a {
-      padding: 6px 12px;
+      padding: 4px 9px;
       font-size: 2em;
       border-radius: $borderRadiusBase;
     }
@@ -69,6 +69,8 @@ a {
 }
 
 .swipe {
+  flex-grow: 0.42;
+
   & .button-background {
     height: 140px;
   }

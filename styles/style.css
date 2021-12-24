@@ -1259,7 +1259,7 @@ textarea::placeholder {
     padding: 0 35px;
   }
   .ml-header__brand-logo > a {
-    padding: 6px 12px;
+    padding: 4px 9px;
     font-size: 2em;
     border-radius: 12px;
   }
@@ -1285,6 +1285,11 @@ textarea::placeholder {
   }
   .ml-main__title h1 {
     font-size: 4em;
+  }
+  .swipe {
+    -webkit-box-flex: 0.42;
+        -ms-flex-positive: 0.42;
+            flex-grow: 0.42;
   }
   .swipe .button-background {
     height: 140px;

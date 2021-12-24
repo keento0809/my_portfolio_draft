@@ -31,6 +31,8 @@ function toggleButton() {
   }
 }
 
+console.log(window.innerWidth);
+
 // swipe btn
 let initialMouse = 0;
 let slideMovementTotal = 0;
@@ -105,7 +107,11 @@ function emergeButton() {
   // topからの距離
   let scrollTop = rect.top + window.pageYOffset;
 
-  if (scrollTop > 680) {
+  // btn表示開始のscrollTopの位置をレスポンシブに応じて変更する
+  let startEmerge = 690;
+  if (window.innerWidth >= 768) startEmerge = 1310;
+
+  if (scrollTop > startEmerge) {
     pageTop.classList.add("startShow");
   } else {
     pageTop.classList.remove("startShow");
