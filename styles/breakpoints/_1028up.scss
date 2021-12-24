@@ -1,0 +1,57 @@
+$padding1028up: 0 50px;
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p,
+label {
+  font-size: 2em;
+}
+
+.cover {
+  display: none;
+  visibility: hidden;
+}
+
+.ml-header {
+  &__wrapper {
+    padding: $padding1028up;
+  }
+
+  &__toggle-btn {
+    display: none;
+    visibility: hidden;
+  }
+
+  &__brand-logo {
+    & > a {
+      font-size: 1.7em;
+    }
+  }
+}
+
+.ml-main {
+  &__wrapper {
+    padding: $padding1028up;
+  }
+}
+
+.ml-footer {
+  &__wrapper {
+    padding: $padding1028up;
+  }
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.social-media-list {
+  width: 75%;
+}
