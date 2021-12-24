@@ -710,15 +710,18 @@ a {
   font-size: 1.2em;
   margin-bottom: 15px;
   background: inherit;
+  position: relative;
+  padding-left: 0.6em;
 }
 
 .input-f::placeholder,
 textarea::placeholder {
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 400;
-  position: relative;
-  top: 0.1em;
-  left: 0.1em;
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
+  padding-bottom: 0.1em;
 }
 
 .submit {
