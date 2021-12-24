@@ -19,7 +19,10 @@ label {
 }
 
 .ml-header {
+  height: 100px;
+
   &__wrapper {
+    height: 100%;
     padding: $padding1028up;
   }
 
@@ -33,9 +36,92 @@ label {
       font-size: 1.7em;
     }
   }
+
+  &__header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    background: $cGrey;
+
+    & .nav-list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > li > a {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        & > .fas {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+.n-common::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.nav-first::before {
+  content: "\f007";
+}
+
+.nav-second::before {
+  content: "\f108";
+}
+
+.nav-third::before {
+  content: "\f1d8";
+}
+
+.nav-first::after {
+  content: "ABOUT ME";
+}
+
+.nav-second::after {
+  content: "MY WORK";
+}
+
+.nav-third::after {
+  content: "CONTACT";
 }
 
 .ml-main {
+  &__wrapper {
+    padding: $padding1028up;
+  }
+
+  &__title {
+    & h1 {
+      font-size: 5em;
+    }
+  }
+}
+
+.aboutMe {
+  &__wrapper {
+    padding: $padding1028up;
+  }
+}
+
+.myWork {
+  &__wrapper {
+    padding: $padding1028up;
+  }
+}
+
+.contact {
   &__wrapper {
     padding: $padding1028up;
   }
