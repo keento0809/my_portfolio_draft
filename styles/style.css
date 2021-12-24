@@ -181,7 +181,7 @@ a {
 
 .cover-slide::after {
   content: "";
-  background: #bf07db;
+  background: #8d8d8d;
   position: absolute;
   top: 0;
   left: 0;
@@ -1318,6 +1318,9 @@ textarea::placeholder {
   .ml-footer__wrapper {
     height: 140px;
     padding: 0 35px;
+  }
+  .cover__header .fa-times {
+    font-size: 3em;
   }
   .fab {
     font-size: 3em;

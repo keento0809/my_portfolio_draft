@@ -119,6 +119,12 @@ a {
   }
 }
 
+.cover__header {
+  & .fa-times {
+    font-size: 3em;
+  }
+}
+
 .fab {
   font-size: 3em;
 }
