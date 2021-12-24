@@ -675,7 +675,7 @@ a {
 }
 
 .slide-text {
-  font-size: 20px;
+  font-size: 1.25em;
   text-transform: uppercase;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -721,6 +721,7 @@ a {
       -ms-flex-positive: 2;
           flex-grow: 2;
   font-family: "Bad Script", cursive;
+  text-align: center;
   border: none;
   --color: none;
 }
@@ -1235,5 +1236,66 @@ textarea::placeholder {
 #target2,
 #target3 {
   padding-top: 65px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 2em;
+  }
+  .cover-slide__contents .contents-list > li {
+    font-size: 2em;
+  }
+  .ml-header {
+    min-height: 80px;
+  }
+  .ml-header__wrapper {
+    padding: 0 35px;
+  }
+  .ml-main__wrapper {
+    padding: 0 35px;
+  }
+  .ml-main__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ml-main__title h1 {
+    font-size: 4em;
+  }
+  .swipe .button-background {
+    height: 140px;
+  }
+  .swipe .button-background2 {
+    height: 140px;
+  }
+  .slide-text {
+    font-size: 1.7em;
+  }
+  .aboutMe__wrapper {
+    padding: 0 35px;
+  }
+  .myWork__wrapper {
+    padding: 0 35px;
+  }
+  .contact__wrapper {
+    padding: 0 35px;
+  }
+  .ml-footer__wrapper {
+    height: 140px;
+    padding: 0 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

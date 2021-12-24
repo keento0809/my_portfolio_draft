@@ -1,0 +1,86 @@
+$padding768up: 0 35px;
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 2em;
+}
+
+.cover-slide {
+  &__contents {
+    & .contents-list {
+      & > li {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+.ml-header {
+  min-height: 80px;
+
+  &__wrapper {
+    padding: $padding768up;
+  }
+}
+
+.ml-main {
+  &__wrapper {
+    padding: $padding768up;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h1 {
+      font-size: 4em;
+    }
+  }
+}
+
+.swipe {
+  & .button-background {
+    height: 140px;
+  }
+
+  & .button-background2 {
+    height: 140px;
+  }
+}
+
+.slide-text {
+  font-size: 1.7em;
+}
+
+.aboutMe {
+  &__wrapper {
+    padding: $padding768up;
+  }
+}
+
+.myWork {
+  &__wrapper {
+    padding: $padding768up;
+  }
+}
+
+.contact {
+  &__wrapper {
+    padding: $padding768up;
+  }
+}
+
+.ml-footer {
+  &__wrapper {
+    height: 140px;
+    padding: $padding768up;
+  }
+}
