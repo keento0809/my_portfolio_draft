@@ -94,6 +94,16 @@ a {
   &__wrapper {
     padding: $padding768up;
   }
+
+  &__contents {
+    & .work {
+      flex-basis: 430px;
+
+      &__description {
+        flex-basis: 350px;
+      }
+    }
+  }
 }
 
 .contact {

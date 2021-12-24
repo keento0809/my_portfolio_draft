@@ -905,8 +905,8 @@ a {
 }
 
 .work__description {
-  -ms-flex-preferred-size: 160px;
-      flex-basis: 160px;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
   text-align: center;
 }
 
@@ -1303,6 +1303,14 @@ textarea::placeholder {
   }
   .myWork__wrapper {
     padding: 0 35px;
+  }
+  .myWork__contents .work {
+    -ms-flex-preferred-size: 430px;
+        flex-basis: 430px;
+  }
+  .myWork__contents .work__description {
+    -ms-flex-preferred-size: 350px;
+        flex-basis: 350px;
   }
   .contact__wrapper {
     padding: 0 35px;
