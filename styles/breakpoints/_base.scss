@@ -116,6 +116,10 @@ h1 {
   font-size: $h1FontSize;
 }
 
+p {
+  font-family: $neonFontFamily;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -922,7 +926,11 @@ textarea::placeholder {
 
 /* target section */
 #target2,
-#target3,
-#target4 {
+#target3 {
   padding-top: 65px;
+}
+
+#target4 {
+  padding-top: 10px;
+  padding-bottom: 100px;
 }
