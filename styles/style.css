@@ -142,6 +142,7 @@ a {
   margin: 0 auto;
   height: 100%;
   line-height: 10vh;
+  cursor: pointer;
   -webkit-animation-name: kf-contents-appear;
           animation-name: kf-contents-appear;
   -webkit-animation-duration: 5s;
@@ -925,6 +926,8 @@ a {
   display: inline-block;
   width: 100%;
   height: 100%;
+  vertical-align: bottom;
+  border-radius: 12px;
 }
 
 .work__description {
@@ -1277,13 +1280,13 @@ textarea::placeholder {
 
 /* target section */
 #target2,
-#target3 {
+#target3,
+#target4 {
   padding-top: 65px;
 }
 
 #target4 {
-  padding-top: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 280px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1485,17 +1488,16 @@ textarea::placeholder {
     font-size: 2em;
   }
   .ml-footer__wrapper {
-    height: 140px;
     padding: 0 35px;
+  }
+  .social-media-list {
+    margin: 10px auto;
   }
   .cover__header .fa-times {
     font-size: 3em;
   }
   .fab {
     font-size: 3em;
-  }
-  #target4 {
-    padding-top: 65px;
   }
 }
 

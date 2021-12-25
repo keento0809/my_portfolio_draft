@@ -159,6 +159,7 @@ a {
     margin: 0 auto;
     height: 100%;
     line-height: 10vh;
+    cursor: pointer;
     @include animation(
       $name: kf-contents-appear,
       $duration: 5s,
@@ -685,6 +686,8 @@ a {
       display: inline-block;
       width: 100%;
       height: 100%;
+      vertical-align: bottom;
+      border-radius: 12px;
     }
   }
 
@@ -933,11 +936,11 @@ textarea::placeholder {
 
 /* target section */
 #target2,
-#target3 {
+#target3,
+#target4 {
   padding-top: 65px;
 }
 
 #target4 {
-  padding-top: 10px;
-  padding-bottom: 100px;
+  padding-bottom: 280px;
 }

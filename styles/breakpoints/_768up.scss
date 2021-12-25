@@ -199,9 +199,13 @@ textarea::placeholder {
 
 .ml-footer {
   &__wrapper {
-    height: 140px;
+    // height: 140px;
     padding: $padding768up;
   }
+}
+
+.social-media-list {
+  margin: 10px auto;
 }
 
 .cover__header {
@@ -214,6 +218,6 @@ textarea::placeholder {
   font-size: 3em;
 }
 
-#target4 {
-  padding-top: 65px;
-}
+// #target4 {
+//   padding-top: 65px;
+// }
