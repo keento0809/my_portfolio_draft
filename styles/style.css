@@ -933,6 +933,15 @@ a {
   text-align: center;
 }
 
+.work__links .w-linkList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 /* contact form section */
 .contact {
   /* temporary */

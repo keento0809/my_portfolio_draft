@@ -692,6 +692,13 @@ a {
     flex-basis: 200px;
     text-align: center;
   }
+
+  &__links {
+    & .w-linkList {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 }
 
 /* contact form section */
