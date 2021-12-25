@@ -45,7 +45,8 @@ label {
     max-width: 600px;
     width: 100%;
     height: 100%;
-    background: $cGrey;
+    /* temporary */
+    // border: $borderBase;
 
     & .nav-list {
       width: 100%;
@@ -58,6 +59,7 @@ label {
         display: flex;
         flex-direction: column;
         text-align: center;
+        font-size: 1.15em;
 
         & > .fas {
           font-size: 2em;
@@ -71,6 +73,7 @@ label {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 2em;
+  padding-bottom: 5px;
 }
 
 .nav-first::before {
