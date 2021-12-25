@@ -395,6 +395,7 @@ a {
 
 .ml-header__wrapper {
   width: 100%;
+  margin-top: 15px;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,7 +706,7 @@ a {
 
 /* about me section */
 .aboutMe {
-  height: 100vh;
+  height: auto;
 }
 
 .aboutMe__wrapper {
@@ -747,6 +748,7 @@ a {
 }
 
 .aboutMe__skills {
+  margin: 15px 0 30px;
   -webkit-box-flex: 0.6;
       -ms-flex-positive: 0.6;
           flex-grow: 0.6;
@@ -768,6 +770,7 @@ a {
 }
 
 .aboutMe__toLink {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,6 +813,7 @@ a {
 }
 
 .title-sub {
+  margin: 10px 0;
   color: #ffff00;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,7 +840,7 @@ a {
 
 /* myWork section */
 .myWork {
-  height: 180vh;
+  height: auto;
 }
 
 .myWork__title {
@@ -860,16 +864,6 @@ a {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .myWork__contents .work {
@@ -931,7 +925,6 @@ a {
 
 /* contact form section */
 .contact {
-  height: 88vh;
   /* temporary */
 }
 
@@ -1136,7 +1129,7 @@ textarea::placeholder {
 }
 
 .ml-footer__wrapper {
-  height: 90px;
+  margin: 10px 0 40px;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1151,7 +1144,7 @@ textarea::placeholder {
 }
 
 .ml-footer__container {
-  height: 60%;
+  padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1264,7 +1257,8 @@ textarea::placeholder {
 
 /* target section */
 #target2,
-#target3 {
+#target3,
+#target4 {
   padding-top: 65px;
 }
 
@@ -1377,7 +1371,7 @@ textarea::placeholder {
     height: 280px;
   }
   .myWork {
-    height: 141vh;
+    height: auto;
   }
   .myWork__wrapper {
     padding: 0 35px;
@@ -1477,7 +1471,7 @@ textarea::placeholder {
     font-size: 3em;
   }
   #target4 {
-    padding-top: 0;
+    padding-top: 65px;
   }
 }
 

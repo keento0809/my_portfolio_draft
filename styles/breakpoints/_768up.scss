@@ -128,7 +128,8 @@ a {
 }
 
 .myWork {
-  height: 141vh;
+  height: auto;
+  //   height: 141vh;
 
   &__wrapper {
     padding: $padding768up;
@@ -214,5 +215,5 @@ textarea::placeholder {
 }
 
 #target4 {
-  padding-top: 0;
+  padding-top: 65px;
 }
