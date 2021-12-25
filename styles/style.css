@@ -82,6 +82,7 @@ button {
 
 label {
   font-family: "Bad Script", cursive;
+  padding-left: 5px;
 }
 
 ul {
@@ -640,6 +641,10 @@ a {
   height: inherit;
 }
 
+.swipe.about-sec {
+  margin-top: 30px;
+}
+
 .button-background {
   border-color: #bf07db !important;
 }
@@ -861,6 +866,7 @@ a {
 }
 
 .myWork__contents {
+  margin-top: 10px;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -872,7 +878,7 @@ a {
 }
 
 .work {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -950,12 +956,12 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .input-f,
 .textarea-f {
   font-size: 1.2em;
-  margin-bottom: 15px;
   background: inherit;
   position: relative;
   padding-left: 0.6em;
@@ -1012,6 +1018,7 @@ textarea::placeholder {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-bottom: 30px;
 }
 
 .submit__btn {

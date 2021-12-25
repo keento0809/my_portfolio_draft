@@ -65,8 +65,6 @@ $borderRadiusBase: 12px;
 html,
 body {
   height: 100%;
-  //   height: 2403px;
-  //   overflow: hidden;
 }
 
 :focus {
@@ -101,6 +99,7 @@ button {
 
 label {
   font-family: $neonFontFamily;
+  padding-left: 5px;
 }
 
 ul {
@@ -468,6 +467,10 @@ a {
   }
 }
 
+.swipe.about-sec {
+  margin-top: 30px;
+}
+
 .button-background {
   border-color: $cPurple !important;
 
@@ -639,10 +642,8 @@ a {
   }
 
   &__contents {
+    margin-top: 10px;
     flex-grow: 2;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
 
     & .work {
       flex-basis: 300px;
@@ -651,7 +652,7 @@ a {
 }
 
 .work {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   //   height: 140px;
   display: flex;
   justify-content: flex-start;
@@ -711,6 +712,7 @@ a {
     & > li {
       display: flex;
       flex-direction: column;
+      margin-bottom: 30px;
     }
   }
 }
@@ -718,7 +720,7 @@ a {
 .input-f,
 .textarea-f {
   font-size: 1.2em;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   background: inherit;
   position: relative;
   padding-left: 0.6em;
@@ -739,6 +741,7 @@ textarea::placeholder {
 .submit {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 30px;
 
   &__btn {
     // display: block;
