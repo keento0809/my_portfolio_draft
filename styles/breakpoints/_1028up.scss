@@ -1,4 +1,5 @@
-$padding1028up: 0 50px;
+$padding1028up: 0 40px;
+$maxWidth1028up: 1200px;
 
 h1 {
   font-size: 5em;
@@ -24,6 +25,7 @@ label {
   &__wrapper {
     height: 100%;
     padding: $padding1028up;
+    max-width: $maxWidth1028up;
   }
 
   &__toggle-btn {
@@ -42,7 +44,7 @@ label {
     justify-content: center;
     align-items: center;
     visibility: visible;
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
     height: 100%;
     /* temporary */

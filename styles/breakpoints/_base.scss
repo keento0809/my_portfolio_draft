@@ -12,6 +12,7 @@ $slideTextColor: $cGrey;
 $h1FontSize: 2.5em;
 $paddingBase: 0 15px;
 $neonFontFamily: "Bad Script", cursive;
+$maxWidthBase: 600px;
 // $neonTextShadow:;
 
 $borderBase: 2px solid $cText;
@@ -308,6 +309,8 @@ a {
 
   &__wrapper {
     width: 100%;
+    max-width: $maxWidthBase;
+    margin: 0 auto;
     margin-top: 15px;
     padding: $paddingBase;
     display: flex;
@@ -369,6 +372,8 @@ a {
   &__wrapper {
     width: 100%;
     height: 100%;
+    max-width: $maxWidthBase;
+    margin: 0 auto;
     padding: $paddingBase;
     padding-top: 15px;
     display: flex;
@@ -536,6 +541,8 @@ a {
 
   &__wrapper {
     height: 100%;
+    max-width: $maxWidthBase;
+    margin: 0 auto;
     padding: $paddingBase;
     display: flex;
     flex-direction: column;
@@ -640,6 +647,8 @@ a {
   &__wrapper {
     width: 100%;
     height: 100%;
+    max-width: $maxWidthBase;
+    margin: 0 auto;
     padding: $paddingBase;
     display: flex;
     flex-direction: column;
@@ -711,6 +720,8 @@ a {
   &__wrapper {
     width: 100%;
     height: 85%;
+    max-width: $maxWidthBase;
+    margin: 0 auto;
     padding: $paddingBase;
   }
 }
@@ -859,9 +870,8 @@ textarea::placeholder {
   );
 
   &__wrapper {
-    // width: 100%;
-    // height: 90px;
-    margin: 10px 0 40px;
+    max-width: $maxWidthBase;
+    margin: 10px auto 40px;
     padding: $paddingBase;
     display: flex;
     flex-direction: column;
