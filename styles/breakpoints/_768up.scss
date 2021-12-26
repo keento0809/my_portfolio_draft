@@ -31,13 +31,14 @@ a {
   min-height: 90px;
 
   &__wrapper {
+    margin-top: 0;
     padding: $padding768up;
   }
 
   &__brand-logo {
     & > a {
       padding: 4px 9px;
-      font-size: 1em;
+      font-size: 1.5em;
       border-radius: $borderRadiusBase;
     }
   }
@@ -129,7 +130,6 @@ a {
 
 .myWork {
   height: auto;
-  //   height: 141vh;
 
   &__wrapper {
     padding: $padding768up;
