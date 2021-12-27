@@ -20,6 +20,9 @@ const btt = document.querySelector("#backTopBtn");
 // Cover menu button triggers
 const triggers = document.querySelectorAll(".btn-trigger");
 
+// Button switch dark and light mode (desktop ver)
+const darkLight = document.querySelector("#darkLight");
+
 // Toggle cover
 function toggleButton() {
   if (cover.classList.contains("visible")) {
@@ -118,6 +121,12 @@ function emergeButton() {
   }
 }
 
+function changeDarkLight(e) {
+  e.preventDefault();
+  body.style.background = "red";
+  console.log("Now bg is changing...");
+}
+
 // Hook up the event
 menuBtn.addEventListener("click", toggleButton);
 crossBtn.addEventListener("click", toggleButton);
@@ -134,5 +143,7 @@ btt.addEventListener("click", backTop);
 window.addEventListener("scroll", emergeButton);
 
 triggers.forEach((trigger) => trigger.addEventListener("click", toggleButton));
+
+darkLight.addEventListener("click", changeDarkLight);
 
 AOS.init();
