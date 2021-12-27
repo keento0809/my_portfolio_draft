@@ -891,6 +891,7 @@ a {
 }
 
 .work {
+  height: 100%;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,6 +943,10 @@ a {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
   text-align: center;
+}
+
+.work__links {
+  margin-top: 5px;
 }
 
 .work__links .w-linkList {

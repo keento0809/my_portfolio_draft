@@ -665,8 +665,8 @@ a {
 }
 
 .work {
+  height: 100%;
   margin-bottom: 20px;
-  //   height: 140px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -705,6 +705,8 @@ a {
   }
 
   &__links {
+    margin-top: 5px;
+
     & .w-linkList {
       display: flex;
       justify-content: space-evenly;
