@@ -44,7 +44,7 @@ label {
     justify-content: center;
     align-items: center;
     visibility: visible;
-    max-width: 500px;
+    max-width: 550px;
     width: 100%;
     height: 100%;
     /* temporary */
@@ -105,6 +105,7 @@ label {
 .ml-main {
   &__wrapper {
     padding: $padding1028up;
+    max-width: $maxWidth1028up;
   }
 
   &__title {
@@ -117,29 +118,33 @@ label {
 .aboutMe {
   &__wrapper {
     padding: $padding1028up;
+    max-width: $maxWidth1028up;
   }
 }
 
 .myWork {
   &__wrapper {
     padding: $padding1028up;
+    max-width: $maxWidth1028up;
   }
 }
 
 .contact {
   &__wrapper {
     padding: $padding1028up;
+    max-width: $maxWidth1028up;
   }
 }
 
 .ml-footer {
   &__wrapper {
     padding: $padding1028up;
+    max-width: $maxWidth1028up;
   }
 
   &__container {
     width: 80%;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 }
 

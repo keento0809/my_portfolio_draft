@@ -1325,7 +1325,6 @@ textarea::placeholder {
   .ml-header__wrapper {
     margin-top: 0;
     max-width: 900px;
-    margin: 0 auto;
     padding: 0 33px;
   }
   .ml-header__brand-logo > a {
@@ -1341,7 +1340,6 @@ textarea::placeholder {
   .ml-main__wrapper {
     padding: 0 35px;
     max-width: 900px;
-    margin: 0 auto;
   }
   .ml-main__title {
     display: -webkit-box;
@@ -1375,7 +1373,6 @@ textarea::placeholder {
   .aboutMe__wrapper {
     padding: 0 35px;
     max-width: 900px;
-    margin: 0 auto;
   }
   .aboutMe__title {
     display: -webkit-box;
@@ -1426,7 +1423,6 @@ textarea::placeholder {
   .myWork__wrapper {
     padding: 0 35px;
     max-width: 900px;
-    margin: 0 auto;
   }
   .myWork__contents .work {
     -ms-flex-preferred-size: 430px;
@@ -1439,7 +1435,6 @@ textarea::placeholder {
   .contact__wrapper {
     padding: 0 35px;
     max-width: 900px;
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1514,10 +1509,17 @@ textarea::placeholder {
     height: 70px;
     font-size: 2em;
   }
+  .ml-footer {
+    /* test */
+  }
   .ml-footer__wrapper {
     padding: 0 35px;
     max-width: 900px;
     margin: 10px auto 40px;
+  }
+  .ml-footer__container {
+    width: 90%;
+    margin: 0 auto;
   }
   .social-media-list {
     margin: 10px auto;
@@ -1571,7 +1573,7 @@ textarea::placeholder {
         -ms-flex-align: center;
             align-items: center;
     visibility: visible;
-    max-width: 500px;
+    max-width: 550px;
     width: 100%;
     height: 100%;
     /* temporary */
@@ -1629,25 +1631,29 @@ textarea::placeholder {
   }
   .ml-main__wrapper {
     padding: 0 40px;
+    max-width: 1200px;
   }
   .ml-main__title h1 {
     font-size: 5em;
   }
   .aboutMe__wrapper {
     padding: 0 40px;
+    max-width: 1200px;
   }
   .myWork__wrapper {
     padding: 0 40px;
+    max-width: 1200px;
   }
   .contact__wrapper {
     padding: 0 40px;
+    max-width: 1200px;
   }
   .ml-footer__wrapper {
     padding: 0 40px;
+    max-width: 1200px;
   }
   .ml-footer__container {
     width: 80%;
-    margin: 0 auto;
   }
   .social-media-list {
     width: 75%;

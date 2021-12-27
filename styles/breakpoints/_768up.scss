@@ -34,7 +34,6 @@ a {
   &__wrapper {
     margin-top: 0;
     max-width: $maxWidth768up;
-    margin: 0 auto;
     padding: 0 33px;
   }
 
@@ -61,7 +60,6 @@ a {
   &__wrapper {
     padding: $padding768up;
     max-width: $maxWidth768up;
-    margin: 0 auto;
   }
 
   &__title {
@@ -95,7 +93,6 @@ a {
   &__wrapper {
     padding: $padding768up;
     max-width: $maxWidth768up;
-    margin: 0 auto;
   }
 
   &__title {
@@ -141,7 +138,6 @@ a {
   &__wrapper {
     padding: $padding768up;
     max-width: $maxWidth768up;
-    margin: 0 auto;
   }
 
   &__contents {
@@ -159,7 +155,6 @@ a {
   &__wrapper {
     padding: $padding768up;
     max-width: $maxWidth768up;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -213,6 +208,12 @@ textarea::placeholder {
     padding: $padding768up;
     max-width: $maxWidth768up;
     margin: 10px auto 40px;
+  }
+
+  /* test */
+  &__container {
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
