@@ -367,8 +367,8 @@ a {
 
 /* main section */
 .ml-main {
-  // height: 88vh;
-  height: auto;
+  height: 88vh;
+  // height: auto;
 
   &__wrapper {
     width: 100%;
@@ -539,6 +539,7 @@ a {
 /* about me section */
 .aboutMe {
   height: auto;
+  margin-bottom: 90px;
 
   &__wrapper {
     height: 100%;
@@ -642,6 +643,7 @@ a {
 /* myWork section */
 .myWork {
   height: auto;
+  margin-bottom: 90px;
 
   &__title {
     margin-bottom: 5px;
@@ -963,6 +965,6 @@ textarea::placeholder {
 
 a.anchor {
   display: block;
-  padding-top: 80px;
-  margin-top: -80px;
+  padding-top: 70px;
+  margin-top: -70px;
 }

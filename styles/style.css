@@ -476,7 +476,7 @@ a {
 
 /* main section */
 .ml-main {
-  height: auto;
+  height: 88vh;
 }
 
 .ml-main__wrapper {
@@ -721,6 +721,7 @@ a {
 /* about me section */
 .aboutMe {
   height: auto;
+  margin-bottom: 90px;
 }
 
 .aboutMe__wrapper {
@@ -845,6 +846,7 @@ a {
 /* myWork section */
 .myWork {
   height: auto;
+  margin-bottom: 90px;
 }
 
 .myWork__title {
@@ -1285,8 +1287,8 @@ textarea::placeholder {
 /* target section */
 a.anchor {
   display: block;
-  padding-top: 80px;
-  margin-top: -80px;
+  padding-top: 70px;
+  margin-top: -70px;
 }
 
 @media screen and (min-width: 768px) {
