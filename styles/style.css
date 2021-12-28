@@ -740,7 +740,12 @@ a {
           flex-direction: column;
 }
 
+.aboutMe__title {
+  margin-bottom: 30px;
+}
+
 .aboutMe__discription {
+  margin: 15px 0 30px;
   font-family: "Bad Script", cursive;
   text-align: center;
   border: none;
@@ -820,7 +825,7 @@ a {
 }
 
 .title-sub {
-  margin: 10px 0;
+  margin-top: 15px;
   color: #ffff00;
   display: -webkit-box;
   display: -ms-flexbox;
