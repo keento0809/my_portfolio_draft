@@ -953,7 +953,7 @@ a {
 /* contact form section */
 .contact {
   /* temporary */
-  padding-bottom: 90px;
+  padding-bottom: 160px;
 }
 
 .contact__wrapper {
@@ -1072,6 +1072,8 @@ textarea::placeholder {
 
 /* BackTop button section */
 #backTopBtn {
+  /* hide on mobile ver */
+  display: none;
   width: 70px;
   height: 70px;
   position: fixed;

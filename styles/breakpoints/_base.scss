@@ -727,7 +727,7 @@ a {
 .contact {
   /* temporary */
   //   border: $borderBase;
-  padding-bottom: 90px;
+  padding-bottom: 160px;
 
   &__wrapper {
     width: 100%;
@@ -802,6 +802,8 @@ textarea::placeholder {
 
 /* BackTop button section */
 #backTopBtn {
+  /* hide on mobile ver */
+  display: none;
   width: 70px;
   height: 70px;
   position: fixed;
