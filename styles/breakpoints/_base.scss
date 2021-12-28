@@ -367,7 +367,8 @@ a {
 
 /* main section */
 .ml-main {
-  height: 100vh;
+  // height: 88vh;
+  height: auto;
 
   &__wrapper {
     width: 100%;
@@ -541,6 +542,8 @@ a {
 
   &__wrapper {
     height: 100%;
+    // test
+    // height: 100vh;
     max-width: $maxWidthBase;
     margin: 0 auto;
     padding: $paddingBase;
@@ -550,11 +553,11 @@ a {
   }
 
   &__title {
-    flex-grow: 0.3;
+    // flex-grow: 0.3;
   }
 
   &__discription {
-    flex-grow: 2;
+    // flex-grow: 2;
     font-family: $neonFontFamily;
     text-align: center;
     border: none;
@@ -566,7 +569,7 @@ a {
 
   &__skills {
     margin: 15px 0 30px;
-    flex-grow: 0.6;
+    // flex-grow: 0.6;
     text-align: center;
     border: none;
     // border-bottom: $borderBase;
@@ -945,13 +948,21 @@ textarea::placeholder {
 }
 
 /* target section */
-#target2,
-#target3,
-#target4 {
-  padding-top: 65px;
-  margin-top: 65px;
-}
+// #target2,
+// #target3,
+// #target4 {
+//   padding-top: 80px;
+//   margin-top: -80px;
+// }
 
-#target4 {
-  // padding-bottom: 280px;
+// #target4 {
+//   padding-top: 90px;
+//   margin-top: -90px;
+//   // height: 88vh;
+// }
+
+a.anchor {
+  display: block;
+  padding-top: 80px;
+  margin-top: -80px;
 }

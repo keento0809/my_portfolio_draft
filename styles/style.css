@@ -476,7 +476,7 @@ a {
 
 /* main section */
 .ml-main {
-  height: 100vh;
+  height: auto;
 }
 
 .ml-main__wrapper {
@@ -737,16 +737,7 @@ a {
           flex-direction: column;
 }
 
-.aboutMe__title {
-  -webkit-box-flex: 0.3;
-      -ms-flex-positive: 0.3;
-          flex-grow: 0.3;
-}
-
 .aboutMe__discription {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
   font-family: "Bad Script", cursive;
   text-align: center;
   border: none;
@@ -765,9 +756,6 @@ a {
 
 .aboutMe__skills {
   margin: 15px 0 30px;
-  -webkit-box-flex: 0.6;
-      -ms-flex-positive: 0.6;
-          flex-grow: 0.6;
   text-align: center;
   border: none;
 }
@@ -1295,11 +1283,10 @@ textarea::placeholder {
 }
 
 /* target section */
-#target2,
-#target3,
-#target4 {
-  padding-top: 65px;
-  margin-top: 65px;
+a.anchor {
+  display: block;
+  padding-top: 80px;
+  margin-top: -80px;
 }
 
 @media screen and (min-width: 768px) {
