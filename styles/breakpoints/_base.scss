@@ -5,6 +5,7 @@ $cTest: #12e3e3;
 $cGrey: #8d8d8d;
 $cYellow: #ffff00;
 $cPurple: #bf07db;
+$cPlain: #ccd6f6;
 $slideBgColor: rgba(255, 255, 255, 0.3);
 $slideBallColor: $cText;
 $slideBallIconColor: $cBase;
@@ -55,6 +56,7 @@ $borderRadiusBase: 12px;
 
   &.xe {
     --color: #c4c4c6;
+    // --color: $cPlain;
     filter: brightness(105%);
   }
 }
@@ -387,10 +389,12 @@ a {
 
     & > h1 {
       font-size: 2.5em;
+      color: $cPlain;
     }
 
     & > h2 {
       color: $cGrey;
+      font-family: $neonFontFamily;
     }
   }
 
@@ -723,6 +727,7 @@ a {
 .contact {
   /* temporary */
   //   border: $borderBase;
+  padding-bottom: 90px;
 
   &__wrapper {
     width: 100%;
@@ -730,6 +735,10 @@ a {
     max-width: $maxWidthBase;
     margin: 0 auto;
     padding: $paddingBase;
+  }
+
+  &__form {
+    margin-top: 30px;
   }
 }
 
@@ -742,7 +751,7 @@ a {
     & > li {
       display: flex;
       flex-direction: column;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
   }
 }

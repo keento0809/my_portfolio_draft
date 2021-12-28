@@ -506,10 +506,12 @@ a {
 
 .ml-main__title > h1 {
   font-size: 2.5em;
+  color: #ccd6f6;
 }
 
 .ml-main__title > h2 {
   color: #8d8d8d;
+  font-family: "Bad Script", cursive;
 }
 
 .ml-main__description {
@@ -951,6 +953,7 @@ a {
 /* contact form section */
 .contact {
   /* temporary */
+  padding-bottom: 90px;
 }
 
 .contact__wrapper {
@@ -959,6 +962,10 @@ a {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.contact__form {
+  margin-top: 30px;
 }
 
 .contactMe {
@@ -977,7 +984,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .input-f,
