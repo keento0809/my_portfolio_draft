@@ -134,6 +134,13 @@ label {
   }
 }
 
+.title-sub {
+  & img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 .myWork {
   &__wrapper {
     padding: $padding1028up;

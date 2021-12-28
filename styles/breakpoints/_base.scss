@@ -367,7 +367,7 @@ a {
 
 /* main section */
 .ml-main {
-  height: 88vh;
+  height: 100vh;
 
   &__wrapper {
     width: 100%;
@@ -949,8 +949,9 @@ textarea::placeholder {
 #target3,
 #target4 {
   padding-top: 65px;
+  margin-top: 65px;
 }
 
 #target4 {
-  padding-bottom: 280px;
+  // padding-bottom: 280px;
 }

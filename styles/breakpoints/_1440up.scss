@@ -1,0 +1,42 @@
+$padding1440up: 0 50px;
+$maxWidth1440up: 1500px;
+
+.ml-header {
+  &__wrapper {
+    height: 100%;
+    padding: $padding1440up;
+    max-width: $maxWidth1440up;
+  }
+
+  &__header-nav {
+    max-width: 650px;
+  }
+}
+
+.ml-main {
+  &__wrapper {
+    padding: $padding1440up;
+    max-width: $maxWidth1440up;
+  }
+}
+
+.aboutMe {
+  &__wrapper {
+    padding: $padding1440up;
+    max-width: $maxWidth1440up;
+  }
+}
+
+.myWork {
+  &__wrapper {
+    padding: $padding1440up;
+    max-width: $maxWidth1440up;
+  }
+}
+
+.contact {
+  &__wrapper {
+    padding: $padding1440up;
+    max-width: $maxWidth1440up;
+  }
+}

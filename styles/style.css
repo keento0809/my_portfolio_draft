@@ -476,7 +476,7 @@ a {
 
 /* main section */
 .ml-main {
-  height: 88vh;
+  height: 100vh;
 }
 
 .ml-main__wrapper {
@@ -1299,10 +1299,7 @@ textarea::placeholder {
 #target3,
 #target4 {
   padding-top: 65px;
-}
-
-#target4 {
-  padding-bottom: 280px;
+  margin-top: 65px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1429,8 +1426,8 @@ textarea::placeholder {
         flex-basis: 430px;
   }
   .myWork__contents .work__description {
-    -ms-flex-preferred-size: 350px;
-        flex-basis: 350px;
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
   }
   .contact__wrapper {
     padding: 0 35px;
@@ -1648,6 +1645,10 @@ textarea::placeholder {
     padding: 0 40px;
     max-width: 1200px;
   }
+  .title-sub img {
+    width: 350px;
+    height: 350px;
+  }
   .myWork__wrapper {
     padding: 0 40px;
     max-width: 1200px;
@@ -1669,6 +1670,33 @@ textarea::placeholder {
   }
   .social-media-list {
     width: 75%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ml-header__wrapper {
+    height: 100%;
+    padding: 0 50px;
+    max-width: 1500px;
+  }
+  .ml-header__header-nav {
+    max-width: 650px;
+  }
+  .ml-main__wrapper {
+    padding: 0 50px;
+    max-width: 1500px;
+  }
+  .aboutMe__wrapper {
+    padding: 0 50px;
+    max-width: 1500px;
+  }
+  .myWork__wrapper {
+    padding: 0 50px;
+    max-width: 1500px;
+  }
+  .contact__wrapper {
+    padding: 0 50px;
+    max-width: 1500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
