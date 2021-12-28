@@ -1533,6 +1533,10 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1028px) {
+  body.lightMode {
+    background: #fff;
+    color: #231e1b;
+  }
   h1 {
     font-size: 5em;
   }
@@ -1605,6 +1609,10 @@ textarea::placeholder {
   .ml-header__header-nav .nav-list > li > a > .fas {
     font-size: 2em;
   }
+  .ml-header.lightMode {
+    background: #fff !important;
+    color: #231e1b !important;
+  }
   .n-common::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -1654,6 +1662,10 @@ textarea::placeholder {
   }
   .ml-footer__container {
     width: 80%;
+  }
+  .ml-footer.lightMode {
+    background: #fff;
+    color: #231e1b;
   }
   .social-media-list {
     width: 75%;

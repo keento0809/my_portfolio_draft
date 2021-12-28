@@ -1,6 +1,12 @@
 $padding1028up: 0 40px;
 $maxWidth1028up: 1200px;
 
+body.lightMode {
+  background: $cText;
+  color: $cBase;
+  // border: 2px solid $cBase;
+}
+
 h1 {
   font-size: 5em;
 }
@@ -69,6 +75,11 @@ label {
       }
     }
   }
+}
+
+.ml-header.lightMode {
+  background: $cText !important;
+  color: $cBase !important;
 }
 
 .n-common::before {
@@ -146,6 +157,11 @@ label {
     width: 80%;
     // margin: 0 auto;
   }
+}
+
+.ml-footer.lightMode {
+  background: $cText;
+  color: $cBase;
 }
 
 .social-media-list {

@@ -121,10 +121,20 @@ function emergeButton() {
   }
 }
 
+let isDark = true;
+
 function changeDarkLight(e) {
-  e.preventDefault();
-  body.style.background = "red";
-  console.log("Now bg is changing...");
+  if (!isDark) {
+    body.classList.remove("lightMode");
+    header.classList.remove("lightMode");
+    mlFooter.classList.remove("lightMode");
+  } else {
+    body.classList.add("lightMode");
+    header.classList.add("lightMode");
+    mlFooter.classList.add("lightMode");
+  }
+  isDark = !isDark;
+  console.log(isDark);
 }
 
 // Hook up the event
