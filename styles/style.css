@@ -1534,7 +1534,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 1028px) {
   body.lightMode {
-    background: #fff;
+    background: #f7f6f2;
     color: #231e1b;
   }
   h1 {
@@ -1610,7 +1610,7 @@ textarea::placeholder {
     font-size: 2em;
   }
   .ml-header.lightMode {
-    background: #fff !important;
+    background: #f7f6f2 !important;
     color: #231e1b !important;
   }
   .n-common::before {
@@ -1664,7 +1664,7 @@ textarea::placeholder {
     width: 80%;
   }
   .ml-footer.lightMode {
-    background: #fff;
+    background: #f7f6f2;
     color: #231e1b;
   }
   .social-media-list {

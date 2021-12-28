@@ -72,8 +72,13 @@ function scrollDelay(e) {
 // toggle header's background
 function toggleBg() {
   //   header.style.visibility = "hidden";
-  if (window.scrollY !== 0) header.style.background = "rgba(35, 30, 27,0.8)";
-  else header.style.background = "none";
+  if (window.scrollY !== 0) {
+    header.classList.add("opacity-c");
+    header.style.background = "rgba(35, 30, 27,0.8)";
+  } else {
+    header.classList.remove("opacity-c");
+    header.style.background = "none";
+  }
   //   appearFooter();
 }
 

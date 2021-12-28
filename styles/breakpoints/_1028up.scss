@@ -1,8 +1,9 @@
 $padding1028up: 0 40px;
 $maxWidth1028up: 1200px;
+$cLightMode: #f7f6f2;
 
 body.lightMode {
-  background: $cText;
+  background: $cLightMode;
   color: $cBase;
   // border: 2px solid $cBase;
 }
@@ -78,7 +79,7 @@ label {
 }
 
 .ml-header.lightMode {
-  background: $cText !important;
+  background: $cLightMode !important;
   color: $cBase !important;
 }
 
@@ -160,7 +161,7 @@ label {
 }
 
 .ml-footer.lightMode {
-  background: $cText;
+  background: $cLightMode;
   color: $cBase;
 }
 
