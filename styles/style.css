@@ -876,7 +876,7 @@ a {
 }
 
 .myWork__contents {
-  margin-top: 10px;
+  margin-top: 30px;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -889,7 +889,7 @@ a {
 
 .work {
   height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -937,8 +937,8 @@ a {
 }
 
 .work__description {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
+  -ms-flex-preferred-size: 230px;
+      flex-basis: 230px;
   text-align: center;
 }
 

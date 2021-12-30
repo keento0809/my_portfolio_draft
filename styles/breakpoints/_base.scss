@@ -665,7 +665,7 @@ a {
   }
 
   &__contents {
-    margin-top: 10px;
+    margin-top: 30px;
     flex-grow: 2;
 
     & .work {
@@ -676,7 +676,7 @@ a {
 
 .work {
   height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -710,7 +710,7 @@ a {
   }
 
   &__description {
-    flex-basis: 200px;
+    flex-basis: 230px;
     text-align: center;
   }
 
