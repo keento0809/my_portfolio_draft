@@ -7,6 +7,7 @@ $cGrey: #8d8d8d;
 $cYellow: #ffff00;
 $cPurple: #bf07db;
 $cPlain: #ccd6f6;
+$ch2: #c3ccdf;
 $slideBgColor: rgba(255, 255, 255, 0.3);
 $slideBallColor: $cText;
 $slideBallIconColor: $cBase;
@@ -82,7 +83,9 @@ body {
 
 body {
   font-family: "Exo 2", serif;
-  background: $cTestBase;
+  // background: $cTestBase;
+  // test
+  background: linear-gradient(to right, #192a66, #120e0c);
   color: $cText;
   margin: 0;
   letter-spacing: 0.5px;
@@ -231,6 +234,7 @@ a {
 
       & > li {
         font-size: 1.5em;
+        font-family: $neonFontFamily;
 
         & > a > span {
           padding-left: 10px;
@@ -394,7 +398,7 @@ a {
     }
 
     & > h2 {
-      color: $cGrey;
+      color: $ch2;
       font-family: $neonFontFamily;
     }
   }
@@ -643,6 +647,7 @@ a {
 
   & h2 {
     font-family: $neonFontFamily;
+    max-width: 250px;
   }
 }
 
@@ -878,16 +883,18 @@ textarea::placeholder {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  background: $cTestBase;
+  // background: $cTestBase;
+  // test
+  background: linear-gradient(to right, #192a66 1%, #120e0c);
   //   display: flex;
   //   flex-direction: column;
   //   justify-content: center;
-  @include animation(
-    $name: sc-slideIn,
-    $duration: 0.15s,
-    $timing-function: ease-out,
-    $fill-mode: both
-  );
+  // @include animation(
+  //   $name: sc-slideIn,
+  //   $duration: 0.15s,
+  //   $timing-function: ease-out,
+  //   $fill-mode: both
+  // );
 
   &__wrapper {
     max-width: $maxWidthBase;

@@ -130,6 +130,10 @@ a {
     width: 280px;
     height: 280px;
   }
+
+  & h2 {
+    max-width: 400px;
+  }
 }
 
 .myWork {

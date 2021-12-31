@@ -61,7 +61,8 @@ body {
 
 body {
   font-family: "Exo 2", serif;
-  background: #120e0c;
+  background: -webkit-gradient(linear, left top, right top, from(#192a66), to(#120e0c));
+  background: linear-gradient(to right, #192a66, #120e0c);
   color: #fff;
   margin: 0;
   letter-spacing: 0.5px;
@@ -271,6 +272,7 @@ a {
 
 .cover-slide__contents .contents-list > li {
   font-size: 1.5em;
+  font-family: "Bad Script", cursive;
 }
 
 .cover-slide__contents .contents-list > li > a > span {
@@ -510,7 +512,7 @@ a {
 }
 
 .ml-main__title > h2 {
-  color: #8d8d8d;
+  color: #c3ccdf;
   font-family: "Bad Script", cursive;
 }
 
@@ -848,6 +850,7 @@ a {
 
 .title-sub h2 {
   font-family: "Bad Script", cursive;
+  max-width: 250px;
 }
 
 /* myWork section */
@@ -1153,21 +1156,8 @@ textarea::placeholder {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  background: #120e0c;
-  -webkit-animation-name: sc-slideIn;
-          animation-name: sc-slideIn;
-  -webkit-animation-duration: 0.15s;
-          animation-duration: 0.15s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #192a66), to(#120e0c));
+  background: linear-gradient(to right, #192a66 1%, #120e0c);
 }
 
 .ml-footer__wrapper {
@@ -1416,6 +1406,9 @@ a.anchor {
   .title-sub img {
     width: 280px;
     height: 280px;
+  }
+  .title-sub h2 {
+    max-width: 400px;
   }
   .myWork {
     height: auto;
