@@ -146,13 +146,13 @@ function changeDarkLight(e) {
 menuBtn.addEventListener("click", toggleButton);
 crossBtn.addEventListener("click", toggleButton);
 
-try {
-  window.addEventListener("scroll", scrollDelay, false);
-  window.addEventListener("scroll", toggleBg);
-} catch (e) {
-  window.addEventListener("onscroll", scrollDelay);
-  window.addEventListener("onscroll", toggleBg);
-}
+// try {
+//   window.addEventListener("scroll", scrollDelay, false);
+//   window.addEventListener("scroll", toggleBg);
+// } catch (e) {
+//   window.addEventListener("onscroll", scrollDelay);
+//   window.addEventListener("onscroll", toggleBg);
+// }
 
 btt.addEventListener("click", backTop);
 window.addEventListener("scroll", emergeButton);

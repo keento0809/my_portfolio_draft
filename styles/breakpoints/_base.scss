@@ -1,4 +1,5 @@
 $cBase: #231e1b;
+$cTestBase: #120e0c;
 $cBaseTransparent: rgba(35, 30, 27, 0.8);
 $cText: #fff;
 $cTest: #12e3e3;
@@ -81,7 +82,7 @@ body {
 
 body {
   font-family: "Exo 2", serif;
-  background: $cBase;
+  background: $cTestBase;
   color: $cText;
   margin: 0;
   letter-spacing: 0.5px;
@@ -877,7 +878,7 @@ textarea::placeholder {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  background: $cBase;
+  background: $cTestBase;
   //   display: flex;
   //   flex-direction: column;
   //   justify-content: center;

@@ -61,7 +61,7 @@ body {
 
 body {
   font-family: "Exo 2", serif;
-  background: #231e1b;
+  background: #120e0c;
   color: #fff;
   margin: 0;
   letter-spacing: 0.5px;
@@ -1153,7 +1153,7 @@ textarea::placeholder {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  background: #231e1b;
+  background: #120e0c;
   -webkit-animation-name: sc-slideIn;
           animation-name: sc-slideIn;
   -webkit-animation-duration: 0.15s;
