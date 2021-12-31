@@ -125,6 +125,7 @@ a {
 
 .title-sub {
   flex-grow: 2;
+  justify-content: space-between;
 
   & img {
     width: 280px;
@@ -132,7 +133,8 @@ a {
   }
 
   & h2 {
-    max-width: 400px;
+    font-size: 2em;
+    max-width: 305px;
   }
 }
 

@@ -403,7 +403,7 @@ a {
 
 .ml-header__wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 410px;
   margin: 0 auto;
   margin-top: 15px;
   padding: 0 15px;
@@ -484,7 +484,7 @@ a {
 .ml-main__wrapper {
   width: 100%;
   height: 100%;
-  max-width: 600px;
+  max-width: 410px;
   margin: 0 auto;
   padding: 0 15px;
   padding-top: 15px;
@@ -730,7 +730,7 @@ a {
 
 .aboutMe__wrapper {
   height: 100%;
-  max-width: 600px;
+  max-width: 410px;
   margin: 0 auto;
   padding: 0 15px;
   display: -webkit-box;
@@ -866,7 +866,7 @@ a {
 .myWork__wrapper {
   width: 100%;
   height: 100%;
-  max-width: 600px;
+  max-width: 410px;
   margin: 0 auto;
   padding: 0 15px;
   display: -webkit-box;
@@ -967,7 +967,7 @@ a {
 .contact__wrapper {
   width: 100%;
   height: 85%;
-  max-width: 600px;
+  max-width: 410px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -1161,7 +1161,7 @@ textarea::placeholder {
 }
 
 .ml-footer__wrapper {
-  max-width: 600px;
+  max-width: 410px;
   margin: 10px auto 40px;
   padding: 0 15px;
   display: -webkit-box;
@@ -1295,6 +1295,40 @@ a.anchor {
   margin-top: -70px;
 }
 
+@media screen and (min-width: 600px) {
+  .ml-header__wrapper {
+    max-width: 600px;
+  }
+  .ml-main__wrapper {
+    max-width: 600px;
+  }
+  .aboutMe__wrapper {
+    max-width: 600px;
+  }
+  .title-sub {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .title-sub img {
+    width: 200px;
+    height: 200px;
+  }
+  .title-sub h2 {
+    font-size: 1.7em;
+    max-width: 270px;
+  }
+  .myWork__wrapper {
+    max-width: 600px;
+  }
+  .contact__wrapper {
+    max-width: 600px;
+  }
+  .ml-footer__wrapper {
+    max-width: 600px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 4em;
@@ -1402,13 +1436,17 @@ a.anchor {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .title-sub img {
     width: 280px;
     height: 280px;
   }
   .title-sub h2 {
-    max-width: 400px;
+    font-size: 2em;
+    max-width: 305px;
   }
   .myWork {
     height: auto;
@@ -1644,6 +1682,9 @@ a.anchor {
   .title-sub img {
     width: 350px;
     height: 350px;
+  }
+  .title-sub h2 {
+    max-width: 500px;
   }
   .myWork__wrapper {
     padding: 0 40px;
