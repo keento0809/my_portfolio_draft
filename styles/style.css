@@ -1296,6 +1296,9 @@ a.anchor {
 }
 
 @media screen and (min-width: 600px) {
+  body {
+    height: 100%;
+  }
   .ml-header__wrapper {
     max-width: 600px;
   }
@@ -1330,6 +1333,9 @@ a.anchor {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    height: 100%;
+  }
   h1 {
     font-size: 4em;
   }
@@ -1560,6 +1566,10 @@ a.anchor {
   }
   .fab {
     font-size: 3em;
+  }
+  a.anchor {
+    padding-top: 90px;
+    margin-top: -90px;
   }
 }
 

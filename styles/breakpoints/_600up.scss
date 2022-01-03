@@ -1,5 +1,9 @@
 $maxWidthBase600up: 600px;
 
+body {
+  height: 100%;
+}
+
 .ml-header {
   &__wrapper {
     max-width: $maxWidthBase600up;

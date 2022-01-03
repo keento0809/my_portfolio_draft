@@ -1,6 +1,10 @@
 $padding768up: 0 35px;
 $maxWidth768up: 900px;
 
+body {
+  height: 100%;
+}
+
 h1 {
   font-size: 4em;
 }
@@ -237,6 +241,7 @@ textarea::placeholder {
   font-size: 3em;
 }
 
-// #target4 {
-//   padding-top: 65px;
-// }
+a.anchor {
+  padding-top: 90px;
+  margin-top: -90px;
+}
