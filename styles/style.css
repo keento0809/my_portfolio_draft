@@ -61,8 +61,7 @@ body {
 
 body {
   font-family: "Exo 2", serif;
-  background: -webkit-gradient(linear, left top, right top, from(#192a66), to(#120e0c));
-  background: linear-gradient(to right, #192a66, #120e0c);
+  background: #120e0c;
   color: #fff;
   margin: 0;
   letter-spacing: 0.5px;
@@ -187,7 +186,7 @@ a {
 .cover-slide {
   position: relative;
   height: 100vh;
-  background: #231e1b;
+  background: #120e0c;
 }
 
 .cover-slide::after {
@@ -478,7 +477,7 @@ a {
 
 /* main section */
 .ml-main {
-  height: 88vh;
+  height: 95vh;
 }
 
 .ml-main__wrapper {
@@ -488,16 +487,6 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   padding-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .ml-main__title {
@@ -507,13 +496,24 @@ a {
 }
 
 .ml-main__title > h1 {
-  font-size: 2.5em;
-  color: #ccd6f6;
+  font-size: 1.5em;
+  font-family: "Exo 2", serif;
+  color: #dee6ff;
 }
 
-.ml-main__title > h2 {
-  color: #c3ccdf;
+.ml-main__title > h1 span {
+  font-size: 1.8em;
   font-family: "Bad Script", cursive;
+  display: inline-block;
+}
+
+.ml-main__title > h3 {
+  color: #dee6ff;
+  font-family: "Exo 2", serif;
+}
+
+.ml-main__title > h3 span {
+  font-family: Sriracha;
 }
 
 .ml-main__description {
@@ -532,6 +532,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  display: none;
 }
 
 .ml-main__description.non {
@@ -566,6 +567,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 .swipe__btn {
@@ -1156,8 +1158,8 @@ textarea::placeholder {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #192a66), to(#120e0c));
-  background: linear-gradient(to right, #192a66 1%, #120e0c);
+  background: #120e0c;
+  display: none;
 }
 
 .ml-footer__wrapper {
@@ -1293,6 +1295,66 @@ a.anchor {
   display: block;
   padding-top: 70px;
   margin-top: -70px;
+}
+
+/* test */
+.x-sign {
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+          animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.x-sign1 {
+  color: yellow;
+  --color1: goldenrod;
+  --color2: orangered;
+  --color3: mediumblue;
+  --color4: purple;
+}
+
+.x-sign2 {
+  color: pink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+}
+
+.x-sign3 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: mediumblue;
+}
+
+.x-sign5 {
+  color: #ccf0f0;
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+}
+
+.x-sign7 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: orange;
+  --color3: brown;
+  --color4: purple;
+}
+
+.x-sign9 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  --color4: darkred;
 }
 
 @media screen and (min-width: 600px) {

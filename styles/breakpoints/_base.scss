@@ -1,4 +1,5 @@
 $cBase: #231e1b;
+$cBaseBackground: linear-gradient(to right, #192a66, #120e0c);
 $cTestBase: #120e0c;
 $cBaseTransparent: rgba(35, 30, 27, 0.8);
 $cText: #fff;
@@ -7,7 +8,7 @@ $cGrey: #8d8d8d;
 $cYellow: #ffff00;
 $cPurple: #bf07db;
 $cPlain: #ccd6f6;
-$ch2: #c3ccdf;
+$ch2: #dee6ff;
 $slideBgColor: rgba(255, 255, 255, 0.3);
 $slideBallColor: $cText;
 $slideBallIconColor: $cBase;
@@ -15,6 +16,8 @@ $slideTextColor: $cGrey;
 $h1FontSize: 2.5em;
 $paddingBase: 0 15px;
 $neonFontFamily: "Bad Script", cursive;
+$anotherNeonFontFamily: Sriracha;
+$baseFontFamily: "Exo 2", serif;
 $maxWidthBase: 410px;
 // $neonTextShadow:;
 
@@ -85,7 +88,8 @@ body {
   font-family: "Exo 2", serif;
   // background: $cTestBase;
   // test
-  background: linear-gradient(to right, #192a66, #120e0c);
+  // background: linear-gradient(to right, #192a66, #120e0c);
+  background: $cTestBase;
   color: $cText;
   margin: 0;
   letter-spacing: 0.5px;
@@ -193,7 +197,7 @@ a {
 .cover-slide {
   position: relative;
   height: 100vh;
-  background: $cBase;
+  background: $cTestBase;
 
   &::after {
     content: "";
@@ -374,7 +378,7 @@ a {
 
 /* main section */
 .ml-main {
-  height: 88vh;
+  height: 95vh;
   // height: auto;
 
   &__wrapper {
@@ -384,22 +388,34 @@ a {
     margin: 0 auto;
     padding: $paddingBase;
     padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
   }
 
   &__title {
     flex-grow: 0.1;
 
     & > h1 {
-      font-size: 2.5em;
-      color: $cPlain;
+      font-size: 1.5em;
+      font-family: $baseFontFamily;
+      color: $ch2;
+
+      & span {
+        font-size: 1.8em;
+        font-family: $neonFontFamily;
+        display: inline-block;
+      }
     }
 
-    & > h2 {
+    & > h3 {
       color: $ch2;
-      font-family: $neonFontFamily;
+      font-family: $baseFontFamily;
+
+      & span {
+        // font-family: $neonFontFamily;
+        font-family: $anotherNeonFontFamily;
+      }
     }
   }
 
@@ -410,6 +426,7 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    display: none;
   }
 
   &__description.non {
@@ -436,6 +453,7 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  display: none;
 
   &__btn {
     @include center;
@@ -885,7 +903,9 @@ textarea::placeholder {
   width: 100%;
   // background: $cTestBase;
   // test
-  background: linear-gradient(to right, #192a66 1%, #120e0c);
+  // background: linear-gradient(to right, #192a66 1%, #120e0c);
+  background: $cTestBase;
+  display: none;
   //   display: flex;
   //   flex-direction: column;
   //   justify-content: center;
@@ -987,4 +1007,64 @@ a.anchor {
   display: block;
   padding-top: 70px;
   margin-top: -70px;
+}
+
+/* test */
+.x-sign {
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
+    0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(60%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.x-sign1 {
+  color: yellow;
+  --color1: goldenrod;
+  --color2: orangered;
+  --color3: mediumblue;
+  --color4: purple;
+  // font-family: Gruppo;
+}
+
+.x-sign2 {
+  color: pink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+}
+
+.x-sign3 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: mediumblue;
+}
+
+.x-sign5 {
+  color: rgb(204, 240, 240);
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+}
+
+.x-sign7 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: orange;
+  --color3: brown;
+  --color4: purple;
+}
+
+.x-sign9 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  --color4: darkred;
 }
