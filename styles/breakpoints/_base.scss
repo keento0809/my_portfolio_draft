@@ -20,8 +20,6 @@ $neonFontFamily: "Bad Script", cursive;
 $anotherNeonFontFamily: Sriracha;
 $baseFontFamily: "Exo 2", serif;
 $maxWidthBase: 410px;
-// $neonTextShadow:;
-
 $borderBase: 2px solid $cText;
 $borderRadiusBase: 12px;
 
@@ -56,8 +54,8 @@ $borderRadiusBase: 12px;
   }
 
   &.ar {
-    --color: #e555c7;
-    filter: brightness(120%);
+    --color: pink;
+    filter: brightness(100%);
   }
 
   &.xe {
@@ -65,6 +63,11 @@ $borderRadiusBase: 12px;
     // --color: $cPlain;
     filter: brightness(105%);
   }
+
+  // &.gr {
+  //   --color: $cLightYellow;
+  //   filter: brightness(100%);
+  // }
 }
 
 * {
@@ -492,14 +495,11 @@ a {
 
   &__wrapper {
     height: 100%;
-    // test
-    // height: 100vh;
     max-width: $maxWidthBase;
     margin: 0 auto;
     padding: $paddingBase;
     display: flex;
     flex-direction: column;
-    // justify-content: ;
   }
 
   &__title {
@@ -533,6 +533,10 @@ a {
       font-family: $baseFontFamily;
     }
 
+    & h2 {
+      font-family: $anotherNeonFontFamily;
+    }
+
     & span {
       display: inline-block;
       // text-align: left;
@@ -541,11 +545,18 @@ a {
   }
 
   &__skills {
-    margin: 15px 0 30px;
-    // flex-grow: 0.6;
+    padding-bottom: 40px;
     text-align: center;
     border: none;
-    // border-bottom: $borderBase;
+
+    & h3 {
+      color: $ch2;
+      padding-bottom: 20px;
+    }
+
+    & h2 {
+      font-family: $neonFontFamily;
+    }
 
     & .skill-list {
       padding: 20px;
@@ -554,6 +565,38 @@ a {
       justify-content: space-evenly;
       border-bottom: $borderBase;
     }
+
+    & .skillSet {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 40px;
+      text-align: left;
+      overflow-wrap: break-word;
+      // width: 100%;
+
+      & ul {
+        padding-bottom: 40px;
+
+        & h3 {
+          padding-bottom: 20px;
+          color: $ch2;
+        }
+
+        & > li {
+          display: inline-block;
+          padding: 6px 4px;
+          border: $borderBase;
+          border-radius: 8px;
+          font-family: $anotherNeonFontFamily;
+          // font-family: $neonFontFamily;
+          // font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .swipe.about-sec {
+    display: none;
   }
 
   &__toLink {
@@ -564,31 +607,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     // line-height: 1em;
-
-    & .circle {
-      display: inline-block;
-      width: 80px;
-      height: 80px;
-      border-radius: $borderRadiusBase;
-      border: $borderBase;
-      text-align: center;
-      //   line-height: 1em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family: $neonFontFamily;
-    }
   }
-}
-
-.circle.to-contact {
-  border-color: $cPurple;
-  color: $cPurple;
-}
-
-.circle.to-myWork {
-  border-color: $cYellow;
-  color: $cYellow;
 }
 
 .title-sub {
@@ -620,6 +639,12 @@ a {
 
   &__title {
     margin-bottom: 5px;
+
+    & h1 {
+      font-family: $neonFontFamily;
+      text-align: center;
+      padding-bottom: 40px;
+    }
   }
 
   &__wrapper {
@@ -644,7 +669,7 @@ a {
 
 .work {
   height: 100%;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

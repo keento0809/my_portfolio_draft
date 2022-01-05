@@ -28,9 +28,9 @@
 }
 
 .gas.ar {
-  --color: #e555c7;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  --color: pink;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 .gas.xe {
@@ -650,14 +650,27 @@ a {
   font-family: "Exo 2", serif;
 }
 
+.aboutMe__discription h2 {
+  font-family: Sriracha;
+}
+
 .aboutMe__discription span {
   display: inline-block;
 }
 
 .aboutMe__skills {
-  margin: 15px 0 30px;
+  padding-bottom: 40px;
   text-align: center;
   border: none;
+}
+
+.aboutMe__skills h3 {
+  color: #dee6ff;
+  padding-bottom: 20px;
+}
+
+.aboutMe__skills h2 {
+  font-family: "Bad Script", cursive;
 }
 
 .aboutMe__skills .skill-list {
@@ -673,6 +686,35 @@ a {
   border-bottom: 2px solid #fff;
 }
 
+.aboutMe__skills .skillSet {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.aboutMe__skills .skillSet ul {
+  padding-bottom: 40px;
+}
+
+.aboutMe__skills .skillSet ul h3 {
+  padding-bottom: 20px;
+  color: #dee6ff;
+}
+
+.aboutMe__skills .skillSet ul > li {
+  display: inline-block;
+  padding: 6px 4px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  font-family: Sriracha;
+}
+
+.aboutMe .swipe.about-sec {
+  display: none;
+}
+
 .aboutMe__toLink {
   margin-top: 30px;
   display: -webkit-box;
@@ -684,36 +726,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.aboutMe__toLink .circle {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  border-radius: 12px;
-  border: 2px solid #fff;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Bad Script", cursive;
-}
-
-.circle.to-contact {
-  border-color: #bf07db;
-  color: #bf07db;
-}
-
-.circle.to-myWork {
-  border-color: #ffff00;
-  color: #ffff00;
 }
 
 .title-sub {
@@ -752,6 +764,12 @@ a {
   margin-bottom: 5px;
 }
 
+.myWork__title h1 {
+  font-family: "Bad Script", cursive;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 .myWork__wrapper {
   width: 100%;
   height: 100%;
@@ -781,7 +799,6 @@ a {
 
 .work {
   height: 100%;
-  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
