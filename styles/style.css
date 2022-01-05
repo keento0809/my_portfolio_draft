@@ -487,37 +487,46 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   padding-top: 15px;
-}
-
-.ml-main__title {
-  -webkit-box-flex: 0.1;
-      -ms-flex-positive: 0.1;
-          flex-grow: 0.1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ml-main__title > h1 {
   font-size: 1.5em;
   font-family: "Exo 2", serif;
   color: #dee6ff;
+  padding-bottom: 40px;
 }
 
 .ml-main__title > h1 span {
-  font-size: 1.8em;
+  font-size: 2.5em;
   font-family: "Bad Script", cursive;
   display: inline-block;
 }
 
-.ml-main__title > h3 {
+.ml-main__title > h2 {
   color: #dee6ff;
+  font-size: 1.8em;
   font-family: "Exo 2", serif;
+  padding-bottom: 50px;
 }
 
-.ml-main__title > h3 span {
+.ml-main__title > h2 span {
   font-family: Sriracha;
 }
 
 .ml-main__description {
-  font-family: "Bad Script", cursive;
   -webkit-box-flex: 0.4;
       -ms-flex-positive: 0.4;
           flex-grow: 0.4;
@@ -531,8 +540,11 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   display: none;
+}
+
+.ml-main__description p {
+  font-family: "Exo 2", serif;
 }
 
 .ml-main__description.non {
@@ -551,147 +563,19 @@ a {
 }
 
 .swipe {
-  -webkit-box-flex: 0.3;
-      -ms-flex-positive: 0.3;
-          flex-grow: 0.3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-}
-
-.swipe__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  padding-bottom: 40px;
 }
 
 .swipe__btn.link-to-aboutMe {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  display: none;
 }
 
-.swipe__btn.link-to-myWork {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-}
-
-.swipe .button-background,
 .swipe .button-background2 {
-  position: relative;
-  background: inherit;
-  width: 100px;
-  height: 100px;
-  border: 2px solid #fff;
+  padding: 8px 40px;
   border-radius: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-flex: 0.5;
-      -ms-flex-positive: 0.5;
-          flex-grow: 0.5;
-  text-align: center;
+  border-color: lightyellow;
   font-family: "Bad Script", cursive;
-}
-
-.swipe .button-background #slider,
-.swipe .button-background #slider2,
-.swipe .button-background2 #slider,
-.swipe .button-background2 #slider2 {
-  visibility: hidden;
-  -webkit-transition: width 0.3s, border-radius 0.3s, height 0.3s;
-  transition: width 0.3s, border-radius 0.3s, height 0.3s;
-  position: absolute;
-  left: -10px;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #fff;
-  border-radius: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.swipe .button-background #slider.unlocked,
-.swipe .button-background #slider2.unlocked,
-.swipe .button-background2 #slider.unlocked,
-.swipe .button-background2 #slider2.unlocked {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  width: inherit;
-  left: 0 !important;
-  height: inherit;
-}
-
-.swipe.about-sec {
-  margin-top: 30px;
-}
-
-.button-background {
-  border-color: #bf07db !important;
-}
-
-.button-background > .slide-text {
-  color: #bf07db;
-  border: none;
-}
-
-.button-background #slider {
-  border-color: #bf07db !important;
-}
-
-.swipe .button-background2 {
-  width: 140px;
-  height: 100px;
-  border-radius: 12px;
-  border-color: #ffff00;
-  -webkit-box-flex: 0.7;
-      -ms-flex-positive: 0.7;
-          flex-grow: 0.7;
-}
-
-.swipe .button-background2 > .slide-text {
-  color: #ffff00;
-  border: none;
-  font-size: 27px;
-}
-
-.swipe .button-background2 #slider2 {
-  height: 100px;
-  width: 100px;
+  text-align: left;
 }
 
 .material-icons {

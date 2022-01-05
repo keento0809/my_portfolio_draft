@@ -6,6 +6,7 @@ $cText: #fff;
 $cTest: #12e3e3;
 $cGrey: #8d8d8d;
 $cYellow: #ffff00;
+$cLightYellow: lightyellow;
 $cPurple: #bf07db;
 $cPlain: #ccd6f6;
 $ch2: #dee6ff;
@@ -388,29 +389,33 @@ a {
     margin: 0 auto;
     padding: $paddingBase;
     padding-top: 15px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {
-    flex-grow: 0.1;
+    // flex-grow: 0.1;
 
     & > h1 {
       font-size: 1.5em;
       font-family: $baseFontFamily;
       color: $ch2;
+      padding-bottom: 40px;
 
       & span {
-        font-size: 1.8em;
+        font-size: 2.5em;
         font-family: $neonFontFamily;
         display: inline-block;
       }
     }
 
-    & > h3 {
+    & > h2 {
       color: $ch2;
+      font-size: 1.8em;
       font-family: $baseFontFamily;
+      padding-bottom: 50px;
 
       & span {
         // font-family: $neonFontFamily;
@@ -420,13 +425,15 @@ a {
   }
 
   &__description {
-    font-family: $neonFontFamily;
     flex-grow: 0.4;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    // text-align: center;
     display: none;
+    & p {
+      font-family: $baseFontFamily;
+    }
   }
 
   &__description.non {
@@ -438,8 +445,6 @@ a {
 .disc {
   margin: 0 auto;
   height: 20vh;
-  // background: $cTest;
-  //   border: $borderBase;
 
   & > p {
     text-align: left;
@@ -448,97 +453,22 @@ a {
 }
 
 .swipe {
-  flex-grow: 0.3;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  display: none;
-
-  &__btn {
-    @include center;
-    align-items: flex-start;
-  }
+  // width: 100%;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: flex-start;
+  padding-bottom: 40px;
 
   &__btn.link-to-aboutMe {
-    flex-grow: 1;
+    display: none;
   }
 
-  &__btn.link-to-myWork {
-    flex-grow: 2;
-  }
-
-  & .button-background,
   & .button-background2 {
-    position: relative;
-    background: inherit;
-    width: 100px;
-    height: 100px;
-    border: $borderBase;
+    padding: 8px 40px;
     border-radius: $borderRadiusBase;
-    @include center;
-    flex-grow: 0.5;
-    text-align: center;
+    border-color: $cLightYellow;
     font-family: $neonFontFamily;
-
-    & #slider,
-    & #slider2 {
-      visibility: hidden;
-      transition: width 0.3s, border-radius 0.3s, height 0.3s;
-      position: absolute;
-      left: -10px;
-      //   background: $slideBallColor;
-      width: 50px;
-      height: 50px;
-      border: $borderBase;
-      border-radius: $borderRadiusBase;
-      @include center;
-
-      &.unlocked {
-        transition: all 0.3s ease;
-        width: inherit;
-        left: 0 !important;
-        height: inherit;
-        // border-radius: inherit;
-      }
-    }
-  }
-}
-
-.swipe.about-sec {
-  margin-top: 30px;
-}
-
-.button-background {
-  border-color: $cPurple !important;
-
-  & > .slide-text {
-    color: $cPurple;
-    border: none;
-  }
-
-  & #slider {
-    border-color: $cPurple !important;
-  }
-}
-
-.swipe .button-background2 {
-  width: 140px;
-  height: 100px;
-  border-radius: $borderRadiusBase;
-  border-color: $cYellow;
-  flex-grow: 0.7;
-
-  & > .slide-text {
-    color: $cYellow;
-    border: none;
-    font-size: 27px;
-  }
-
-  & #slider2 {
-    // border-color: $cYellow !important;
-    height: 100px;
-    width: 100px;
+    text-align: left;
   }
 }
 
