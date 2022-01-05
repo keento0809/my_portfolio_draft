@@ -323,8 +323,8 @@ a {
     width: 100%;
     max-width: $maxWidthBase;
     margin: 0 auto;
-    margin-top: 15px;
-    padding: $paddingBase;
+    // margin-top: 15px;
+    padding: 15px 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -453,11 +453,7 @@ a {
 }
 
 .swipe {
-  // width: 100%;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: flex-start;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 
   &__btn.link-to-aboutMe {
     display: none;
@@ -468,35 +464,31 @@ a {
     border-radius: $borderRadiusBase;
     border-color: $cLightYellow;
     font-family: $neonFontFamily;
+    font-size: 1.25em;
+    text-transform: uppercase;
     text-align: left;
   }
 }
 
-.material-icons {
-  color: $slideBallIconColor;
-  font-size: 50px;
-  @include nonSelect;
-}
+.social-media {
+  width: 100%;
 
-.slide-text {
-  //   color: $cYellow;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  @include nonSelect;
-}
-
-.slide-text.ab {
-  color: $cPurple;
-}
-
-.slide-text.mine {
-  color: $cYellow;
+  & .social-media-list {
+    width: 50%;
+    margin: 0 auto;
+    // color: $ch2;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    // background: yellow;
+  }
 }
 
 /* about me section */
 .aboutMe {
   height: auto;
-  margin-bottom: 90px;
+  // test
+  // margin-bottom: 90px;
 
   &__wrapper {
     height: 100%;
@@ -512,18 +504,40 @@ a {
 
   &__title {
     // flex-grow: 0.3;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    & h1 {
+      font-family: $neonFontFamily;
+      text-align: center;
+      padding-bottom: 40px;
+    }
   }
 
   &__discription {
-    margin: 15px 0 30px;
-    font-family: $neonFontFamily;
-    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    // margin: 15px 0 30px;
+    padding: 15px 0 30px;
+    font-family: $baseFontFamily;
+    text-align: left;
     border: none;
     --color: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    & h2,
+    & p {
+      // text-align: center;
+      padding-bottom: 40px;
+      font-family: $baseFontFamily;
+    }
+
+    & span {
+      display: inline-block;
+      // text-align: left;
+      // font-size: 1.2em;
+    }
   }
 
   &__skills {
@@ -578,7 +592,7 @@ a {
 }
 
 .title-sub {
-  margin-top: 15px;
+  // padding-top: 15px;
   color: $cYellow;
   display: flex;
   justify-content: space-evenly;
@@ -587,8 +601,8 @@ a {
 
   & img {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     // flex-grow: 2;
     border-radius: $borderRadiusBase;
   }

@@ -404,8 +404,7 @@ a {
   width: 100%;
   max-width: 410px;
   margin: 0 auto;
-  margin-top: 15px;
-  padding: 0 15px;
+  padding: 15px 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +562,7 @@ a {
 }
 
 .swipe {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .swipe__btn.link-to-aboutMe {
@@ -575,43 +574,30 @@ a {
   border-radius: 12px;
   border-color: lightyellow;
   font-family: "Bad Script", cursive;
+  font-size: 1.25em;
+  text-transform: uppercase;
   text-align: left;
 }
 
-.material-icons {
-  color: #231e1b;
-  font-size: 50px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
+.social-media {
+  width: 100%;
 }
 
-.slide-text {
-  font-size: 1.25em;
-  text-transform: uppercase;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}
-
-.slide-text.ab {
-  color: #bf07db;
-}
-
-.slide-text.mine {
-  color: #ffff00;
+.social-media .social-media-list {
+  width: 50%;
+  margin: 0 auto;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* about me section */
 .aboutMe {
   height: auto;
-  margin-bottom: 90px;
 }
 
 .aboutMe__wrapper {
@@ -629,13 +615,21 @@ a {
 }
 
 .aboutMe__title {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.aboutMe__title h1 {
+  font-family: "Bad Script", cursive;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 .aboutMe__discription {
-  margin: 15px 0 30px;
-  font-family: "Bad Script", cursive;
-  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 15px 0 30px;
+  font-family: "Exo 2", serif;
+  text-align: left;
   border: none;
   --color: none;
   display: -webkit-box;
@@ -648,6 +642,16 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.aboutMe__discription h2,
+.aboutMe__discription p {
+  padding-bottom: 40px;
+  font-family: "Exo 2", serif;
+}
+
+.aboutMe__discription span {
+  display: inline-block;
 }
 
 .aboutMe__skills {
@@ -713,7 +717,6 @@ a {
 }
 
 .title-sub {
-  margin-top: 15px;
   color: #ffff00;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,8 +732,8 @@ a {
 
 .title-sub img {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 12px;
 }
 
