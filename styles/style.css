@@ -81,8 +81,9 @@ button {
 }
 
 label {
-  font-family: "Bad Script", cursive;
+  font-family: "Exo 2", serif;
   padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 ul {
@@ -279,13 +280,14 @@ a {
 }
 
 .cover-slide__contents .social-media-list {
-  width: 70%;
+  width: 60%;
   -webkit-box-flex: 1.2;
       -ms-flex-positive: 1.2;
           flex-grow: 1.2;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  color: #120e0c;
 }
 
 .cover-slide.inview::after {
@@ -629,6 +631,7 @@ a {
   margin: 0 auto;
   padding: 15px 0 30px;
   font-family: "Exo 2", serif;
+  color: #dee6ff;
   text-align: left;
   border: none;
   --color: none;
@@ -885,6 +888,10 @@ a {
   padding-bottom: 40px;
 }
 
+.contact__form {
+  padding-bottom: 40px;
+}
+
 .contactMe {
   font-size: 1.4em;
 }
@@ -901,7 +908,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .input-f,
@@ -910,6 +917,7 @@ a {
   background: inherit;
   position: relative;
   padding-left: 0.6em;
+  border-radius: 8px;
 }
 
 .input-f::-webkit-input-placeholder,
@@ -1190,11 +1198,11 @@ textarea::placeholder {
 /* 補足 */
 .input-f,
 .textarea-f {
-  border-color: #ffff00;
+  border-color: lightyellow;
 }
 
 .input-f.gas.ar {
-  border-color: #bf07db;
+  border-color: pink;
 }
 
 /* target section */
@@ -1207,7 +1215,6 @@ a.anchor {
 /* test */
 .x-sign {
   --interval: 1s;
-  display: block;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
   will-change: filter, color;
   -webkit-filter: saturate(60%);
@@ -1246,6 +1253,15 @@ a.anchor {
   --color2: aqua;
   --color3: dodgerblue;
   --color4: blue;
+}
+
+.x-sign6 {
+  color: tomato;
+  --color1: orangered;
+  --color2: firebrick;
+  --color3: maroon;
+  --color4: darkred;
+  font-family: Yellowtail;
 }
 
 .x-sign7 {

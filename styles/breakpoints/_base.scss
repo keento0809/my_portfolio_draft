@@ -114,8 +114,9 @@ button {
 }
 
 label {
-  font-family: $neonFontFamily;
+  font-family: $baseFontFamily;
   padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 ul {
@@ -252,9 +253,10 @@ a {
     }
 
     & .social-media-list {
-      width: 70%;
+      width: 60%;
       flex-grow: 1.2;
       align-items: flex-start;
+      color: $cTestBase;
     }
   }
 
@@ -520,6 +522,7 @@ a {
     // margin: 15px 0 30px;
     padding: 15px 0 30px;
     font-family: $baseFontFamily;
+    color: $ch2;
     text-align: left;
     border: none;
     --color: none;
@@ -767,7 +770,7 @@ a {
   }
 
   &__form {
-    // margin-top: 30px;
+    padding-bottom: 40px;
   }
 }
 
@@ -780,7 +783,7 @@ a {
     & > li {
       display: flex;
       flex-direction: column;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
     }
   }
 }
@@ -788,10 +791,10 @@ a {
 .input-f,
 .textarea-f {
   font-size: 1.2em;
-  // margin-bottom: 15px;
   background: inherit;
   position: relative;
   padding-left: 0.6em;
+  border-radius: 8px;
 }
 
 .input-f::placeholder,
@@ -986,11 +989,11 @@ textarea::placeholder {
 /* 補足 */
 .input-f,
 .textarea-f {
-  border-color: $cYellow;
+  border-color: $cLightYellow;
 }
 
 .input-f.gas.ar {
-  border-color: $cPurple;
+  border-color: $cPink;
 }
 
 /* target section */
@@ -1016,7 +1019,7 @@ a.anchor {
 /* test */
 .x-sign {
   --interval: 1s;
-  display: block;
+  // display: block;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
     0 0 40px var(--color3), 0 0 80px var(--color4);
   will-change: filter, color;
@@ -1055,6 +1058,16 @@ a.anchor {
   --color2: aqua;
   --color3: dodgerblue;
   --color4: blue;
+}
+
+.x-sign6 {
+  // display: inline-block;
+  color: tomato;
+  --color1: orangered;
+  --color2: firebrick;
+  --color3: maroon;
+  --color4: darkred;
+  font-family: Yellowtail;
 }
 
 .x-sign7 {
