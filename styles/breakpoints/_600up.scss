@@ -1,3 +1,4 @@
+$padding600up: 0 30px;
 $maxWidthBase600up: 600px;
 
 body {
@@ -6,19 +7,72 @@ body {
 
 .ml-header {
   &__wrapper {
+    padding: $padding600up;
     max-width: $maxWidthBase600up;
   }
 }
 
 .ml-main {
   &__wrapper {
+    padding: $padding600up;
     max-width: $maxWidthBase600up;
   }
+
+  &__title {
+    padding-bottom: 70px;
+
+    & h1 {
+      font-size: 2em;
+    }
+
+    & h2 {
+      width: 70%;
+      margin-right: auto;
+    }
+  }
+}
+
+.swipe {
+  padding-bottom: 70px;
 }
 
 .aboutMe {
   &__wrapper {
+    padding: $padding600up;
     max-width: $maxWidthBase600up;
+  }
+
+  &__title {
+    & h1 {
+      font-size: 3em;
+    }
+  }
+
+  &__discription {
+    & h2 {
+      font-size: 2.5em;
+    }
+
+    & p {
+      font-size: 1.5em;
+    }
+  }
+
+  &__skills {
+    & h2 {
+      font-size: 2em;
+    }
+
+    & h3 {
+      font-size: 1.5em;
+      padding-bottom: 30px;
+    }
+
+    & .skill-list {
+      padding: 30px;
+      //   width: 80%;
+      //   margin: 0 auto;
+    }
   }
 }
 
@@ -26,8 +80,8 @@ body {
   flex-grow: 2;
 
   & img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
 
   & h2 {
@@ -39,12 +93,26 @@ body {
 
 .myWork {
   &__wrapper {
+    padding: $padding600up;
     max-width: $maxWidthBase600up;
+  }
+
+  &__title {
+    & h1 {
+      font-size: 3em;
+    }
+  }
+}
+
+.work {
+  &__links {
+    width: 50%;
   }
 }
 
 .contact {
   &__wrapper {
+    padding: $padding600up;
     max-width: $maxWidthBase600up;
   }
 }

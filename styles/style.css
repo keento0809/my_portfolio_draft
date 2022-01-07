@@ -82,6 +82,7 @@ button {
 
 label {
   font-family: "Exo 2", serif;
+  color: #dee6ff;
   padding-left: 5px;
   padding-bottom: 5px;
 }
@@ -503,6 +504,10 @@ a {
           align-items: center;
 }
 
+.ml-main__title {
+  padding-bottom: 50px;
+}
+
 .ml-main__title > h1 {
   font-size: 1.5em;
   font-family: "Exo 2", serif;
@@ -520,7 +525,6 @@ a {
   color: #dee6ff;
   font-size: 1.8em;
   font-family: "Exo 2", serif;
-  padding-bottom: 50px;
 }
 
 .ml-main__title > h2 span {
@@ -655,6 +659,7 @@ a {
 
 .aboutMe__discription h2 {
   font-family: Sriracha;
+  text-align: center;
 }
 
 .aboutMe__discription span {
@@ -859,6 +864,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   color: #120e0c;
+  margin-left: 20px;
 }
 
 .learnMore {
@@ -1285,13 +1291,48 @@ a.anchor {
     height: 100%;
   }
   .ml-header__wrapper {
+    padding: 0 30px;
     max-width: 600px;
   }
   .ml-main__wrapper {
+    padding: 0 30px;
     max-width: 600px;
   }
+  .ml-main__title {
+    padding-bottom: 70px;
+  }
+  .ml-main__title h1 {
+    font-size: 2em;
+  }
+  .ml-main__title h2 {
+    width: 70%;
+    margin-right: auto;
+  }
+  .swipe {
+    padding-bottom: 70px;
+  }
   .aboutMe__wrapper {
+    padding: 0 30px;
     max-width: 600px;
+  }
+  .aboutMe__title h1 {
+    font-size: 3em;
+  }
+  .aboutMe__discription h2 {
+    font-size: 2.5em;
+  }
+  .aboutMe__discription p {
+    font-size: 1.5em;
+  }
+  .aboutMe__skills h2 {
+    font-size: 2em;
+  }
+  .aboutMe__skills h3 {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+  }
+  .aboutMe__skills .skill-list {
+    padding: 30px;
   }
   .title-sub {
     -webkit-box-flex: 2;
@@ -1299,17 +1340,25 @@ a.anchor {
             flex-grow: 2;
   }
   .title-sub img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
   .title-sub h2 {
     font-size: 1.7em;
     max-width: 270px;
   }
   .myWork__wrapper {
+    padding: 0 30px;
     max-width: 600px;
   }
+  .myWork__title h1 {
+    font-size: 3em;
+  }
+  .work__links {
+    width: 50%;
+  }
   .contact__wrapper {
+    padding: 0 30px;
     max-width: 600px;
   }
   .ml-footer__wrapper {
