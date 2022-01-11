@@ -801,6 +801,7 @@ a {
 
 .work {
   height: 100%;
+  margin-bottom: 40px;
 }
 
 .work:nth-child(1) {
@@ -1418,18 +1419,12 @@ a.anchor {
             justify-content: center;
   }
   .ml-main__title h1 {
-    font-size: 4em;
+    font-size: 3.5em;
+    padding-bottom: 0;
   }
-  .swipe {
-    -webkit-box-flex: 0.42;
-        -ms-flex-positive: 0.42;
-            flex-grow: 0.42;
-  }
-  .swipe .button-background {
-    height: 140px;
-  }
-  .swipe .button-background2 {
-    height: 140px;
+  .ml-main__title h2 {
+    width: 85%;
+    font-size: 3em;
   }
   .slide-text {
     font-size: 1.7em;
@@ -1473,16 +1468,13 @@ a.anchor {
     height: 140px;
   }
   .title-sub {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .title-sub img {
-    width: 280px;
-    height: 280px;
+    width: 350px;
+    height: 350px;
   }
   .title-sub h2 {
     font-size: 2em;
@@ -1602,8 +1594,8 @@ a.anchor {
     font-size: 3em;
   }
   a.anchor {
-    padding-top: 90px;
-    margin-top: -90px;
+    padding-top: 150px;
+    margin-top: -150px;
   }
 }
 

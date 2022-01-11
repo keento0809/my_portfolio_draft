@@ -675,10 +675,7 @@ a {
 
 .work {
   height: 100%;
-  // padding-bottom: 60px;
-  // display: flex;
-  // justify-content: flex-start;
-  // align-items: center;
+  margin-bottom: 40px;
 
   &:nth-child(1) {
     border-color: $cLightYellow;
