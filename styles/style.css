@@ -604,6 +604,7 @@ a {
 /* about me section */
 .aboutMe {
   height: auto;
+  margin-bottom: 90px;
 }
 
 .aboutMe__wrapper {
@@ -1521,10 +1522,10 @@ a.anchor {
   .myWork__contents .work__description {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
   .myWork__contents .work__links {
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
   .myWork__contents .work__links .w-linkList > li > a > .fa-link {
     font-size: 3em;
@@ -1636,7 +1637,7 @@ a.anchor {
   }
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1024px) {
   body.lightMode {
     background: #f7f6f2;
     color: #231e1b;
@@ -1720,8 +1721,12 @@ a.anchor {
   .n-common::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.5em;
     padding-bottom: 5px;
+  }
+  .n-common::after {
+    font-family: "Bad Script", cursive;
+    font-size: 1.2em;
   }
   .nav-first::before {
     content: "\f007";
@@ -1732,6 +1737,9 @@ a.anchor {
   .nav-third::before {
     content: "\f1d8";
   }
+  .nav-forth::before {
+    content: "\f15b";
+  }
   .nav-first::after {
     content: "ABOUT ME";
   }
@@ -1740,6 +1748,9 @@ a.anchor {
   }
   .nav-third::after {
     content: "CONTACT";
+  }
+  .nav-forth::after {
+    content: "RESUME";
   }
   .ml-main__wrapper {
     padding: 0 40px;

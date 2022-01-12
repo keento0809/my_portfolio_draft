@@ -1,5 +1,5 @@
-$padding1028up: 0 40px;
-$maxWidth1028up: 1200px;
+$padding1024up: 0 40px;
+$maxWidth1024up: 1200px;
 $cLightMode: #f7f6f2;
 
 body.lightMode {
@@ -31,8 +31,8 @@ label {
 
   &__wrapper {
     height: 100%;
-    padding: $padding1028up;
-    max-width: $maxWidth1028up;
+    padding: $padding1024up;
+    max-width: $maxWidth1024up;
   }
 
   &__toggle-btn {
@@ -86,8 +86,13 @@ label {
 .n-common::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  font-size: 2em;
+  font-size: 1.5em;
   padding-bottom: 5px;
+}
+
+.n-common::after {
+  font-family: $neonFontFamily;
+  font-size: 1.2em;
 }
 
 .nav-first::before {
@@ -102,6 +107,10 @@ label {
   content: "\f1d8";
 }
 
+.nav-forth::before {
+  content: "\f15b";
+}
+
 .nav-first::after {
   content: "ABOUT ME";
 }
@@ -114,10 +123,14 @@ label {
   content: "CONTACT";
 }
 
+.nav-forth::after {
+  content: "RESUME";
+}
+
 .ml-main {
   &__wrapper {
-    padding: $padding1028up;
-    max-width: $maxWidth1028up;
+    padding: $padding1024up;
+    max-width: $maxWidth1024up;
   }
 
   &__title {
@@ -129,8 +142,8 @@ label {
 
 .aboutMe {
   &__wrapper {
-    padding: $padding1028up;
-    max-width: $maxWidth1028up;
+    padding: $padding1024up;
+    max-width: $maxWidth1024up;
   }
 }
 
@@ -147,22 +160,22 @@ label {
 
 .myWork {
   &__wrapper {
-    padding: $padding1028up;
-    max-width: $maxWidth1028up;
+    padding: $padding1024up;
+    max-width: $maxWidth1024up;
   }
 }
 
 .contact {
   &__wrapper {
-    padding: $padding1028up;
-    max-width: $maxWidth1028up;
+    padding: $padding1024up;
+    max-width: $maxWidth1024up;
   }
 }
 
 .ml-footer {
   &__wrapper {
-    padding: $padding1028up;
-    max-width: $maxWidth1028up;
+    padding: $padding1024up;
+    max-width: $maxWidth1024up;
   }
 
   &__container {
