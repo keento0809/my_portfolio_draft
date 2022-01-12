@@ -1,4 +1,6 @@
 $padding1024up: 0 40px;
+$widthPercent1024up: 90%;
+$marginBase1024up: 0 auto;
 $maxWidth1024up: 1200px;
 $cLightMode: #f7f6f2;
 
@@ -27,11 +29,12 @@ label {
 }
 
 .ml-header {
-  height: 100px;
+  min-height: 100px;
 
   &__wrapper {
     height: 100%;
     padding: $padding1024up;
+    margin: 30px auto;
     max-width: $maxWidth1024up;
   }
 
@@ -160,6 +163,9 @@ label {
 
 .myWork {
   &__wrapper {
+    // test
+    width: $widthPercent1024up;
+    margin: $marginBase1024up;
     padding: $padding1024up;
     max-width: $maxWidth1024up;
   }
@@ -167,6 +173,8 @@ label {
 
 .contact {
   &__wrapper {
+    width: $widthPercent1024up;
+    margin: $marginBase1024up;
     padding: $padding1024up;
     max-width: $maxWidth1024up;
   }

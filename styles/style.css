@@ -480,6 +480,7 @@ a {
 /* main section */
 .ml-main {
   height: 95vh;
+  margin-bottom: 90px;
 }
 
 .ml-main__wrapper {
@@ -1637,7 +1638,7 @@ a.anchor {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
   body.lightMode {
     background: #f7f6f2;
     color: #231e1b;
@@ -1657,11 +1658,12 @@ a.anchor {
     visibility: hidden;
   }
   .ml-header {
-    height: 100px;
+    min-height: 100px;
   }
   .ml-header__wrapper {
     height: 100%;
     padding: 0 40px;
+    margin: 30px auto;
     max-width: 1200px;
   }
   .ml-header__toggle-btn {
@@ -1771,10 +1773,14 @@ a.anchor {
     max-width: 500px;
   }
   .myWork__wrapper {
+    width: 90%;
+    margin: 0 auto;
     padding: 0 40px;
     max-width: 1200px;
   }
   .contact__wrapper {
+    width: 90%;
+    margin: 0 auto;
     padding: 0 40px;
     max-width: 1200px;
   }
