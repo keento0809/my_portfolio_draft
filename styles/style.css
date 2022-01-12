@@ -1444,6 +1444,19 @@ a.anchor {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding-bottom: 60px;
+  }
+  .aboutMe__title h1 {
+    font-size: 4em;
+  }
+  .aboutMe__discription {
+    padding: 20px 0 60px;
+  }
+  .aboutMe__discription h2 {
+    font-size: 3em;
+  }
+  .aboutMe__discription p {
+    font-size: 2em;
   }
   .aboutMe__skills {
     display: -webkit-box;
@@ -1456,12 +1469,22 @@ a.anchor {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 80px;
+  }
+  .aboutMe__skills h2 {
+    font-size: 3em;
   }
   .aboutMe__skills h3 {
-    font-size: 1.8em;
+    font-size: 2.5em;
   }
   .aboutMe__skills .skill-list {
     padding: 40px;
+  }
+  .aboutMe__skills .skillSet {
+    width: 95%;
+  }
+  .aboutMe__skills .skillSet ul li {
+    font-size: 1.8em;
   }
   .aboutMe__toLink .circle {
     width: 140px;
@@ -1487,13 +1510,27 @@ a.anchor {
     padding: 0 35px;
     max-width: 900px;
   }
+  .myWork__title h1 {
+    font-size: 4em;
+  }
   .myWork__contents .work {
     -ms-flex-preferred-size: 430px;
         flex-basis: 430px;
+    margin-bottom: 80px;
   }
   .myWork__contents .work__description {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
+    padding-bottom: 80px;
+  }
+  .myWork__contents .work__links {
+    padding-bottom: 80px;
+  }
+  .myWork__contents .work__links .w-linkList > li > a > .fa-link {
+    font-size: 3em;
+  }
+  .learnMore {
+    font-size: 1.8em;
   }
   .contact__wrapper {
     padding: 0 35px;

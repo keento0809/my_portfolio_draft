@@ -101,19 +101,51 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 60px;
+
+    & h1 {
+      font-size: 4em;
+    }
+  }
+
+  &__discription {
+    padding: 20px 0 60px;
+
+    & h2 {
+      font-size: 3em;
+    }
+
+    & p {
+      font-size: 2em;
+    }
   }
 
   &__skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 80px;
+
+    & h2 {
+      font-size: 3em;
+    }
 
     & h3 {
-      font-size: 1.8em;
+      font-size: 2.5em;
     }
 
     & .skill-list {
       padding: 40px;
+    }
+
+    & .skillSet {
+      width: 95%;
+
+      & ul {
+        & li {
+          font-size: 1.8em;
+        }
+      }
     }
   }
 
@@ -147,15 +179,37 @@ a {
     max-width: $maxWidth768up;
   }
 
+  &__title {
+    & h1 {
+      font-size: 4em;
+    }
+  }
+
   &__contents {
     & .work {
       flex-basis: 430px;
+      margin-bottom: 80px;
 
       &__description {
         flex-basis: 400px;
+        padding-bottom: 80px;
+      }
+
+      &__links {
+        padding-bottom: 80px;
+
+        & .w-linkList {
+          & > li > a > .fa-link {
+            font-size: 3em;
+          }
+        }
       }
     }
   }
+}
+
+.learnMore {
+  font-size: 1.8em;
 }
 
 .contact {
