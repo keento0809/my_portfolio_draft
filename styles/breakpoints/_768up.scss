@@ -6,14 +6,6 @@ body {
   height: 100%;
 }
 
-h1 {
-  font-size: 4em;
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
 p,
 label {
   font-size: 2em;
@@ -32,13 +24,19 @@ label {
   font-size: 3em;
 }
 
-.cover-slide {
-  &__contents {
-    & .contents-list {
-      & > li {
-        font-size: 2.5em;
-      }
-    }
+// .cover-slide {
+//   &__contents {
+//     & .contents-list {
+//       & > li {
+//         font-size: 2.5em;
+//       }
+//     }
+//   }
+// }
+
+.contents-list {
+  & > li {
+    font-size: 2.5em;
   }
 }
 

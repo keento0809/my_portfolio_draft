@@ -26,7 +26,6 @@ $borderRadiusBase: 12px;
 
 /* test neon color */
 .gas {
-  //   --blur: 1.75rem;
   --blur: 1rem;
   --box-blur: calc(0.5 * var(--blur));
   --glow: var(--color);
@@ -64,11 +63,6 @@ $borderRadiusBase: 12px;
     // --color: $cPlain;
     filter: brightness(105%);
   }
-
-  // &.gr {
-  //   --color: $cLightYellow;
-  //   filter: brightness(100%);
-  // }
 }
 
 * {
@@ -91,9 +85,6 @@ body {
 
 body {
   font-family: "Exo 2", serif;
-  // background: $cTestBase;
-  // test
-  // background: linear-gradient(to right, #192a66, #120e0c);
   background: $cTestBase;
   color: $cText;
   margin: 0;
@@ -175,6 +166,10 @@ a {
   height: 10vh;
   // border: $borderBase;
 
+  & .common-wrapper {
+    margin: 0 auto;
+  }
+
   & .fa-times {
     display: block;
     text-align: right;
@@ -241,22 +236,22 @@ a {
       );
     }
 
-    & .contents-list {
-      flex-grow: 3;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
+    // & .contents-list {
+    //   flex-grow: 3;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-evenly;
+    //   align-items: center;
 
-      & > li {
-        font-size: 1.5em;
-        font-family: $neonFontFamily;
+    //   & > li {
+    //     font-size: 1.5em;
+    //     font-family: $neonFontFamily;
 
-        & > a > span {
-          padding-left: 10px;
-        }
-      }
-    }
+    //     & > a > span {
+    //       padding-left: 10px;
+    //     }
+    //   }
+    // }
 
     & .social-media-list {
       width: 60%;
@@ -273,6 +268,23 @@ a {
         $duration: 1.2s,
         $timing-function: ease-out
       );
+    }
+  }
+}
+
+.contents-list {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  & > li {
+    font-size: 1.5em;
+    font-family: $neonFontFamily;
+
+    & > a > span {
+      padding-left: 10px;
     }
   }
 }

@@ -142,6 +142,10 @@ a {
   height: 10vh;
 }
 
+.cover__header .common-wrapper {
+  margin: 0 auto;
+}
+
 .cover__header .fa-times {
   display: block;
   text-align: right;
@@ -257,34 +261,6 @@ a {
           animation-fill-mode: forwards;
 }
 
-.cover-slide__contents .contents-list {
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.cover-slide__contents .contents-list > li {
-  font-size: 1.5em;
-  font-family: "Bad Script", cursive;
-}
-
-.cover-slide__contents .contents-list > li > a > span {
-  padding-left: 10px;
-}
-
 .cover-slide__contents .social-media-list {
   width: 60%;
   -webkit-box-flex: 1.2;
@@ -311,6 +287,34 @@ a {
           animation-direction: normal;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.contents-list {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents-list > li {
+  font-size: 1.5em;
+  font-family: "Bad Script", cursive;
+}
+
+.contents-list > li > a > span {
+  padding-left: 10px;
 }
 
 @-webkit-keyframes kf-cover-slide {
@@ -1232,12 +1236,6 @@ a.anchor {
   body {
     height: 100%;
   }
-  h1 {
-    font-size: 4em;
-  }
-  h2 {
-    font-size: 2.5em;
-  }
   p,
   label {
     font-size: 2em;
@@ -1252,7 +1250,7 @@ a.anchor {
   .common-h2 {
     font-size: 3em;
   }
-  .cover-slide__contents .contents-list > li {
+  .contents-list > li {
     font-size: 2.5em;
   }
   .ml-header {
