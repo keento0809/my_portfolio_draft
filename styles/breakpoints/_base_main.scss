@@ -1,0 +1,107 @@
+/* main section */
+.ml-main {
+  height: 95vh;
+  margin-bottom: 90px;
+  // height: auto;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: $maxWidthBase;
+    margin: 0 auto;
+    padding: $paddingBase;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    // flex-grow: 0.1;
+    padding-bottom: 50px;
+
+    & > h1 {
+      // font-size: 1.5em;
+      font-family: $baseFontFamily;
+      color: $ch2;
+      padding-bottom: 40px;
+
+      & span {
+        font-size: 2.5em;
+        font-family: $neonFontFamily;
+        display: inline-block;
+      }
+    }
+
+    & > h2 {
+      color: $ch2;
+      font-size: 1.8em;
+      font-family: $baseFontFamily;
+
+      & span {
+        // font-family: $neonFontFamily;
+        font-family: $anotherNeonFontFamily;
+      }
+    }
+  }
+
+  &__description {
+    flex-grow: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // text-align: center;
+    display: none;
+    & p {
+      font-family: $baseFontFamily;
+    }
+  }
+
+  &__description.non {
+    border: none;
+    --color: none;
+  }
+}
+
+.disc {
+  margin: 0 auto;
+  height: 20vh;
+
+  & > p {
+    text-align: left;
+    font-size: 1em;
+  }
+}
+
+.swipe {
+  padding-bottom: 50px;
+
+  &__btn.link-to-aboutMe {
+    display: none;
+  }
+
+  & .button-background2 {
+    padding: 8px 40px;
+    border-radius: $borderRadiusBase;
+    border-color: $cLightYellow;
+    font-family: $neonFontFamily;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+
+.social-media {
+  width: 100%;
+
+  & .social-media-list {
+    width: 50%;
+    margin: 0 auto;
+    // color: $ch2;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    // background: yellow;
+  }
+}

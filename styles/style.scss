@@ -1,6 +1,11 @@
 @import "mixin";
 @import "breakpoints/base";
+@import "breakpoints/base_cover";
 @import "breakpoints/base_header";
+@import "breakpoints/base_main";
+@import "breakpoints/base_aboutMe";
+@import "breakpoints/base_myWork";
+@import "breakpoints/base_contact";
 
 @media screen and (min-width: 600px) {
   @import "breakpoints/600up";
