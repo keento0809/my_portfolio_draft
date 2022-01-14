@@ -24,7 +24,7 @@ $maxWidthBase: 410px;
 $borderBase: 2px solid $cText;
 $borderRadiusBase: 12px;
 
-/* test neon color */
+/* neon color */
 .gas {
   --blur: 1rem;
   --box-blur: calc(0.5 * var(--blur));
@@ -147,18 +147,6 @@ a {
   font-size: 1.5em;
 }
 
-/* cover section */
-
-/* header section */
-
-/* main section */
-
-/* about me section */
-
-/* myWork section */
-
-/* contact form section */
-
 /* BackTop button section */
 #backTopBtn {
   /* hide on mobile ver */
@@ -241,89 +229,9 @@ a {
   }
 }
 
-/* 補足 */
-.input-f,
-.textarea-f {
-  border-color: $cLightYellow;
-}
-
-.input-f.gas.ar {
-  border-color: $cPink;
-}
-
 /* anchor */
 a.anchor {
   display: block;
   padding-top: 70px;
   margin-top: -70px;
-}
-
-/* neon colors */
-.x-sign {
-  --interval: 1s;
-  // display: block;
-  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
-    0 0 40px var(--color3), 0 0 80px var(--color4);
-  will-change: filter, color;
-  filter: saturate(60%);
-  animation: flicker steps(100) var(--interval) 1s infinite;
-}
-
-.x-sign1 {
-  color: yellow;
-  --color1: goldenrod;
-  --color2: orangered;
-  --color3: mediumblue;
-  --color4: purple;
-  // font-family: Gruppo;
-}
-
-.x-sign2 {
-  color: pink;
-  --color1: pink;
-  --color2: orangered;
-  --color3: red;
-  --color4: magenta;
-}
-
-.x-sign3 {
-  color: lightyellow;
-  --color1: yellow;
-  --color2: lime;
-  --color3: green;
-  --color4: mediumblue;
-}
-
-.x-sign5 {
-  color: rgb(204, 240, 240);
-  --color1: azure;
-  --color2: aqua;
-  --color3: dodgerblue;
-  --color4: blue;
-}
-
-.x-sign6 {
-  // display: inline-block;
-  color: tomato;
-  --color1: orangered;
-  --color2: firebrick;
-  --color3: maroon;
-  --color4: darkred;
-  font-family: Yellowtail;
-}
-
-.x-sign7 {
-  color: lightyellow;
-  --color1: yellow;
-  --color2: orange;
-  --color3: brown;
-  --color4: purple;
-}
-
-.x-sign9 {
-  color: lightyellow;
-  --color1: yellow;
-  --color2: gold;
-  --color3: orange;
-  --color4: darkred;
 }

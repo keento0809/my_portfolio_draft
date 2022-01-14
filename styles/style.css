@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* test neon color */
+/* neon color */
 .gas {
   --blur: 1rem;
   --box-blur: calc(0.5 * var(--blur));
@@ -123,12 +123,6 @@ a {
   font-size: 1.5em;
 }
 
-/* cover section */
-/* header section */
-/* main section */
-/* about me section */
-/* myWork section */
-/* contact form section */
 /* BackTop button section */
 #backTopBtn {
   /* hide on mobile ver */
@@ -218,89 +212,11 @@ a {
   display: block;
 }
 
-/* 補足 */
-.input-f,
-.textarea-f {
-  border-color: lightyellow;
-}
-
-.input-f.gas.ar {
-  border-color: pink;
-}
-
 /* anchor */
 a.anchor {
   display: block;
   padding-top: 70px;
   margin-top: -70px;
-}
-
-/* neon colors */
-.x-sign {
-  --interval: 1s;
-  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
-  will-change: filter, color;
-  -webkit-filter: saturate(60%);
-          filter: saturate(60%);
-  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
-          animation: flicker steps(100) var(--interval) 1s infinite;
-}
-
-.x-sign1 {
-  color: yellow;
-  --color1: goldenrod;
-  --color2: orangered;
-  --color3: mediumblue;
-  --color4: purple;
-}
-
-.x-sign2 {
-  color: pink;
-  --color1: pink;
-  --color2: orangered;
-  --color3: red;
-  --color4: magenta;
-}
-
-.x-sign3 {
-  color: lightyellow;
-  --color1: yellow;
-  --color2: lime;
-  --color3: green;
-  --color4: mediumblue;
-}
-
-.x-sign5 {
-  color: #ccf0f0;
-  --color1: azure;
-  --color2: aqua;
-  --color3: dodgerblue;
-  --color4: blue;
-}
-
-.x-sign6 {
-  color: tomato;
-  --color1: orangered;
-  --color2: firebrick;
-  --color3: maroon;
-  --color4: darkred;
-  font-family: Yellowtail;
-}
-
-.x-sign7 {
-  color: lightyellow;
-  --color1: yellow;
-  --color2: orange;
-  --color3: brown;
-  --color4: purple;
-}
-
-.x-sign9 {
-  color: lightyellow;
-  --color1: yellow;
-  --color2: gold;
-  --color3: orange;
-  --color4: darkred;
 }
 
 /* cover section */
@@ -1049,7 +965,6 @@ a.anchor {
 
 /* contact form section */
 .contact {
-  /* temporary */
   padding-bottom: 160px;
 }
 
@@ -1172,6 +1087,84 @@ textarea::placeholder {
   font-size: 24px;
   text-align: center;
   font-family: "Bad Script", cursive;
+}
+
+/* 補足 */
+.input-f,
+.textarea-f {
+  border-color: lightyellow;
+}
+
+.input-f.gas.ar {
+  border-color: pink;
+}
+
+/* neon colors */
+.x-sign {
+  --interval: 1s;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+          animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.x-sign1 {
+  color: yellow;
+  --color1: goldenrod;
+  --color2: orangered;
+  --color3: mediumblue;
+  --color4: purple;
+}
+
+.x-sign2 {
+  color: pink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+}
+
+.x-sign3 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: mediumblue;
+}
+
+.x-sign5 {
+  color: #ccf0f0;
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+}
+
+.x-sign6 {
+  color: tomato;
+  --color1: orangered;
+  --color2: firebrick;
+  --color3: maroon;
+  --color4: darkred;
+  font-family: Yellowtail;
+}
+
+.x-sign7 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: orange;
+  --color3: brown;
+  --color4: purple;
+}
+
+.x-sign9 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  --color4: darkred;
 }
 
 @media screen and (min-width: 600px) {

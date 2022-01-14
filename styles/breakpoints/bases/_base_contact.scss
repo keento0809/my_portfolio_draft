@@ -1,7 +1,5 @@
 /* contact form section */
 .contact {
-  /* temporary */
-  //   border: $borderBase;
   padding-bottom: 160px;
 
   &__wrapper {
@@ -56,7 +54,6 @@ textarea::placeholder {
   position: absolute;
   top: 0.2em;
   left: 1em;
-  // bottom: -0.5em;
   padding-bottom: 0.1em;
 }
 
@@ -78,4 +75,14 @@ textarea::placeholder {
     text-align: center;
     font-family: $neonFontFamily;
   }
+}
+
+/* 補足 */
+.input-f,
+.textarea-f {
+  border-color: $cLightYellow;
+}
+
+.input-f.gas.ar {
+  border-color: $cPink;
 }
