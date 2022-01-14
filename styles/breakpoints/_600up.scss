@@ -5,19 +5,12 @@ body {
   height: 100%;
 }
 
-.ml-header {
-  &__wrapper {
-    padding: $padding600up;
-    max-width: $maxWidthBase600up;
-  }
+.common-wrapper {
+  padding: $padding600up;
+  max-width: $maxWidthBase600up;
 }
 
 .ml-main {
-  &__wrapper {
-    padding: $padding600up;
-    max-width: $maxWidthBase600up;
-  }
-
   &__title {
     padding-bottom: 70px;
 
@@ -37,11 +30,6 @@ body {
 }
 
 .aboutMe {
-  &__wrapper {
-    padding: $padding600up;
-    max-width: $maxWidthBase600up;
-  }
-
   &__title {
     & h1 {
       font-size: 3em;
@@ -70,8 +58,6 @@ body {
 
     & .skill-list {
       padding: 30px;
-      //   width: 80%;
-      //   margin: 0 auto;
     }
   }
 }
@@ -87,16 +73,10 @@ body {
   & h2 {
     font-size: 1.7em;
     max-width: 270px;
-    // margin-right: 20px;
   }
 }
 
 .myWork {
-  &__wrapper {
-    padding: $padding600up;
-    max-width: $maxWidthBase600up;
-  }
-
   &__title {
     & h1 {
       font-size: 3em;
@@ -107,16 +87,6 @@ body {
 .work {
   &__links {
     width: 50%;
-  }
-
-  &__description {
-  }
-}
-
-.contact {
-  &__wrapper {
-    padding: $padding600up;
-    max-width: $maxWidthBase600up;
   }
 }
 
