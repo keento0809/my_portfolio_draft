@@ -114,6 +114,11 @@ a {
   height: 100%;
 }
 
+.common-title-h1 {
+  font-size: 1.5em;
+}
+
+/* cover section */
 .cover {
   /* temporary */
   display: none;
@@ -510,7 +515,6 @@ a {
 }
 
 .ml-main__title > h1 {
-  font-size: 1.5em;
   font-family: "Exo 2", serif;
   color: #dee6ff;
   padding-bottom: 40px;
@@ -757,11 +761,6 @@ a {
   width: 200px;
   height: 200px;
   border-radius: 12px;
-}
-
-.title-sub h2 {
-  font-family: "Bad Script", cursive;
-  max-width: 250px;
 }
 
 /* myWork section */
@@ -1103,14 +1102,14 @@ textarea::placeholder {
   border-color: pink;
 }
 
-/* target section */
+/* anchor */
 a.anchor {
   display: block;
   padding-top: 70px;
   margin-top: -70px;
 }
 
-/* test */
+/* neon colors */
 .x-sign {
   --interval: 1s;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
@@ -1186,6 +1185,12 @@ a.anchor {
     padding: 0 30px;
     max-width: 600px;
   }
+  .common-title-h1 {
+    font-size: 3em;
+  }
+  .common-h2 {
+    font-size: 2em;
+  }
   .ml-main__title {
     padding-bottom: 70px;
   }
@@ -1199,17 +1204,8 @@ a.anchor {
   .swipe {
     padding-bottom: 70px;
   }
-  .aboutMe__title h1 {
-    font-size: 3em;
-  }
-  .aboutMe__discription h2 {
-    font-size: 2.5em;
-  }
   .aboutMe__discription p {
     font-size: 1.5em;
-  }
-  .aboutMe__skills h2 {
-    font-size: 2em;
   }
   .aboutMe__skills h3 {
     font-size: 1.5em;
@@ -1227,18 +1223,8 @@ a.anchor {
     width: 250px;
     height: 250px;
   }
-  .title-sub h2 {
-    font-size: 1.7em;
-    max-width: 270px;
-  }
-  .myWork__title h1 {
-    font-size: 3em;
-  }
   .work__links {
     width: 50%;
-  }
-  .ml-footer__wrapper {
-    max-width: 600px;
   }
 }
 
@@ -1256,6 +1242,16 @@ a.anchor {
   label {
     font-size: 2em;
   }
+  .common-wrapper {
+    padding: 0 35px;
+    max-width: 900px;
+  }
+  .common-title-h1 {
+    font-size: 4em;
+  }
+  .common-h2 {
+    font-size: 3em;
+  }
   .cover-slide__contents .contents-list > li {
     font-size: 2.5em;
   }
@@ -1264,8 +1260,6 @@ a.anchor {
   }
   .ml-header__wrapper {
     margin-top: 0;
-    max-width: 900px;
-    padding: 0 33px;
   }
   .ml-header__brand-logo > a {
     padding: 4px 9px;
@@ -1276,22 +1270,6 @@ a.anchor {
     width: 45px;
     height: 5px;
     margin-bottom: 6px;
-  }
-  .ml-main__wrapper {
-    padding: 0 35px;
-    max-width: 900px;
-  }
-  .ml-main__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .ml-main__title h1 {
     font-size: 3.5em;
@@ -1304,31 +1282,11 @@ a.anchor {
   .slide-text {
     font-size: 1.7em;
   }
-  .aboutMe__wrapper {
-    padding: 0 35px;
-    max-width: 900px;
-  }
   .aboutMe__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding-bottom: 60px;
-  }
-  .aboutMe__title h1 {
-    font-size: 4em;
   }
   .aboutMe__discription {
     padding: 20px 0 60px;
-  }
-  .aboutMe__discription h2 {
-    font-size: 3em;
   }
   .aboutMe__discription p {
     font-size: 2em;
@@ -1345,9 +1303,6 @@ a.anchor {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 80px;
-  }
-  .aboutMe__skills h2 {
-    font-size: 3em;
   }
   .aboutMe__skills h3 {
     font-size: 2.5em;
@@ -1381,13 +1336,6 @@ a.anchor {
   .myWork {
     height: auto;
   }
-  .myWork__wrapper {
-    padding: 0 35px;
-    max-width: 900px;
-  }
-  .myWork__title h1 {
-    font-size: 4em;
-  }
   .myWork__contents .work {
     -ms-flex-preferred-size: 430px;
         flex-basis: 430px;
@@ -1408,8 +1356,6 @@ a.anchor {
     font-size: 1.8em;
   }
   .contact__wrapper {
-    padding: 0 35px;
-    max-width: 900px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1464,37 +1410,25 @@ a.anchor {
     padding-left: 0.55em;
   }
   .input-f::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
+  .textarea-f::-webkit-input-placeholder {
     font-size: 24px;
   }
   .input-f:-ms-input-placeholder,
-  textarea:-ms-input-placeholder {
+  .textarea-f:-ms-input-placeholder {
     font-size: 24px;
   }
   .input-f::-ms-input-placeholder,
-  textarea::-ms-input-placeholder {
+  .textarea-f::-ms-input-placeholder {
     font-size: 24px;
   }
   .input-f::placeholder,
-  textarea::placeholder {
+  .textarea-f::placeholder {
     font-size: 24px;
   }
   .submit__btn {
     width: 220px;
     height: 70px;
     font-size: 2em;
-  }
-  .ml-footer {
-    /* test */
-  }
-  .ml-footer__wrapper {
-    padding: 0 35px;
-    max-width: 900px;
-    margin: 10px auto 40px;
-  }
-  .ml-footer__container {
-    width: 90%;
-    margin: 0 auto;
   }
   .social-media-list {
     margin: 10px auto;
@@ -1505,6 +1439,7 @@ a.anchor {
   .fab {
     font-size: 3em;
   }
+  /* anchor */
   a.anchor {
     padding-top: 150px;
     margin-top: -150px;

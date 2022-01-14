@@ -10,6 +10,14 @@ body {
   max-width: $maxWidthBase600up;
 }
 
+.common-title-h1 {
+  font-size: 3em;
+}
+
+.common-h2 {
+  font-size: 2em;
+}
+
 .ml-main {
   &__title {
     padding-bottom: 70px;
@@ -30,27 +38,13 @@ body {
 }
 
 .aboutMe {
-  &__title {
-    & h1 {
-      font-size: 3em;
-    }
-  }
-
   &__discription {
-    & h2 {
-      font-size: 2.5em;
-    }
-
     & p {
       font-size: 1.5em;
     }
   }
 
   &__skills {
-    & h2 {
-      font-size: 2em;
-    }
-
     & h3 {
       font-size: 1.5em;
       padding-bottom: 30px;
@@ -69,29 +63,10 @@ body {
     width: 250px;
     height: 250px;
   }
-
-  & h2 {
-    font-size: 1.7em;
-    max-width: 270px;
-  }
-}
-
-.myWork {
-  &__title {
-    & h1 {
-      font-size: 3em;
-    }
-  }
 }
 
 .work {
   &__links {
     width: 50%;
-  }
-}
-
-.ml-footer {
-  &__wrapper {
-    max-width: $maxWidthBase600up;
   }
 }
