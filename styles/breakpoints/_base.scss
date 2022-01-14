@@ -169,7 +169,6 @@ a {
   height: 10vh;
 
   & .common-wrapper {
-    width: 90%;
     margin: 0 auto;
   }
 
@@ -301,74 +300,6 @@ a {
 }
 
 /* header section */
-#header {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.ml-header {
-  min-height: 55px;
-  transition: all 0.4s ease;
-
-  &.visible2 {
-    background: inherit;
-  }
-
-  &__wrapper {
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__brand-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: inherit;
-
-    & > a {
-      border: $borderBase;
-      border-radius: 8px;
-    }
-  }
-
-  .logoName {
-    display: inline-block;
-    padding: 4px 8px;
-  }
-
-  &__toggle-btn {
-    & .toggle-btn-container {
-      /* reset style for button */
-      background-color: inherit;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      & .bar {
-        display: block;
-        background-color: $cText;
-        width: 28px;
-        height: 3px;
-        margin-bottom: 4px;
-      }
-
-      & .bar:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &__header-nav {
-    display: none;
-  }
-}
 
 /* main section */
 .ml-main {

@@ -1,5 +1,6 @@
 @import "mixin";
 @import "breakpoints/base";
+@import "breakpoints/base_header";
 
 @media screen and (min-width: 600px) {
   @import "breakpoints/600up";

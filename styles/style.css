@@ -146,7 +146,6 @@ a {
 }
 
 .cover__header .common-wrapper {
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -385,95 +384,6 @@ a {
 }
 
 /* header section */
-#header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.ml-header {
-  min-height: 55px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.ml-header.visible2 {
-  background: inherit;
-}
-
-.ml-header__wrapper {
-  width: 100%;
-  margin: 0 auto;
-  padding: 15px 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ml-header__brand-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: inherit;
-}
-
-.ml-header__brand-logo > a {
-  border: 2px solid #fff;
-  border-radius: 8px;
-}
-
-.ml-header .logoName {
-  display: inline-block;
-  padding: 4px 8px;
-}
-
-.ml-header__toggle-btn .toggle-btn-container {
-  /* reset style for button */
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.ml-header__toggle-btn .toggle-btn-container .bar {
-  display: block;
-  background-color: #fff;
-  width: 28px;
-  height: 3px;
-  margin-bottom: 4px;
-}
-
-.ml-header__toggle-btn .toggle-btn-container .bar:last-child {
-  margin-bottom: 0;
-}
-
-.ml-header__header-nav {
-  display: none;
-}
-
 /* main section */
 .ml-main {
   height: 95vh;
@@ -1167,6 +1077,96 @@ a.anchor {
   --color2: gold;
   --color3: orange;
   --color4: darkred;
+}
+
+/* header section */
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.ml-header {
+  min-height: 55px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.ml-header.visible2 {
+  background: inherit;
+}
+
+.ml-header__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ml-header__brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: inherit;
+}
+
+.ml-header__brand-logo > a {
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+.ml-header .logoName {
+  display: inline-block;
+  padding: 4px 8px;
+}
+
+.ml-header .toggle-btn-container {
+  /* reset style for button */
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ml-header .toggle-btn-container .bar {
+  display: block;
+  background-color: #fff;
+  width: 28px;
+  height: 3px;
+  margin-bottom: 4px;
+}
+
+.ml-header .toggle-btn-container .bar:last-child {
+  margin-bottom: 0;
+}
+
+.ml-header__header-nav {
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
