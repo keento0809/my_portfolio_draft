@@ -2,7 +2,6 @@
 .ml-main {
   height: 95vh;
   margin-bottom: 90px;
-  // height: auto;
 
   &__wrapper {
     width: 100%;
@@ -18,17 +17,16 @@
   }
 
   &__title {
-    // flex-grow: 0.1;
     padding-bottom: 50px;
 
     & > h1 {
-      // font-size: 1.5em;
+      font-size: 1.5em;
       font-family: $baseFontFamily;
       color: $ch2;
       padding-bottom: 40px;
 
       & span {
-        font-size: 2.5em;
+        font-size: $h1FontSize;
         font-family: $neonFontFamily;
         display: inline-block;
       }
@@ -36,11 +34,9 @@
 
     & > h2 {
       color: $ch2;
-      font-size: 1.8em;
       font-family: $baseFontFamily;
 
       & span {
-        // font-family: $neonFontFamily;
         font-family: $anotherNeonFontFamily;
       }
     }
@@ -51,8 +47,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // text-align: center;
     display: none;
+
     & p {
       font-family: $baseFontFamily;
     }
@@ -77,10 +73,6 @@
 .swipe {
   padding-bottom: 50px;
 
-  &__btn.link-to-aboutMe {
-    display: none;
-  }
-
   & .button-background2 {
     padding: 8px 40px;
     border-radius: $borderRadiusBase;
@@ -98,10 +90,8 @@
   & .social-media-list {
     width: 50%;
     margin: 0 auto;
-    // color: $ch2;
     color: black;
     display: flex;
     justify-content: space-between;
-    // background: yellow;
   }
 }

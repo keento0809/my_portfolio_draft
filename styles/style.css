@@ -80,6 +80,12 @@ button {
   padding: 0;
 }
 
+input,
+textarea {
+  padding: 0;
+  border: 0;
+}
+
 label {
   font-family: "Exo 2", serif;
   color: #dee6ff;
@@ -91,14 +97,8 @@ ul {
   list-style: none;
 }
 
-input,
-textarea {
-  padding: 0;
-  border: 0;
-}
-
-h1 {
-  font-size: 2.5em;
+h2 {
+  font-size: 1.5em;
 }
 
 p {
@@ -120,7 +120,7 @@ a {
 }
 
 .common-title-h1 {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 /* BackTop button section */
@@ -602,6 +602,7 @@ a.anchor {
 }
 
 .ml-main__title > h1 {
+  font-size: 1.5em;
   font-family: "Exo 2", serif;
   color: #dee6ff;
   padding-bottom: 40px;
@@ -615,7 +616,6 @@ a.anchor {
 
 .ml-main__title > h2 {
   color: #dee6ff;
-  font-size: 1.8em;
   font-family: "Exo 2", serif;
 }
 
@@ -661,10 +661,6 @@ a.anchor {
 
 .swipe {
   padding-bottom: 50px;
-}
-
-.swipe__btn.link-to-aboutMe {
-  display: none;
 }
 
 .swipe .button-background2 {

@@ -16,10 +16,12 @@ $slideBallColor: $cText;
 $slideBallIconColor: $cBase;
 $slideTextColor: $cGrey;
 $h1FontSize: 2.5em;
+$h2FontSize: 1.5em;
 $paddingBase: 0 15px;
 $neonFontFamily: "Bad Script", cursive;
 $anotherNeonFontFamily: Sriracha;
 $baseFontFamily: "Exo 2", serif;
+$fontAwesomeFree: "Font Awesome 5 Free";
 $maxWidthBase: 410px;
 $borderBase: 2px solid $cText;
 $borderRadiusBase: 12px;
@@ -104,6 +106,12 @@ button {
   padding: 0;
 }
 
+input,
+textarea {
+  padding: 0;
+  border: 0;
+}
+
 label {
   font-family: $baseFontFamily;
   color: $ch2;
@@ -115,14 +123,8 @@ ul {
   list-style: none;
 }
 
-input,
-textarea {
-  padding: 0;
-  border: 0;
-}
-
-h1 {
-  font-size: $h1FontSize;
+h2 {
+  font-size: $h2FontSize;
 }
 
 p {
@@ -144,7 +146,7 @@ a {
 }
 
 .common-title-h1 {
-  font-size: 1.5em;
+  font-size: $h1FontSize;
 }
 
 /* BackTop button section */
@@ -176,7 +178,7 @@ a {
     text-align: center;
 
     &::before {
-      font-family: "Font Awesome 5 Free";
+      font-family: $fontAwesomeFree;
       font-weight: 900;
       content: "\f102";
       font-size: 30px;
