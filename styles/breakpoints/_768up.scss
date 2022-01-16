@@ -88,9 +88,6 @@ label {
   }
 
   &__skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-bottom: 80px;
 
     & h3 {
@@ -103,12 +100,6 @@ label {
 
     & .skillSet {
       width: 95%;
-
-      & ul {
-        & li {
-          font-size: 1.8em;
-        }
-      }
     }
   }
 
@@ -118,6 +109,10 @@ label {
       height: 140px;
     }
   }
+}
+
+.skillSet > ul > li {
+  font-size: 1.8em;
 }
 
 .title-sub {
@@ -134,30 +129,22 @@ label {
   }
 }
 
-.myWork {
-  height: auto;
+.work {
+  flex-basis: 430px;
+  margin-bottom: 80px;
 
-  &__contents {
-    & .work {
-      flex-basis: 430px;
-      margin-bottom: 80px;
-
-      &__description {
-        flex-basis: 400px;
-        padding-bottom: $paddingBottom768up;
-      }
-
-      &__links {
-        padding-bottom: $paddingBottom768up;
-
-        & .w-linkList {
-          & > li > a > .fa-link {
-            font-size: 3em;
-          }
-        }
-      }
-    }
+  &__description {
+    flex-basis: 400px;
+    padding-bottom: $paddingBottom768up;
   }
+
+  &__links {
+    padding-bottom: $paddingBottom768up;
+  }
+}
+
+.w-linkList > li > a > .fa-link {
+  font-size: 3em;
 }
 
 .learnMore {

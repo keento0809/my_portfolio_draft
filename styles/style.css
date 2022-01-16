@@ -1272,16 +1272,6 @@ textarea::placeholder {
     font-size: 2em;
   }
   .aboutMe__skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding-bottom: 80px;
   }
   .aboutMe__skills h3 {
@@ -1293,12 +1283,12 @@ textarea::placeholder {
   .aboutMe__skills .skillSet {
     width: 95%;
   }
-  .aboutMe__skills .skillSet ul li {
-    font-size: 1.8em;
-  }
   .aboutMe__toLink .circle {
     width: 140px;
     height: 140px;
+  }
+  .skillSet > ul > li {
+    font-size: 1.8em;
   }
   .title-sub {
     -webkit-box-pack: center;
@@ -1313,23 +1303,20 @@ textarea::placeholder {
     font-size: 2em;
     max-width: 305px;
   }
-  .myWork {
-    height: auto;
-  }
-  .myWork__contents .work {
+  .work {
     -ms-flex-preferred-size: 430px;
         flex-basis: 430px;
     margin-bottom: 80px;
   }
-  .myWork__contents .work__description {
+  .work__description {
     -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
     padding-bottom: 60px;
   }
-  .myWork__contents .work__links {
+  .work__links {
     padding-bottom: 60px;
   }
-  .myWork__contents .work__links .w-linkList > li > a > .fa-link {
+  .w-linkList > li > a > .fa-link {
     font-size: 3em;
   }
   .learnMore {
