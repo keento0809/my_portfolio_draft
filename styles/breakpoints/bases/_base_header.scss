@@ -8,6 +8,9 @@
 .ml-header {
   min-height: 55px;
   transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &.visible2 {
     background: inherit;
@@ -16,7 +19,7 @@
   &__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 15px 15px 0;
+    padding: 5px 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
