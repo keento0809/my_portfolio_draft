@@ -1347,8 +1347,8 @@ textarea::placeholder {
     height: 70px;
     font-size: 2em;
   }
-  .social-media-list {
-    margin: 10px auto;
+  .social-media-list.main-social-list {
+    display: none;
   }
   /* anchor */
   a.anchor {
@@ -1361,9 +1361,6 @@ textarea::placeholder {
   body.lightMode {
     background: #f7f6f2;
     color: #231e1b;
-  }
-  h1 {
-    font-size: 5em;
   }
   h2 {
     font-size: 3em;
@@ -1464,8 +1461,14 @@ textarea::placeholder {
   .nav-forth::after {
     content: "RESUME";
   }
-  .ml-main__title > h1 {
-    font-size: 5em;
+  .ml-main__title {
+    padding-bottom: 120px;
+  }
+  .ml-main__title h1 {
+    font-size: 4.6em;
+  }
+  .ml-main__title h2 {
+    font-size: 3.5em;
   }
   .title-sub img {
     width: 350px;
