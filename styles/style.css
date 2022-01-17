@@ -1176,6 +1176,12 @@ textarea::placeholder {
   body {
     height: 100%;
   }
+  p {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
   .common-wrapper {
     padding: 0 30px;
     max-width: 600px;
@@ -1194,25 +1200,17 @@ textarea::placeholder {
   }
   .ml-main__title h2 {
     width: 70%;
+    font-size: 2em;
     margin-right: auto;
   }
   .swipe {
     padding-bottom: 70px;
   }
-  .aboutMe__discription p {
-    font-size: 1.5em;
-  }
   .aboutMe__skills h3 {
-    font-size: 1.5em;
     padding-bottom: 30px;
   }
   .aboutMe__skills .skill-list {
     padding: 30px;
-  }
-  .title-sub {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
   }
   .title-sub img {
     width: 250px;
@@ -1231,6 +1229,9 @@ textarea::placeholder {
   label {
     font-size: 2em;
   }
+  h3 {
+    font-size: 2.5em;
+  }
   .common-wrapper {
     padding: 0 35px;
     max-width: 900px;
@@ -1247,15 +1248,12 @@ textarea::placeholder {
   .ml-header {
     min-height: 90px;
   }
-  .ml-header__wrapper {
-    margin-top: 0;
-  }
   .ml-header__brand-logo > a {
     padding: 4px 9px;
     font-size: 1.5em;
     border-radius: 12px;
   }
-  .ml-header__toggle-btn .toggle-btn-container > .bar {
+  .ml-header .toggle-btn-container .bar {
     width: 45px;
     height: 5px;
     margin-bottom: 6px;
@@ -1268,8 +1266,10 @@ textarea::placeholder {
     width: 85%;
     font-size: 3em;
   }
-  .slide-text {
-    font-size: 1.7em;
+  .slide-text,
+  .learnMore,
+  .skillSet > ul > li {
+    font-size: 1.8em;
   }
   .aboutMe__title {
     padding-bottom: 60px;
@@ -1277,14 +1277,8 @@ textarea::placeholder {
   .aboutMe__discription {
     padding: 20px 0 60px;
   }
-  .aboutMe__discription p {
-    font-size: 2em;
-  }
   .aboutMe__skills {
     padding-bottom: 80px;
-  }
-  .aboutMe__skills h3 {
-    font-size: 2.5em;
   }
   .aboutMe__skills .skill-list {
     padding: 40px;
@@ -1295,9 +1289,6 @@ textarea::placeholder {
   .aboutMe__toLink .circle {
     width: 140px;
     height: 140px;
-  }
-  .skillSet > ul > li {
-    font-size: 1.8em;
   }
   .title-sub {
     -webkit-box-pack: center;
@@ -1325,60 +1316,10 @@ textarea::placeholder {
   .work__links {
     padding-bottom: 60px;
   }
-  .w-linkList > li > a > .fa-link {
+  .w-linkList .fa-link,
+  .fab,
+  .cover__header .fa-times {
     font-size: 3em;
-  }
-  .learnMore {
-    font-size: 1.8em;
-  }
-  .contact__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .contact__form {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .contact__form .contactMe {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
-  }
-  .contactMe__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .contactMe__list > li:nth-child(1) {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
   }
   .input-f,
   .textarea-f {
@@ -1408,12 +1349,6 @@ textarea::placeholder {
   }
   .social-media-list {
     margin: 10px auto;
-  }
-  .cover__header .fa-times {
-    font-size: 3em;
-  }
-  .fab {
-    font-size: 3em;
   }
   /* anchor */
   a.anchor {

@@ -11,6 +11,10 @@ label {
   font-size: 2em;
 }
 
+h3 {
+  font-size: 2.5em;
+}
+
 .common-wrapper {
   padding: $padding768up;
   max-width: $maxWidth768up;
@@ -33,10 +37,6 @@ label {
 .ml-header {
   min-height: 90px;
 
-  &__wrapper {
-    margin-top: 0;
-  }
-
   &__brand-logo {
     & > a {
       padding: 4px 9px;
@@ -45,13 +45,11 @@ label {
     }
   }
 
-  &__toggle-btn {
-    & .toggle-btn-container {
-      & > .bar {
-        width: 45px;
-        height: 5px;
-        margin-bottom: 6px;
-      }
+  & .toggle-btn-container {
+    & .bar {
+      width: 45px;
+      height: 5px;
+      margin-bottom: 6px;
     }
   }
 }
@@ -70,8 +68,10 @@ label {
   }
 }
 
-.slide-text {
-  font-size: 1.7em;
+.slide-text,
+.learnMore,
+.skillSet > ul > li {
+  font-size: 1.8em;
 }
 
 .aboutMe {
@@ -81,18 +81,10 @@ label {
 
   &__discription {
     padding: 20px 0 $paddingBottom768up;
-
-    & p {
-      font-size: 2em;
-    }
   }
 
   &__skills {
     padding-bottom: 80px;
-
-    & h3 {
-      font-size: 2.5em;
-    }
 
     & .skill-list {
       padding: 40px;
@@ -109,10 +101,6 @@ label {
       height: 140px;
     }
   }
-}
-
-.skillSet > ul > li {
-  font-size: 1.8em;
 }
 
 .title-sub {
@@ -143,41 +131,10 @@ label {
   }
 }
 
-.w-linkList > li > a > .fa-link {
+.w-linkList .fa-link,
+.fab,
+.cover__header .fa-times {
   font-size: 3em;
-}
-
-.learnMore {
-  font-size: 1.8em;
-}
-
-.contact {
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  &__form {
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    & .contactMe {
-      flex-grow: 2;
-    }
-  }
-}
-
-.contactMe__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  & > li:nth-child(1) {
-    flex-grow: 2;
-  }
 }
 
 .input-f,
@@ -199,16 +156,6 @@ label {
 
 .social-media-list {
   margin: 10px auto;
-}
-
-.cover__header {
-  & .fa-times {
-    font-size: 3em;
-  }
-}
-
-.fab {
-  font-size: 3em;
 }
 
 /* anchor */

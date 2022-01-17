@@ -5,6 +5,14 @@ body {
   height: 100%;
 }
 
+p {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
 .common-wrapper {
   padding: $padding600up;
   max-width: $maxWidthBase600up;
@@ -28,6 +36,7 @@ body {
 
     & h2 {
       width: 70%;
+      font-size: 2em;
       margin-right: auto;
     }
   }
@@ -38,15 +47,8 @@ body {
 }
 
 .aboutMe {
-  &__discription {
-    & p {
-      font-size: 1.5em;
-    }
-  }
-
   &__skills {
     & h3 {
-      font-size: 1.5em;
       padding-bottom: 30px;
     }
 
@@ -57,8 +59,6 @@ body {
 }
 
 .title-sub {
-  flex-grow: 2;
-
   & img {
     width: 250px;
     height: 250px;
