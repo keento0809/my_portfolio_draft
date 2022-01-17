@@ -1372,6 +1372,10 @@ textarea::placeholder {
   label {
     font-size: 2em;
   }
+  .common-wrapper {
+    padding: 0 40px;
+    max-width: 1200px;
+  }
   .cover {
     display: none;
     visibility: hidden;
@@ -1381,34 +1385,21 @@ textarea::placeholder {
   }
   .ml-header__wrapper {
     height: 100%;
-    padding: 0 40px;
     margin: 30px auto;
-    max-width: 1200px;
   }
   .ml-header__toggle-btn {
     display: none;
-    visibility: hidden;
   }
   .ml-header__brand-logo > a {
     font-size: 1.7em;
   }
   .ml-header__header-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    visibility: visible;
+    display: block;
     max-width: 550px;
     width: 100%;
     height: 100%;
-    /* temporary */
   }
-  .ml-header__header-nav .nav-list {
+  .nav-list {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1420,7 +1411,7 @@ textarea::placeholder {
         -ms-flex-align: center;
             align-items: center;
   }
-  .ml-header__header-nav .nav-list > li > a {
+  .nav-list > li > a {
     display: block;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1432,7 +1423,7 @@ textarea::placeholder {
     text-align: center;
     font-size: 1.15em;
   }
-  .ml-header__header-nav .nav-list > li > a > .fas {
+  .nav-list > li > a > .fas {
     font-size: 2em;
   }
   .ml-header.lightMode {
@@ -1473,16 +1464,8 @@ textarea::placeholder {
   .nav-forth::after {
     content: "RESUME";
   }
-  .ml-main__wrapper {
-    padding: 0 40px;
-    max-width: 1200px;
-  }
-  .ml-main__title h1 {
+  .ml-main__title > h1 {
     font-size: 5em;
-  }
-  .aboutMe__wrapper {
-    padding: 0 40px;
-    max-width: 1200px;
   }
   .title-sub img {
     width: 350px;
@@ -1494,25 +1477,10 @@ textarea::placeholder {
   .myWork__wrapper {
     width: 90%;
     margin: 0 auto;
-    padding: 0 40px;
-    max-width: 1200px;
   }
   .contact__wrapper {
     width: 90%;
     margin: 0 auto;
-    padding: 0 40px;
-    max-width: 1200px;
-  }
-  .ml-footer__wrapper {
-    padding: 0 40px;
-    max-width: 1200px;
-  }
-  .ml-footer__container {
-    width: 80%;
-  }
-  .ml-footer.lightMode {
-    background: #f7f6f2;
-    color: #231e1b;
   }
   .social-media-list {
     width: 75%;

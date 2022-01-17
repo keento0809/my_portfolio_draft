@@ -7,7 +7,6 @@ $cLightMode: #f7f6f2;
 body.lightMode {
   background: $cLightMode;
   color: $cBase;
-  // border: 2px solid $cBase;
 }
 
 h1 {
@@ -23,6 +22,11 @@ label {
   font-size: 2em;
 }
 
+.common-wrapper {
+  padding: $padding1024up;
+  max-width: $maxWidth1024up;
+}
+
 .cover {
   display: none;
   visibility: hidden;
@@ -33,50 +37,40 @@ label {
 
   &__wrapper {
     height: 100%;
-    padding: $padding1024up;
     margin: 30px auto;
-    max-width: $maxWidth1024up;
   }
 
   &__toggle-btn {
     display: none;
-    visibility: hidden;
   }
 
-  &__brand-logo {
-    & > a {
-      font-size: 1.7em;
-    }
+  &__brand-logo > a {
+    font-size: 1.7em;
   }
 
   &__header-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: visible;
+    display: block;
     max-width: 550px;
     width: 100%;
     height: 100%;
-    /* temporary */
-    // border: $borderBase;
+  }
+}
 
-    & .nav-list {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-      & > li > a {
-        display: block;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 1.15em;
+  & > li > a {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.15em;
 
-        & > .fas {
-          font-size: 2em;
-        }
-      }
+    & > .fas {
+      font-size: 2em;
     }
   }
 }
@@ -131,22 +125,8 @@ label {
 }
 
 .ml-main {
-  &__wrapper {
-    padding: $padding1024up;
-    max-width: $maxWidth1024up;
-  }
-
-  &__title {
-    & h1 {
-      font-size: 5em;
-    }
-  }
-}
-
-.aboutMe {
-  &__wrapper {
-    padding: $padding1024up;
-    max-width: $maxWidth1024up;
+  &__title > h1 {
+    font-size: 5em;
   }
 }
 
@@ -163,11 +143,8 @@ label {
 
 .myWork {
   &__wrapper {
-    // test
     width: $widthPercent1024up;
     margin: $marginBase1024up;
-    padding: $padding1024up;
-    max-width: $maxWidth1024up;
   }
 }
 
@@ -175,26 +152,7 @@ label {
   &__wrapper {
     width: $widthPercent1024up;
     margin: $marginBase1024up;
-    padding: $padding1024up;
-    max-width: $maxWidth1024up;
   }
-}
-
-.ml-footer {
-  &__wrapper {
-    padding: $padding1024up;
-    max-width: $maxWidth1024up;
-  }
-
-  &__container {
-    width: 80%;
-    // margin: 0 auto;
-  }
-}
-
-.ml-footer.lightMode {
-  background: $cLightMode;
-  color: $cBase;
 }
 
 .social-media-list {
