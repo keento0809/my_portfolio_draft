@@ -12,10 +12,10 @@
         "breakpoints/bases/_base_myWork.scss",
         "breakpoints/bases/_base_contact.scss",
         "breakpoints/bases/_base_neonFontColors.scss",
-        "breakpoints/_600up.scss",
-        "breakpoints/_768up.scss",
-        "breakpoints/_1024up.scss",
-        "breakpoints/_1440up.scss"
+        "breakpoints/mediaQueries/_600up.scss",
+        "breakpoints/mediaQueries/_768up.scss",
+        "breakpoints/mediaQueries/_1024up.scss",
+        "breakpoints/mediaQueries/_1440up.scss"
     ],
     "names": [],
     "file": "style.css"

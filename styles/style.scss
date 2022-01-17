@@ -9,17 +9,17 @@
 @import "breakpoints/bases/base_neonFontColors";
 
 @media screen and (min-width: 600px) {
-  @import "breakpoints/600up";
+  @import "breakpoints/mediaQueries/600up";
 }
 
 @media screen and (min-width: 768px) {
-  @import "breakpoints/768up";
+  @import "breakpoints/mediaQueries/768up";
 }
 
 @media screen and (min-width: 1023px) {
-  @import "breakpoints/1024up";
+  @import "breakpoints/mediaQueries/1024up";
 }
 
 @media screen and (min-width: 1440px) {
-  @import "breakpoints/1440up";
+  @import "breakpoints/mediaQueries/1440up";
 }
