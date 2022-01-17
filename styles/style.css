@@ -1488,29 +1488,12 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1440px) {
-  .ml-header__wrapper {
-    height: 100%;
+  .common-wrapper {
     padding: 0 50px;
     max-width: 1500px;
   }
   .ml-header__header-nav {
     max-width: 650px;
-  }
-  .ml-main__wrapper {
-    padding: 0 50px;
-    max-width: 1500px;
-  }
-  .aboutMe__wrapper {
-    padding: 0 50px;
-    max-width: 1500px;
-  }
-  .myWork__wrapper {
-    padding: 0 50px;
-    max-width: 1500px;
-  }
-  .contact__wrapper {
-    padding: 0 50px;
-    max-width: 1500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
