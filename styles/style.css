@@ -1280,17 +1280,18 @@ body.lightMode {
     margin-bottom: 6px;
   }
   .ml-main__title h1 {
-    font-size: 3.5em;
+    width: 70%;
+    font-size: 3em;
     padding-bottom: 0;
   }
   .ml-main__title h2 {
-    width: 85%;
-    font-size: 3em;
+    width: 60%;
+    font-size: 2em;
   }
   .slide-text,
   .learnMore,
   .skillSet > ul > li {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   .aboutMe__title {
     padding-bottom: 60px;
@@ -1384,7 +1385,7 @@ body.lightMode {
   }
   .common-wrapper {
     padding: 0 40px;
-    max-width: 1200px;
+    max-width: 1100px;
   }
   .cover {
     display: none;
@@ -1471,13 +1472,17 @@ body.lightMode {
     content: "RESUME";
   }
   .ml-main__title {
+    width: 100%;
     padding-bottom: 120px;
+    padding-top: 10px;
   }
   .ml-main__title h1 {
-    font-size: 4.6em;
+    width: 60%;
+    font-size: 3.5em;
   }
   .ml-main__title h2 {
-    font-size: 3.5em;
+    width: 50%;
+    font-size: 2.5em;
   }
   .title-sub img {
     width: 350px;
@@ -1506,6 +1511,14 @@ body.lightMode {
   }
   .ml-header__header-nav {
     max-width: 650px;
+  }
+  .ml-main__title h1 {
+    font-size: 2.8em;
+    padding-bottom: 0;
+  }
+  .ml-main__title h2 {
+    width: 40%;
+    font-size: 2.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */

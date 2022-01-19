@@ -57,13 +57,14 @@ h3 {
 .ml-main {
   &__title {
     & h1 {
-      font-size: 3.5em;
+      width: 70%;
+      font-size: 3em;
       padding-bottom: 0;
     }
 
     & h2 {
-      width: 85%;
-      font-size: 3em;
+      width: 60%;
+      font-size: 2em;
     }
   }
 }
@@ -71,7 +72,7 @@ h3 {
 .slide-text,
 .learnMore,
 .skillSet > ul > li {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 .aboutMe {

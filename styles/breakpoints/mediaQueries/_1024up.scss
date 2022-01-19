@@ -1,7 +1,7 @@
 $padding1024up: 0 40px;
 $widthPercent1024up: 90%;
 $marginBase1024up: 0 auto;
-$maxWidth1024up: 1200px;
+$maxWidth1024up: 1100px;
 $cLightMode: #eee1ac;
 
 h2 {
@@ -112,14 +112,18 @@ label {
 
 .ml-main {
   &__title {
+    width: 100%;
     padding-bottom: 120px;
+    padding-top: 10px;
 
     & h1 {
-      font-size: 4.6em;
+      width: 60%;
+      font-size: 3.5em;
     }
 
     & h2 {
-      font-size: 3.5em;
+      width: 50%;
+      font-size: 2.5em;
     }
   }
 }
