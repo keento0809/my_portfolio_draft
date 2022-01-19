@@ -44,6 +44,12 @@
   position: relative;
   padding-left: 0.6em;
   border-radius: 8px;
+  border-color: $cLightYellow;
+}
+
+/* 補足 */
+.input-f.gas.ar {
+  border-color: $cPink;
 }
 
 .input-f::placeholder,
@@ -77,12 +83,14 @@ textarea::placeholder {
   }
 }
 
-/* 補足 */
-.input-f,
-.textarea-f {
-  border-color: $cLightYellow;
-}
+.social-media {
+  width: 100%;
 
-.input-f.gas.ar {
-  border-color: $cPink;
+  & .social-media-list {
+    width: 50%;
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+  }
 }

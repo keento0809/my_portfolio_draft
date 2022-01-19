@@ -216,7 +216,6 @@ a {
 a.anchor {
   display: block;
   padding-top: 70px;
-  margin-top: -70px;
 }
 
 /* cover section */
@@ -358,7 +357,7 @@ a.anchor {
 }
 
 .cover-slide__contents .social-media-list {
-  width: 60%;
+  width: 55%;
   -webkit-box-flex: 1.2;
       -ms-flex-positive: 1.2;
           flex-grow: 1.2;
@@ -682,10 +681,6 @@ a.anchor {
   text-align: left;
 }
 
-.social-media-list.main-social-list {
-  display: none;
-}
-
 /* about me section */
 .aboutMe {
   height: auto;
@@ -1005,6 +1000,12 @@ a.anchor {
   position: relative;
   padding-left: 0.6em;
   border-radius: 8px;
+  border-color: lightyellow;
+}
+
+/* 補足 */
+.input-f.gas.ar {
+  border-color: pink;
 }
 
 .input-f::-webkit-input-placeholder,
@@ -1082,14 +1083,20 @@ textarea::placeholder {
   font-family: "Bad Script", cursive;
 }
 
-/* 補足 */
-.input-f,
-.textarea-f {
-  border-color: lightyellow;
+.social-media {
+  width: 100%;
 }
 
-.input-f.gas.ar {
-  border-color: pink;
+.social-media .social-media-list {
+  width: 50%;
+  margin: 0 auto;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* neon colors */
@@ -1203,6 +1210,9 @@ textarea::placeholder {
   .title-sub img {
     width: 250px;
     height: 250px;
+  }
+  .myWork {
+    padding-bottom: 90px;
   }
   .work__links {
     width: 50%;
@@ -1338,7 +1348,6 @@ textarea::placeholder {
   /* anchor */
   a.anchor {
     padding-top: 150px;
-    margin-top: -150px;
   }
 }
 
