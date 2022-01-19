@@ -51,8 +51,10 @@ function emergeButton() {
 function changeDarkLight() {
   if (!isDark) {
     globalContainer.classList.add("lightMode");
+    header.classList.add("lightMode");
   } else {
     globalContainer.classList.remove("lightMode");
+    header.classList.remove("lightMode");
   }
   isDark = !isDark;
 }

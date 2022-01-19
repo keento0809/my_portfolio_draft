@@ -16,8 +16,13 @@ const scrollEventDelay = (e) => {
   timer = setTimeout(function () {
     console.log("scroll event happening!");
     if (window.scrollY !== 0) {
-      header.classList.add("opacity-c");
-      header.style.background = "rgba(18, 14, 12,0.8)";
+      if (header.classList.contains("lightMode")) {
+        header.classList.add("header-lightMode");
+        header.style.background = "rgba(238, 225, 172, 0.5)";
+      } else {
+        header.classList.add("opacity-c");
+        header.style.background = "rgba(18, 14, 12,0.8)";
+      }
     } else {
       header.classList.remove("opacity-c");
       header.style.background = "none";
