@@ -84,14 +84,6 @@
   }
 }
 
-.social-media {
-  width: 100%;
-
-  & .social-media-list {
-    width: 50%;
-    margin: 0 auto;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-  }
+.social-media-list.main-social-list {
+  display: none;
 }

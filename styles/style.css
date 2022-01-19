@@ -682,20 +682,8 @@ a.anchor {
   text-align: left;
 }
 
-.social-media {
-  width: 100%;
-}
-
-.social-media .social-media-list {
-  width: 50%;
-  margin: 0 auto;
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.social-media-list.main-social-list {
+  display: none;
 }
 
 /* about me section */
@@ -1346,9 +1334,6 @@ textarea::placeholder {
     width: 220px;
     height: 70px;
     font-size: 2em;
-  }
-  .social-media-list.main-social-list {
-    display: none;
   }
   /* anchor */
   a.anchor {
