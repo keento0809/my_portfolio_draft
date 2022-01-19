@@ -123,6 +123,10 @@ a {
   font-size: 2.5em;
 }
 
+.differentBg {
+  background: #1a0f0a;
+}
+
 /* BackTop button section */
 #backTopBtn {
   /* hide on mobile ver */
@@ -1168,18 +1172,22 @@ textarea::placeholder {
 }
 
 body.lightMode {
-  background: #eee1ac;
+  background: #b50f0f;
   color: #231e1b;
 }
 
 #global-container.lightMode {
-  background: #eee1ac;
+  background: #b50f0f;
   color: #231e1b;
 }
 
 .ml-header.lightMode {
-  background: #eee1ac !important;
-  color: #231e1b !important;
+  background: #b50f0f;
+  color: #231e1b;
+}
+
+.differentBg.lightMode {
+  background: #b50f0f;
 }
 
 @media screen and (min-width: 600px) {

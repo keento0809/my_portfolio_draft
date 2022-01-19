@@ -18,7 +18,7 @@ const scrollEventDelay = (e) => {
     if (window.scrollY !== 0) {
       if (header.classList.contains("lightMode")) {
         header.classList.add("header-lightMode");
-        header.style.background = "rgba(238, 225, 172, 0.5)";
+        header.style.background = "rgba(254, 252, 242, 0.5)";
       } else {
         header.classList.add("opacity-c");
         header.style.background = "rgba(18, 14, 12,0.8)";

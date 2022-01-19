@@ -13,6 +13,11 @@ const pageLinkTriggers = document.querySelectorAll(".btn-trigger");
 const globalContainer = document.querySelector("#global-container");
 // Button switch dark and light mode (desktop ver)
 const darkLight = document.querySelector("#darkLight");
+// differentBg (to switch the background color)
+const differentBgs = document.querySelectorAll(".differentBg");
+// x-sign9
+const xSign9s = document.querySelectorAll(".x-sign9");
+console.log(xSign9s);
 
 // Define variables
 // Javascript event on scroll up or scroll down
@@ -52,9 +57,15 @@ function changeDarkLight() {
   if (!isDark) {
     globalContainer.classList.add("lightMode");
     header.classList.add("lightMode");
+    // header.style.background = "rgba(254, 252, 242, 0.5)";
+    xSign9s.forEach((sign) => sign.classList.add("lightMode"));
+    differentBgs.forEach((div) => div.classList.add("lightMode"));
   } else {
     globalContainer.classList.remove("lightMode");
     header.classList.remove("lightMode");
+    // header.style.background = "rgba(18, 14, 12)";
+    xSign9s.forEach((sign) => sign.classList.remove("lightMode"));
+    differentBgs.forEach((div) => div.classList.remove("lightMode"));
   }
   isDark = !isDark;
 }
