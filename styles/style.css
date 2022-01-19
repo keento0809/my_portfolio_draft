@@ -684,7 +684,7 @@ a.anchor {
 /* about me section */
 .aboutMe {
   height: auto;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .aboutMe__wrapper {
@@ -841,7 +841,7 @@ a.anchor {
 /* myWork section */
 .myWork {
   height: auto;
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .myWork__title {
