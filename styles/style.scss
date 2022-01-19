@@ -7,6 +7,7 @@
 @import "breakpoints/bases/base_myWork";
 @import "breakpoints/bases/base_contact";
 @import "breakpoints/bases/base_neonFontColors";
+@import "breakpoints/bases/base_lightMode";
 
 @media screen and (min-width: 600px) {
   @import "breakpoints/mediaQueries/600up";

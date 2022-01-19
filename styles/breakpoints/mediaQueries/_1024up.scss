@@ -2,12 +2,7 @@ $padding1024up: 0 40px;
 $widthPercent1024up: 90%;
 $marginBase1024up: 0 auto;
 $maxWidth1024up: 1200px;
-$cLightMode: #f7f6f2;
-
-body.lightMode {
-  background: $cLightMode;
-  color: $cBase;
-}
+$cLightMode: #eee1ac;
 
 h2 {
   font-size: 3em;
@@ -69,11 +64,6 @@ label {
       font-size: 2em;
     }
   }
-}
-
-.ml-header.lightMode {
-  background: $cLightMode !important;
-  color: $cBase !important;
 }
 
 .n-common::before {

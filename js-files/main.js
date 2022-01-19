@@ -9,6 +9,8 @@ console.log(body.style.height);
 const btt = document.querySelector("#backTopBtn");
 // page link triggers (links to each sections)
 const pageLinkTriggers = document.querySelectorAll(".btn-trigger");
+// global container
+const globalContainer = document.querySelector("#global-container");
 // Button switch dark and light mode (desktop ver)
 const darkLight = document.querySelector("#darkLight");
 
@@ -46,18 +48,13 @@ function emergeButton() {
 }
 
 // switch dark mode and light mode
-function changeDarkLight(e) {
+function changeDarkLight() {
   if (!isDark) {
-    body.classList.remove("lightMode");
-    header.classList.remove("lightMode");
-    mlFooter.classList.remove("lightMode");
+    globalContainer.classList.add("lightMode");
   } else {
-    body.classList.add("lightMode");
-    header.classList.add("lightMode");
-    mlFooter.classList.add("lightMode");
+    globalContainer.classList.remove("lightMode");
   }
   isDark = !isDark;
-  console.log(isDark);
 }
 
 // Hook up the event

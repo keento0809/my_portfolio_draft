@@ -1,0 +1,16 @@
+$cLightMode: #eee1ac;
+
+body.lightMode {
+  background: $cLightMode;
+  color: $cBase;
+}
+
+#global-container.lightMode {
+  background: $cLightMode;
+  color: $cBase;
+}
+
+.ml-header.lightMode {
+  background: $cLightMode !important;
+  color: $cBase !important;
+}
