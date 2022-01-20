@@ -56,6 +56,8 @@ h3 {
 
 .ml-main {
   &__title {
+    padding-bottom: 90px;
+
     & h1 {
       width: 70%;
       font-size: 3em;
@@ -69,7 +71,10 @@ h3 {
   }
 }
 
-.slide-text,
+.slide-text {
+  font-size: 1.2em;
+}
+
 .learnMore,
 .skillSet > ul > li {
   font-size: 1.5em;
