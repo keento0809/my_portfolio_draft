@@ -12,7 +12,7 @@ const pageLinkTriggers = document.querySelectorAll(".btn-trigger");
 // global container
 const globalContainer = document.querySelector("#global-container");
 // Button switch dark and light mode (desktop ver)
-const darkLight = document.querySelector("#darkLight");
+// const darkLight = document.querySelector("#darkLight");
 // differentBg (to switch the background color)
 const differentBgs = document.querySelectorAll(".differentBg");
 // x-sign9
@@ -81,6 +81,6 @@ pageLinkTriggers.forEach((trigger) =>
   trigger.addEventListener("click", toggleButton)
 );
 
-darkLight.addEventListener("click", changeDarkLight);
+// darkLight.addEventListener("click", changeDarkLight);
 
 AOS.init();
