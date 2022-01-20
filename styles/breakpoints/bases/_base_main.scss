@@ -20,6 +20,7 @@
     padding-bottom: 50px;
 
     & > h1 {
+      width: 82%;
       font-size: 1.5em;
       font-family: $baseFontFamily;
       color: $ch2;
@@ -33,6 +34,7 @@
     }
 
     & > h2 {
+      width: 90%;
       color: $ch2;
       font-family: $baseFontFamily;
 
@@ -78,7 +80,6 @@
     border-radius: $borderRadiusBase;
     border-color: $cLightYellow;
     font-family: $neonFontFamily;
-    font-size: 1.25em;
     text-transform: uppercase;
     text-align: left;
   }

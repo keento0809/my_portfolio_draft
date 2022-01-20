@@ -614,6 +614,7 @@ a.anchor {
 }
 
 .ml-main__title > h1 {
+  width: 82%;
   font-size: 1.5em;
   font-family: "Exo 2", serif;
   color: #dee6ff;
@@ -627,6 +628,7 @@ a.anchor {
 }
 
 .ml-main__title > h2 {
+  width: 90%;
   color: #dee6ff;
   font-family: "Exo 2", serif;
 }
@@ -680,7 +682,6 @@ a.anchor {
   border-radius: 12px;
   border-color: lightyellow;
   font-family: "Bad Script", cursive;
-  font-size: 1.25em;
   text-transform: uppercase;
   text-align: left;
 }
@@ -1214,11 +1215,11 @@ body.lightMode {
     padding-bottom: 70px;
   }
   .ml-main__title h1 {
-    font-size: 2em;
+    width: 50%;
+    padding-bottom: 0;
   }
   .ml-main__title h2 {
-    width: 70%;
-    font-size: 2em;
+    width: 60%;
     margin-right: auto;
   }
   .swipe {
