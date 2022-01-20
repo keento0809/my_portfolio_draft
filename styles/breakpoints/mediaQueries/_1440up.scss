@@ -9,16 +9,11 @@ $widthPercent1440up: 85%;
 
 .ml-header {
   &__header-nav {
-    max-width: 600px;
+    max-width: 500px;
   }
 }
 
 .ml-main {
-  &__wrapper {
-    width: 90%;
-    align-items: flex-start;
-  }
-
   &__title {
     padding-top: 40px;
     padding-bottom: 40px;

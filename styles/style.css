@@ -1280,6 +1280,7 @@ body.lightMode {
     margin-bottom: 6px;
   }
   .ml-main__title {
+    width: 100%;
     padding-bottom: 90px;
   }
   .ml-main__title h1 {
@@ -1482,16 +1483,17 @@ body.lightMode {
             align-items: flex-start;
   }
   .ml-main__title {
-    width: 100%;
     padding-bottom: 40px;
     padding-top: 10px;
   }
   .ml-main__title h1 {
     width: 50%;
+    max-width: 480px;
     font-size: 2.5em;
   }
   .ml-main__title h2 {
     width: 45%;
+    max-width: 420px;
     font-size: 2em;
   }
   .swipe {
@@ -1524,13 +1526,7 @@ body.lightMode {
     max-width: 1500px;
   }
   .ml-header__header-nav {
-    max-width: 600px;
-  }
-  .ml-main__wrapper {
-    width: 90%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    max-width: 500px;
   }
   .ml-main__title {
     padding-top: 40px;
