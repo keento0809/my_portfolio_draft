@@ -957,6 +957,10 @@ a.anchor {
   margin-left: 20px;
 }
 
+.workTitle {
+  font-family: Sriracha;
+}
+
 .learnMore {
   display: inline-block;
   padding: 2px 10px;
