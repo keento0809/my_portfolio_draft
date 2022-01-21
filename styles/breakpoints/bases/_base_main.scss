@@ -33,6 +33,10 @@
       }
     }
 
+    & > h1.mainH1.changeAnotherFontSize {
+      font-size: 0.8em;
+    }
+
     & > h2 {
       width: 90%;
       color: $ch2;
@@ -41,6 +45,10 @@
       & span {
         font-family: $anotherNeonFontFamily;
       }
+    }
+
+    & > h2.mainH2.changeAnotherFontSize {
+      font-size: 0.5em;
     }
   }
 

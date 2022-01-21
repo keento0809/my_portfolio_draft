@@ -627,6 +627,10 @@ a.anchor {
   display: inline-block;
 }
 
+.ml-main__title > h1.mainH1.changeAnotherFontSize {
+  font-size: 0.8em;
+}
+
 .ml-main__title > h2 {
   width: 90%;
   color: #dee6ff;
@@ -635,6 +639,10 @@ a.anchor {
 
 .ml-main__title > h2 span {
   font-family: Sriracha;
+}
+
+.ml-main__title > h2.mainH2.changeAnotherFontSize {
+  font-size: 0.5em;
 }
 
 .ml-main__description {
