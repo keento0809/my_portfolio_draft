@@ -1,7 +1,10 @@
-/* neon colors */
-.x-sign {
+/* variables */
+
+/* color */
+$baseFormalFontFamily: "Exo 2", serif;
+
+@mixin x-sign {
   --interval: 1s;
-  // display: block;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
     0 0 40px var(--color3), 0 0 80px var(--color4);
   will-change: filter, color;
@@ -9,7 +12,7 @@
   animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
-.x-sign2 {
+@mixin x-sign2 {
   color: pink;
   --color1: pink;
   --color2: orangered;
@@ -17,7 +20,7 @@
   --color4: magenta;
 }
 
-.x-sign3 {
+@mixin x-sign3 {
   color: lightyellow;
   --color1: yellow;
   --color2: lime;
@@ -25,10 +28,13 @@
   --color4: mediumblue;
 }
 
-.x-sign9 {
+@mixin x-sign9 {
   color: lightyellow;
   --color1: yellow;
   --color2: gold;
   --color3: orange;
   --color4: darkred;
 }
+
+/* background-color */
+$baseBackgroundColor: #120e0c;
