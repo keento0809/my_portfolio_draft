@@ -1,7 +1,43 @@
 @charset "UTF-8";
 /* variables */
 /* color */
+.x-sign {
+  --interval: 1s;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+  will-change: filter, color;
+  -webkit-filter: saturate(60%);
+          filter: saturate(60%);
+  -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+          animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.x-sign2 {
+  color: pink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+}
+
+.x-sign3 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: lime;
+  --color3: green;
+  --color4: mediumblue;
+}
+
+.x-sign9 {
+  color: lightyellow;
+  --color1: yellow;
+  --color2: gold;
+  --color3: orange;
+  --color4: darkred;
+}
+
 /* background-color */
+/* border */
+/* font-family */
 /* neon color */
 .gas {
   --blur: 1rem;

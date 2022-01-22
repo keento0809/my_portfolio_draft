@@ -1,9 +1,7 @@
 /* variables */
 
 /* color */
-$baseFormalFontFamily: "Exo 2", serif;
-
-@mixin x-sign {
+.x-sign {
   --interval: 1s;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
     0 0 40px var(--color3), 0 0 80px var(--color4);
@@ -12,7 +10,7 @@ $baseFormalFontFamily: "Exo 2", serif;
   animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
-@mixin x-sign2 {
+.x-sign2 {
   color: pink;
   --color1: pink;
   --color2: orangered;
@@ -20,7 +18,7 @@ $baseFormalFontFamily: "Exo 2", serif;
   --color4: magenta;
 }
 
-@mixin x-sign3 {
+.x-sign3 {
   color: lightyellow;
   --color1: yellow;
   --color2: lime;
@@ -28,7 +26,7 @@ $baseFormalFontFamily: "Exo 2", serif;
   --color4: mediumblue;
 }
 
-@mixin x-sign9 {
+.x-sign9 {
   color: lightyellow;
   --color1: yellow;
   --color2: gold;
@@ -38,3 +36,11 @@ $baseFormalFontFamily: "Exo 2", serif;
 
 /* background-color */
 $baseBackgroundColor: #120e0c;
+
+/* border */
+// $baseBorder
+
+/* font-family */
+$baseNeonFontFamily: "Bad Script", cursive;
+$subNeonFontFamily: Sriracha;
+$baseFormalFontFamily: "Exo 2", serif;
