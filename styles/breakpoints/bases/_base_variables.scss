@@ -34,11 +34,81 @@
   --color4: darkred;
 }
 
+.x-sign5 {
+  color: azure;
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+}
+
+.neonColorYellow {
+  @extend .x-sign;
+  @extend .x-sign9;
+}
+
+.neonColorPink {
+  @extend .x-sign;
+  @extend .x-sign2;
+}
+
+.neonColorGreen {
+  @extend .x-sign;
+  @extend .x-sign3;
+}
+
+.neonColorBlue {
+  @extend .x-sign;
+  @extend .x-sign5;
+}
+
 /* background-color */
 $baseBackgroundColor: #120e0c;
 
 /* border */
-// $baseBorder
+
+/* border-radius */
+$baseBorderRadius: 12px;
+
+/* border-color */
+.gas {
+  --blur: 1rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  --size: 12rem;
+
+  align-items: center;
+  border-radius: $baseBorderRadius;
+  border: 2px solid currentColor;
+  box-shadow: 
+        /* --- "glass" tube --- */
+        /* inside */ inset 0 0 0
+      1px rgba(0, 0, 0, 0.15),
+    /* outside */ 0 0 0 1px rgba(0, 0, 0, 0.15),
+    /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),
+    /* outside */ 0 0 var(--box-blur) var(--glow);
+  color: var(--color, white);
+}
+
+.he {
+  --color: #f3d574;
+  filter: saturate(120%) !important;
+}
+
+.ar {
+  --color: pink;
+  filter: brightness(100%) !important;
+}
+
+.neonBorderYellow,
+.neonBorderGreen {
+  @extend .gas;
+  @extend .he;
+}
+.neonBorderPink {
+  @extend .gas;
+  @extend .ar;
+}
 
 /* font-family */
 $baseNeonFontFamily: "Bad Script", cursive;

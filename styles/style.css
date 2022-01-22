@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* variables */
 /* color */
-.x-sign {
+.x-sign, .neonColorYellow, .neonColorPink, .neonColorGreen, .neonColorBlue {
   --interval: 1s;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
   will-change: filter, color;
@@ -11,7 +11,7 @@
           animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
-.x-sign2 {
+.x-sign2, .neonColorPink {
   color: pink;
   --color1: pink;
   --color2: orangered;
@@ -19,7 +19,7 @@
   --color4: magenta;
 }
 
-.x-sign3 {
+.x-sign3, .neonColorGreen {
   color: lightyellow;
   --color1: yellow;
   --color2: lime;
@@ -27,7 +27,7 @@
   --color4: mediumblue;
 }
 
-.x-sign9 {
+.x-sign9, .neonColorYellow {
   color: lightyellow;
   --color1: yellow;
   --color2: gold;
@@ -35,11 +35,20 @@
   --color4: darkred;
 }
 
+.x-sign5, .neonColorBlue {
+  color: azure;
+  --color1: azure;
+  --color2: aqua;
+  --color3: dodgerblue;
+  --color4: blue;
+}
+
 /* background-color */
 /* border */
-/* font-family */
-/* neon color */
-.gas {
+/* border-radius */
+/* border-color */
+.gas, .neonBorderYellow,
+.neonBorderGreen, .neonBorderPink {
   --blur: 1rem;
   --box-blur: calc(0.5 * var(--blur));
   --glow: var(--color);
@@ -54,25 +63,60 @@
   color: var(--color, white);
 }
 
-.gas.he {
+.he, .neonBorderYellow,
+.neonBorderGreen {
+  --color: #f3d574;
+  -webkit-filter: saturate(120%) !important;
+          filter: saturate(120%) !important;
+}
+
+.ar, .neonBorderPink {
+  --color: pink;
+  -webkit-filter: brightness(100%) !important;
+          filter: brightness(100%) !important;
+}
+
+/* font-family */
+/* neon color */
+.gas, .neonBorderYellow,
+.neonBorderGreen, .neonBorderPink {
+  --blur: 1rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  --size: 12rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  border: 2px solid currentColor;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
+  color: var(--color, white);
+}
+
+.gas.he, .neonBorderYellow,
+.neonBorderGreen, .he.neonBorderPink {
   --color: #f3d574;
   -webkit-filter: saturate(120%);
           filter: saturate(120%);
 }
 
-.gas.ne {
+.gas.ne, .ne.neonBorderYellow,
+.ne.neonBorderGreen, .ne.neonBorderPink {
   --color: #fda802;
   -webkit-filter: brightness(110%);
           filter: brightness(110%);
 }
 
-.gas.ar {
+.gas.ar, .ar.neonBorderYellow,
+.ar.neonBorderGreen, .neonBorderPink {
   --color: pink;
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
 }
 
-.gas.xe {
+.gas.xe, .xe.neonBorderYellow,
+.xe.neonBorderGreen, .xe.neonBorderPink {
   --color: #c4c4c6;
   -webkit-filter: brightness(105%);
           filter: brightness(105%);
@@ -1060,7 +1104,8 @@ a.anchor {
 }
 
 /* 補足 */
-.input-f.gas.ar {
+.input-f.gas.ar, .input-f.ar.neonBorderYellow,
+.input-f.ar.neonBorderGreen, .input-f.neonBorderPink {
   border-color: pink;
 }
 
@@ -1156,7 +1201,7 @@ textarea::placeholder {
 }
 
 /* neon colors */
-.x-sign {
+.x-sign, .neonColorYellow, .neonColorPink, .neonColorGreen, .neonColorBlue {
   --interval: 1s;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
   will-change: filter, color;
@@ -1166,7 +1211,7 @@ textarea::placeholder {
           animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
-.x-sign2 {
+.x-sign2, .neonColorPink {
   color: pink;
   --color1: pink;
   --color2: orangered;
@@ -1174,7 +1219,7 @@ textarea::placeholder {
   --color4: magenta;
 }
 
-.x-sign3 {
+.x-sign3, .neonColorGreen {
   color: lightyellow;
   --color1: yellow;
   --color2: lime;
@@ -1182,7 +1227,7 @@ textarea::placeholder {
   --color4: mediumblue;
 }
 
-.x-sign9 {
+.x-sign9, .neonColorYellow {
   color: lightyellow;
   --color1: yellow;
   --color2: gold;
