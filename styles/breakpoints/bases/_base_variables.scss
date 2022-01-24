@@ -67,6 +67,7 @@ $colorWhite: #fff;
 
 /* background-color */
 $baseBackgroundColor: #120e0c;
+$anotherBackgroundColor: #1a0f0a;
 $baseCoverSlideAfter: #8d8d8d;
 
 /* border */
@@ -118,3 +119,12 @@ $baseBorderRadius: 12px;
 $baseNeonFontFamily: "Bad Script", cursive;
 $subNeonFontFamily: Sriracha;
 $baseFormalFontFamily: "Exo 2", serif;
+
+/* font-size */
+
+/* base (mobile ver) */
+$h1FontSizeForMobile: 2.5em;
+
+/* 600up */
+$h1FontSizeFor600up: 3em;
+$h2FontSizeFor600up: 2em;

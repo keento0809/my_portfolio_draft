@@ -123,8 +123,8 @@ ul {
   list-style: none;
 }
 
-h2 {
-  font-size: $h2FontSize;
+h1 {
+  font-size: $h1FontSizeForMobile;
 }
 
 p {
@@ -145,12 +145,8 @@ a {
   max-width: $maxWidthBase;
 }
 
-.common-title-h1 {
-  font-size: $h1FontSize;
-}
-
 .differentBg {
-  background: #1a0f0a;
+  background: $anotherBackgroundColor;
 }
 
 /* BackTop button section */

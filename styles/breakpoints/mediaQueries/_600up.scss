@@ -9,6 +9,14 @@ p {
   font-size: 1.5em;
 }
 
+h1 {
+  font-size: $h1FontSizeFor600up;
+}
+
+h2 {
+  font-size: $h2FontSizeFor600up;
+}
+
 h3 {
   font-size: 1.5em;
 }
@@ -18,25 +26,18 @@ h3 {
   max-width: $maxWidthBase600up;
 }
 
-.common-title-h1 {
-  font-size: 3em;
-}
-
-.common-h2 {
-  font-size: 2em;
-}
-
 .ml-main {
   &__title {
     padding-bottom: 70px;
 
     & h1 {
       width: 50%;
+      font-size: 2em;
       padding-bottom: 0;
     }
 
     & h2 {
-      width: 60%;
+      width: 80%;
       // font-size: 2em;
       margin-right: auto;
     }
