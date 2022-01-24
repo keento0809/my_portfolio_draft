@@ -96,7 +96,8 @@ $baseBorderRadius: 12px;
 }
 
 .he-yellow {
-  --color: #f3d574;
+  // --color: #f3d574;
+  --color: lightYellow;
   filter: saturate(120%) !important;
 }
 
@@ -125,6 +126,7 @@ $baseFormalFontFamily: "Exo 2", serif;
 /* base (mobile ver) */
 $coverFontSize: 1.5em;
 $h1FontSizeForMobile: 2.5em;
+$placeHolderFontSize: 16px;
 
 /* 600up */
 $h1FontSizeFor600up: 3em;

@@ -39,7 +39,8 @@
 
 .input-f,
 .textarea-f {
-  font-size: 1.2em;
+  // font-size: 1.2em;
+  font-size: 1.4em;
   background: inherit;
   position: relative;
   padding-left: 0.6em;
@@ -54,7 +55,7 @@
 
 .input-f::placeholder,
 textarea::placeholder {
-  font-size: 16px;
+  font-size: $placeHolderFontSize;
   font-family: $neonFontFamily;
   font-weight: 400;
   position: absolute;
@@ -77,7 +78,8 @@ textarea::placeholder {
     border: $borderBase;
     border-radius: $borderRadiusBase;
     border-color: $cPink;
-    font-size: 24px;
+    // font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
     font-family: $neonFontFamily;
   }

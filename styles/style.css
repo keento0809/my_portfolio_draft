@@ -65,7 +65,7 @@
 
 .he-yellow, .neonBorderYellow,
 .neonBorderGreen {
-  --color: #f3d574;
+  --color: lightYellow;
   -webkit-filter: saturate(120%) !important;
           filter: saturate(120%) !important;
 }
@@ -1072,7 +1072,7 @@ a.anchor {
 
 .input-f,
 .textarea-f {
-  font-size: 1.2em;
+  font-size: 1.4em;
   background: inherit;
   position: relative;
   padding-left: 0.6em;
@@ -1156,7 +1156,7 @@ textarea::placeholder {
   border: 2px solid #fff;
   border-radius: 12px;
   border-color: pink;
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
   font-family: "Bad Script", cursive;
 }
