@@ -123,8 +123,14 @@ $baseFormalFontFamily: "Exo 2", serif;
 /* font-size */
 
 /* base (mobile ver) */
+$coverFontSize: 1.5em;
 $h1FontSizeForMobile: 2.5em;
 
 /* 600up */
 $h1FontSizeFor600up: 3em;
 $h2FontSizeFor600up: 2em;
+
+/* 768up */
+$h1FontSizeFor768up: 4em;
+$h2FontSizeFor768up: 3em;
+$h3FontSizeFor768up: 2.5em;

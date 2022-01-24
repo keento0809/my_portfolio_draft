@@ -27,7 +27,7 @@
       padding-bottom: 40px;
 
       & span {
-        font-size: $h1FontSize;
+        font-size: 2.5em;
         font-family: $neonFontFamily;
         display: inline-block;
       }
@@ -58,16 +58,6 @@
   &__description.non {
     border: none;
     --color: none;
-  }
-}
-
-.disc {
-  margin: 0 auto;
-  height: 20vh;
-
-  & > p {
-    text-align: left;
-    font-size: 1em;
   }
 }
 

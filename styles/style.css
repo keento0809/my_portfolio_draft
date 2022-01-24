@@ -80,6 +80,7 @@
 /* font-size */
 /* base (mobile ver) */
 /* 600up */
+/* 768up */
 /* neon color */
 .gas, .neonBorderYellow,
 .neonBorderGreen, .neonBorderPink {
@@ -245,7 +246,6 @@ a {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f102";
-  font-size: 30px;
   color: #bf07db;
   position: absolute;
   width: 30px;
@@ -277,7 +277,6 @@ a {
 
 #toTop {
   display: block;
-  font-size: 0.8em;
   font-family: "Bad Script", cursive;
 }
 
@@ -742,16 +741,6 @@ a.anchor {
 .ml-main__description.non {
   border: none;
   --color: none;
-}
-
-.disc {
-  margin: 0 auto;
-  height: 20vh;
-}
-
-.disc > p {
-  text-align: left;
-  font-size: 1em;
 }
 
 .swipe {
@@ -1303,18 +1292,18 @@ body.lightMode {
   label {
     font-size: 2em;
   }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
   h3 {
     font-size: 2.5em;
   }
   .common-wrapper {
     padding: 0 35px;
     max-width: 900px;
-  }
-  .common-title-h1 {
-    font-size: 4em;
-  }
-  .common-h2 {
-    font-size: 3em;
   }
   .contents-list > li {
     font-size: 2.5em;
