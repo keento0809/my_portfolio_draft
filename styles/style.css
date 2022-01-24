@@ -63,14 +63,14 @@
   color: var(--color, white);
 }
 
-.he, .neonBorderYellow,
+.he-yellow, .neonBorderYellow,
 .neonBorderGreen {
   --color: #f3d574;
   -webkit-filter: saturate(120%) !important;
           filter: saturate(120%) !important;
 }
 
-.ar, .neonBorderPink {
+.ar-pink, .neonBorderPink {
   --color: pink;
   -webkit-filter: brightness(100%) !important;
           filter: brightness(100%) !important;
@@ -94,8 +94,8 @@
   color: var(--color, white);
 }
 
-.gas.he, .neonBorderYellow,
-.neonBorderGreen, .he.neonBorderPink {
+.gas.he, .he.neonBorderYellow,
+.he.neonBorderGreen, .he.neonBorderPink {
   --color: #f3d574;
   -webkit-filter: saturate(120%);
           filter: saturate(120%);
@@ -109,7 +109,7 @@
 }
 
 .gas.ar, .ar.neonBorderYellow,
-.ar.neonBorderGreen, .neonBorderPink {
+.ar.neonBorderGreen, .ar.neonBorderPink {
   --color: pink;
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
@@ -145,7 +145,7 @@ body {
 body {
   font-family: "Exo 2", serif;
   background: #120e0c;
-  color: #fff;
+  color: #dee6ff;
   margin: 0;
   letter-spacing: 0.5px;
 }
@@ -668,6 +668,7 @@ a.anchor {
 .ml-main {
   height: 95vh;
   margin-bottom: 90px;
+  color: #dee6ff;
 }
 
 .ml-main__wrapper {
@@ -700,7 +701,6 @@ a.anchor {
   width: 82%;
   font-size: 1.5em;
   font-family: "Exo 2", serif;
-  color: #dee6ff;
   padding-bottom: 40px;
 }
 
@@ -710,22 +710,13 @@ a.anchor {
   display: inline-block;
 }
 
-.ml-main__title > h1.mainH1.changeAnotherFontSize {
-  font-size: 0.8em;
-}
-
 .ml-main__title > h2 {
   width: 90%;
-  color: #dee6ff;
   font-family: "Exo 2", serif;
 }
 
 .ml-main__title > h2 span {
   font-family: Sriracha;
-}
-
-.ml-main__title > h2.mainH2.changeAnotherFontSize {
-  font-size: 0.5em;
 }
 
 .ml-main__description {
@@ -812,7 +803,6 @@ a.anchor {
   margin: 0 auto;
   padding: 15px 0 30px;
   font-family: "Exo 2", serif;
-  color: #dee6ff;
   text-align: left;
   border: none;
   --color: none;
@@ -850,7 +840,6 @@ a.anchor {
 }
 
 .aboutMe__skills h3 {
-  color: #dee6ff;
   padding-bottom: 20px;
 }
 
@@ -869,6 +858,7 @@ a.anchor {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-bottom: 2px solid #fff;
+  color: #fff;
 }
 
 .aboutMe__skills .skillSet {
@@ -885,7 +875,6 @@ a.anchor {
 
 .aboutMe__skills .skillSet ul h3 {
   padding-bottom: 20px;
-  color: #dee6ff;
 }
 
 .aboutMe__skills .skillSet ul > li {
@@ -1105,7 +1094,7 @@ a.anchor {
 
 /* 補足 */
 .input-f.gas.ar, .input-f.ar.neonBorderYellow,
-.input-f.ar.neonBorderGreen, .input-f.neonBorderPink {
+.input-f.ar.neonBorderGreen, .input-f.ar.neonBorderPink {
   border-color: pink;
 }
 

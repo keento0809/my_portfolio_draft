@@ -1,6 +1,9 @@
 /* variables */
 
 /* color */
+$baseTextColor: #dee6ff;
+$colorWhite: #fff;
+
 .x-sign {
   --interval: 1s;
   text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
@@ -64,6 +67,7 @@
 
 /* background-color */
 $baseBackgroundColor: #120e0c;
+$baseCoverSlideAfter: #8d8d8d;
 
 /* border */
 
@@ -90,12 +94,12 @@ $baseBorderRadius: 12px;
   color: var(--color, white);
 }
 
-.he {
+.he-yellow {
   --color: #f3d574;
   filter: saturate(120%) !important;
 }
 
-.ar {
+.ar-pink {
   --color: pink;
   filter: brightness(100%) !important;
 }
@@ -103,11 +107,11 @@ $baseBorderRadius: 12px;
 .neonBorderYellow,
 .neonBorderGreen {
   @extend .gas;
-  @extend .he;
+  @extend .he-yellow;
 }
 .neonBorderPink {
   @extend .gas;
-  @extend .ar;
+  @extend .ar-pink;
 }
 
 /* font-family */

@@ -2,6 +2,7 @@
 .ml-main {
   height: 95vh;
   margin-bottom: 90px;
+  color: $baseTextColor;
 
   &__wrapper {
     width: 100%;
@@ -23,7 +24,6 @@
       width: 82%;
       font-size: 1.5em;
       font-family: $baseFontFamily;
-      color: $ch2;
       padding-bottom: 40px;
 
       & span {
@@ -33,22 +33,13 @@
       }
     }
 
-    & > h1.mainH1.changeAnotherFontSize {
-      font-size: 0.8em;
-    }
-
     & > h2 {
       width: 90%;
-      color: $ch2;
       font-family: $baseFontFamily;
 
       & span {
         font-family: $anotherNeonFontFamily;
       }
-    }
-
-    & > h2.mainH2.changeAnotherFontSize {
-      font-size: 0.5em;
     }
   }
 

@@ -1,5 +1,5 @@
 $cBase: #231e1b;
-$cBaseBackground: linear-gradient(to right, #192a66, #120e0c);
+// $cBaseBackground: linear-gradient(to right, #192a66, #120e0c);
 $cTestBase: #120e0c;
 $cBaseTransparent: rgba(35, 30, 27, 0.8);
 $cText: #fff;
@@ -86,9 +86,9 @@ body {
 }
 
 body {
-  font-family: "Exo 2", serif;
-  background: $cTestBase;
-  color: $cText;
+  font-family: $baseFormalFontFamily;
+  background: $baseBackgroundColor;
+  color: $baseTextColor;
   margin: 0;
   letter-spacing: 0.5px;
 }
@@ -113,8 +113,8 @@ textarea {
 }
 
 label {
-  font-family: $baseFontFamily;
-  color: $ch2;
+  font-family: $baseFormalFontFamily;
+  color: $baseTextColor;
   padding-left: 5px;
   padding-bottom: 5px;
 }
