@@ -750,7 +750,6 @@ a.anchor {
 .swipe .button-background2 {
   padding: 8px 40px;
   border-radius: 12px;
-  border-color: lightyellow;
   font-family: "Bad Script", cursive;
   text-transform: uppercase;
   text-align: left;
@@ -953,18 +952,6 @@ a.anchor {
   margin-bottom: 40px;
 }
 
-.work:nth-child(1) {
-  border-color: lightyellow;
-}
-
-.work:nth-child(2) {
-  border-color: pink;
-}
-
-.work:nth-child(3) {
-  border-color: lightyellow;
-}
-
 .work__image {
   width: 100%;
   height: 100%;
@@ -1077,7 +1064,6 @@ a.anchor {
   position: relative;
   padding-left: 0.6em;
   border-radius: 8px;
-  border-color: lightyellow;
 }
 
 /* 補足 */

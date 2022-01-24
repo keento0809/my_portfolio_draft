@@ -6,7 +6,7 @@ $cText: #fff;
 $cTest: #12e3e3;
 $cGrey: #8d8d8d;
 $cYellow: #ffff00;
-$cLightYellow: lightyellow;
+// $cLightYellow: lightyellow;
 $cPurple: #bf07db;
 $cPink: pink;
 $cPlain: #ccd6f6;
@@ -215,7 +215,6 @@ a {
 
 #toTop {
   display: block;
-  // font-size: 0.8em;
   font-family: $neonFontFamily;
 }
 
@@ -235,5 +234,4 @@ a {
 a.anchor {
   display: block;
   padding-top: 70px;
-  // margin-top: -70px;
 }
