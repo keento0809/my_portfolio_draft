@@ -6,7 +6,7 @@
   &__wrapper {
     height: 100%;
     max-width: $maxWidthBase;
-    margin: 0 auto;
+    margin: $baseCenteredMargin;
     display: flex;
     flex-direction: column;
   }
@@ -23,7 +23,7 @@
 
   &__discription {
     width: 95%;
-    margin: 0 auto;
+    margin: $baseCenteredMargin;
     padding: 15px 0 $basePadding;
     font-family: $baseFontFamily;
     text-align: left;
@@ -73,7 +73,7 @@
 
     & .skillSet {
       width: 90%;
-      margin: 0 auto;
+      margin: $baseCenteredMargin;
       padding-top: $basePadding;
       text-align: left;
       overflow-wrap: break-word;

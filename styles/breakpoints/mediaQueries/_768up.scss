@@ -49,7 +49,7 @@ h3 {
     & .bar {
       width: 45px;
       height: 5px;
-      margin-bottom: 6px;
+      margin-bottom: $hamburgerMenuMargin768up;
     }
   }
 }

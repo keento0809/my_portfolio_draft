@@ -9,7 +9,7 @@
     & h1 {
       font-family: $neonFontFamily;
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: $basePadding;
     }
   }
 
@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
     max-width: $maxWidthBase;
-    margin: 0 auto;
+    margin: $baseCenteredMargin;
     display: flex;
     flex-direction: column;
   }
@@ -29,16 +29,14 @@
 
 .work {
   height: 100%;
-  margin-bottom: 40px;
+  margin-bottom: $baseWorkMargin;
 
   &__image {
-    // flex-grow: 3;
     width: 100%;
     height: 100%;
     padding-bottom: $baseSmallPadding;
 
     & > img {
-      // flex-grow: 2;
       display: inline-block;
       width: 100%;
       height: 100%;
@@ -54,7 +52,7 @@
 
   &__links {
     width: 70%;
-    margin: 0 auto;
+    margin: $baseCenteredMargin;
     display: flex;
     padding-bottom: $basePadding;
     flex-direction: row;
@@ -66,7 +64,7 @@
       display: flex;
       justify-content: flex-end;
       color: $cTestBase;
-      margin-left: 20px;
+      margin-left: $baseWorkListMargin;
     }
   }
 }
@@ -81,7 +79,7 @@
 
 .work__description > p {
   width: 90%;
-  margin: 0 auto;
+  margin: $baseCenteredMargin;
 }
 
 .learnMore {

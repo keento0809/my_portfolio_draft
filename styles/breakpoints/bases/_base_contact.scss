@@ -6,7 +6,7 @@
     width: 100%;
     height: 85%;
     max-width: $maxWidthBase;
-    margin: 0 auto;
+    margin: $baseCenteredMargin;
   }
 
   &__title {
@@ -86,7 +86,7 @@ textarea::placeholder {
 
   & .social-media-list {
     width: 50%;
-    margin: 0 auto;
+    margin: $baseCenteredMargin;
     color: black;
     display: flex;
     justify-content: space-between;

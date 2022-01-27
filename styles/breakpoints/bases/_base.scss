@@ -188,7 +188,7 @@ a {
       bottom: 0;
       right: 0;
       left: 0px;
-      margin: auto;
+      margin: $baseMarginAuto;
       text-align: center;
     }
 
@@ -200,7 +200,7 @@ a {
       bottom: 0;
       right: 0;
       left: 0;
-      margin: auto;
+      margin: $baseMarginAuto;
       text-align: center;
       color: $cPurple;
     }
@@ -218,7 +218,7 @@ a {
 
 .social-media-list {
   width: 80%;
-  margin: 0 auto;
+  margin: $baseCenteredMargin;
   display: flex;
   justify-content: space-around;
   align-items: center;
