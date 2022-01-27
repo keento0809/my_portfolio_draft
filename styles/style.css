@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* variables */
+/* padding */
 /* color */
 .x-sign, .neonColorYellow, .neonColorPink, .neonColorGreen, .neonColorBlue {
   --interval: 1s;
@@ -176,8 +177,7 @@ textarea {
 label {
   font-family: "Exo 2", serif;
   color: #dee6ff;
-  padding-left: 5px;
-  padding-bottom: 5px;
+  padding: 0px 0px 5px 5px;
 }
 
 ul {
@@ -674,8 +674,6 @@ a.anchor {
   height: 100%;
   max-width: 410px;
   margin: 0 auto;
-  padding: 0 15px;
-  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,14 +690,14 @@ a.anchor {
 }
 
 .ml-main__title {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .ml-main__title > h1 {
   width: 82%;
   font-size: 1.5em;
   font-family: "Exo 2", serif;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .ml-main__title > h1 span {
@@ -744,7 +742,7 @@ a.anchor {
 }
 
 .swipe {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .swipe .button-background2 {
@@ -765,7 +763,6 @@ a.anchor {
   height: 100%;
   max-width: 410px;
   margin: 0 auto;
-  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,7 +773,7 @@ a.anchor {
 }
 
 .aboutMe__title {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .aboutMe__title h1 {
@@ -788,7 +785,7 @@ a.anchor {
 .aboutMe__discription {
   width: 95%;
   margin: 0 auto;
-  padding: 15px 0 30px;
+  padding: 15px 0 40px;
   font-family: "Exo 2", serif;
   text-align: left;
   border: none;
@@ -827,7 +824,7 @@ a.anchor {
 }
 
 .aboutMe__skills h3 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .aboutMe__skills h2 {
@@ -861,7 +858,7 @@ a.anchor {
 }
 
 .aboutMe__skills .skillSet ul h3 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .aboutMe__skills .skillSet ul > li {
@@ -931,7 +928,6 @@ a.anchor {
   height: 100%;
   max-width: 410px;
   margin: 0 auto;
-  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1012,6 +1008,11 @@ a.anchor {
   padding-bottom: 10px;
 }
 
+.work__description > p {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .learnMore {
   display: inline-block;
   padding: 2px 10px;
@@ -1033,7 +1034,6 @@ a.anchor {
   height: 85%;
   max-width: 410px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .contact__title h1 {
@@ -1553,10 +1553,6 @@ body.lightMode {
   }
   .social-media-list {
     width: 75%;
-  }
-  .work__description > p {
-    width: 90%;
-    margin: 0 auto;
   }
 }
 

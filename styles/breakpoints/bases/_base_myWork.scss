@@ -18,7 +18,6 @@
     height: 100%;
     max-width: $maxWidthBase;
     margin: 0 auto;
-    padding: $paddingBase;
     display: flex;
     flex-direction: column;
   }
@@ -79,6 +78,11 @@
 
 .work-h2 {
   padding-bottom: 10px;
+}
+
+.work__description > p {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .learnMore {

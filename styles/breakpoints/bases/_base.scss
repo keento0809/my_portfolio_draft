@@ -115,8 +115,7 @@ textarea {
 label {
   font-family: $baseFormalFontFamily;
   color: $baseTextColor;
-  padding-left: 5px;
-  padding-bottom: 5px;
+  padding: $baseLabelPadding;
 }
 
 ul {
@@ -141,7 +140,7 @@ a {
 }
 
 .common-wrapper {
-  padding: $paddingBase;
+  padding: $baseWrapperPadding;
   max-width: $maxWidthBase;
 }
 

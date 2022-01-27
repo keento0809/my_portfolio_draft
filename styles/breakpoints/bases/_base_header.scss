@@ -19,7 +19,7 @@
   &__wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 5px 15px 0;
+    padding: $baseHeaderWrapperPadding;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +39,7 @@
 
   .logoName {
     display: inline-block;
-    padding: 4px 8px;
+    padding: $baseLogoPadding;
   }
 
   .toggle-btn-container {

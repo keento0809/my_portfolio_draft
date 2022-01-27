@@ -7,25 +7,24 @@
     height: 100%;
     max-width: $maxWidthBase;
     margin: 0 auto;
-    padding: $paddingBase;
     display: flex;
     flex-direction: column;
   }
 
   &__title {
-    padding-bottom: 30px;
+    padding-bottom: $basePaddingBottom;
 
     & h1 {
       font-family: $neonFontFamily;
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: $basePaddingBottom;
     }
   }
 
   &__discription {
     width: 95%;
     margin: 0 auto;
-    padding: 15px 0 30px;
+    padding: 15px 0 40px;
     font-family: $baseFontFamily;
     text-align: left;
     border: none;
@@ -36,7 +35,7 @@
 
     & h2,
     & p {
-      padding-bottom: 40px;
+      padding-bottom: $basePaddingBottom;
       font-family: $baseFontFamily;
     }
 
@@ -51,12 +50,12 @@
   }
 
   &__skills {
-    padding-bottom: 40px;
+    padding-bottom: $basePaddingBottom;
     text-align: center;
     border: none;
 
     & h3 {
-      padding-bottom: 20px;
+      padding-bottom: $basePaddingBottom;
     }
 
     & h2 {
@@ -80,10 +79,10 @@
       overflow-wrap: break-word;
 
       & ul {
-        padding-bottom: 40px;
+        padding-bottom: $basePaddingBottom;
 
         & h3 {
-          padding-bottom: 20px;
+          padding-bottom: $basePaddingBottom;
         }
 
         & > li {
