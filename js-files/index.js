@@ -88,3 +88,5 @@ window.addEventListener("DOMContentLoaded", checkHeight);
 
 AOS.init();
 console.log(window.innerWidth, window.innerHeight);
+
+console.log(Math.floor(Math.random() * 1000));
