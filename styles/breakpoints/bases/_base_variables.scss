@@ -1,13 +1,21 @@
 /* variables */
 
 /* padding */
+
+/* base */
 $baseWrapperPadding: 0 15px;
 $baseHeaderWrapperPadding: 5px 15px 0;
 $baseLogoPadding: 4px 8px;
-$basePaddingBottom: 40px;
+$basePadding: 40px;
 $baseSmallPadding: 20px;
 $baseLabelPadding: 0px 0px 5px 5px;
 $baseAnchorPaddingTop: 70px;
+$baseContactPaddingBottom: 160px;
+
+/* 600up */
+$basePadding600up: 70px;
+$baseSmallPadding600up: 30px;
+$padding600up: 0 $baseSmallPadding600up;
 
 /* color */
 $baseTextColor: #dee6ff;
@@ -83,6 +91,7 @@ $baseCoverSlideAfter: #8d8d8d;
 
 /* border-radius */
 $baseBorderRadius: 12px;
+$baseSmallBorderRadius: 8px;
 
 /* border-color */
 .gas {

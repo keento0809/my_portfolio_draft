@@ -33,7 +33,7 @@
 
     & > a {
       border: $borderBase;
-      border-radius: 8px;
+      border-radius: $baseSmallBorderRadius;
     }
   }
 

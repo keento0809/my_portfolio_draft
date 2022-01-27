@@ -1,6 +1,6 @@
 /* contact form section */
 .contact {
-  padding-bottom: 160px;
+  padding-bottom: $baseContactPaddingBottom;
 
   &__wrapper {
     width: 100%;
@@ -13,12 +13,12 @@
     & h1 {
       font-family: $neonFontFamily;
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: $basePadding;
     }
   }
 
   &__form {
-    padding-bottom: 40px;
+    padding-bottom: $basePadding;
   }
 }
 
@@ -31,7 +31,7 @@
     & > li {
       display: flex;
       flex-direction: column;
-      padding-bottom: 40px;
+      padding-bottom: $basePadding;
     }
   }
 }
@@ -42,7 +42,7 @@
   background: inherit;
   position: relative;
   padding-left: 0.6em;
-  border-radius: 8px;
+  border-radius: $baseSmallBorderRadius;
 }
 
 /* 補足 */
@@ -64,7 +64,7 @@ textarea::placeholder {
 .submit {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 30px;
+  padding-bottom: $basePadding;
 
   &__btn {
     display: flex;
@@ -75,7 +75,6 @@ textarea::placeholder {
     border: $borderBase;
     border-radius: $borderRadiusBase;
     border-color: $cPink;
-    // font-size: 24px;
     font-size: 1.5em;
     text-align: center;
     font-family: $neonFontFamily;

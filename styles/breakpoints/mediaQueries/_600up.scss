@@ -1,4 +1,4 @@
-$padding600up: 0 30px;
+// $padding600up: 0 30px;
 $maxWidthBase600up: 600px;
 
 body {
@@ -28,7 +28,7 @@ h3 {
 
 .ml-main {
   &__title {
-    padding-bottom: 70px;
+    padding-bottom: $basePadding600up;
 
     & h1 {
       width: 50%;
@@ -38,24 +38,23 @@ h3 {
 
     & h2 {
       width: 80%;
-      // font-size: 2em;
       margin-right: auto;
     }
   }
 }
 
 .swipe {
-  padding-bottom: 70px;
+  padding-bottom: $basePadding600up;
 }
 
 .aboutMe {
   &__skills {
     & h3 {
-      padding-bottom: 30px;
+      padding-bottom: $baseSmallPadding600up;
     }
 
     & .skill-list {
-      padding: 30px;
+      padding: $baseSmallPadding600up;
     }
   }
 }

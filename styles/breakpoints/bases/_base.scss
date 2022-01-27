@@ -17,7 +17,7 @@ $slideBallIconColor: $cBase;
 $slideTextColor: $cGrey;
 $h1FontSize: 2.5em;
 $h2FontSize: 1.5em;
-$paddingBase: 0 15px;
+// $paddingBase: 0 15px;
 $neonFontFamily: "Bad Script", cursive;
 $anotherNeonFontFamily: Sriracha;
 $baseFontFamily: "Exo 2", serif;
@@ -180,7 +180,6 @@ a {
       font-family: $fontAwesomeFree;
       font-weight: 900;
       content: "\f102";
-      // font-size: 30px;
       color: $cPurple;
       position: absolute;
       width: 30px;
@@ -232,5 +231,5 @@ a {
 /* anchor */
 a.anchor {
   display: block;
-  padding-top: 70px;
+  padding-top: $baseAnchorPaddingTop;
 }

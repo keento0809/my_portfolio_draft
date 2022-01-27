@@ -9,7 +9,6 @@
     height: 100%;
     max-width: $maxWidthBase;
     margin: 0 auto;
-    // padding: $basePadding;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +16,7 @@
   }
 
   &__title {
-    padding-bottom: $basePaddingBottom;
+    padding-bottom: $basePadding;
 
     & > h1 {
       width: 82%;
@@ -61,10 +60,10 @@
 }
 
 .swipe {
-  padding-bottom: $basePaddingBottom;
+  padding-bottom: $basePadding;
 
   & .button-background2 {
-    padding: 8px $basePaddingBottom;
+    padding: 8px $basePadding;
     border-radius: $borderRadiusBase;
     font-family: $neonFontFamily;
     text-transform: uppercase;

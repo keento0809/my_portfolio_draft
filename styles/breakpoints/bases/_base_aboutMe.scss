@@ -12,19 +12,19 @@
   }
 
   &__title {
-    padding-bottom: $basePaddingBottom;
+    padding-bottom: $basePadding;
 
     & h1 {
       font-family: $neonFontFamily;
       text-align: center;
-      padding-bottom: $basePaddingBottom;
+      padding-bottom: $basePadding;
     }
   }
 
   &__discription {
     width: 95%;
     margin: 0 auto;
-    padding: 15px 0 40px;
+    padding: 15px 0 $basePadding;
     font-family: $baseFontFamily;
     text-align: left;
     border: none;
@@ -35,7 +35,7 @@
 
     & h2,
     & p {
-      padding-bottom: $basePaddingBottom;
+      padding-bottom: $basePadding;
       font-family: $baseFontFamily;
     }
 
@@ -50,12 +50,12 @@
   }
 
   &__skills {
-    padding-bottom: $basePaddingBottom;
+    padding-bottom: $basePadding;
     text-align: center;
     border: none;
 
     & h3 {
-      padding-bottom: $basePaddingBottom;
+      padding-bottom: $basePadding;
     }
 
     & h2 {
@@ -63,7 +63,7 @@
     }
 
     & .skill-list {
-      padding: 20px;
+      padding: $baseSmallPadding;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
@@ -74,22 +74,22 @@
     & .skillSet {
       width: 90%;
       margin: 0 auto;
-      padding-top: 40px;
+      padding-top: $basePadding;
       text-align: left;
       overflow-wrap: break-word;
 
       & ul {
-        padding-bottom: $basePaddingBottom;
+        padding-bottom: $basePadding;
 
         & h3 {
-          padding-bottom: $basePaddingBottom;
+          padding-bottom: $baseSmallPadding;
         }
 
         & > li {
           display: inline-block;
           padding: 6px 4px;
           border: $borderBase;
-          border-radius: 8px;
+          border-radius: $baseSmallBorderRadius;
           font-family: $anotherNeonFontFamily;
         }
       }
@@ -98,13 +98,6 @@
 
   .swipe.about-sec {
     display: none;
-  }
-
-  &__toLink {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }
 }
 
