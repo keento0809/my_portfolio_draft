@@ -1,4 +1,4 @@
-$padding1024up: 0 40px;
+// $padding1024up: 0 $basePadding;
 $widthPercent1024up: 90%;
 $marginBase1024up: 0 auto;
 $maxWidth1024up: 1100px;
@@ -116,8 +116,8 @@ label {
   }
 
   &__title {
-    padding-bottom: 40px;
-    padding-top: 10px;
+    padding-bottom: $basePadding;
+    padding-top: $baseVerySmallPadding;
 
     & h1 {
       width: 50%;
@@ -134,7 +134,7 @@ label {
 }
 
 .swipe {
-  padding-bottom: 100px;
+  padding-bottom: $swipePadding1024up;
 }
 
 .slide-text {

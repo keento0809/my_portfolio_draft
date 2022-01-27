@@ -3,6 +3,9 @@
 /* padding */
 /* base */
 /* 600up */
+/* 768up */
+/* 1024up */
+/* 1440up */
 /* color */
 .x-sign, .neonColorYellow, .neonColorPink, .neonColorGreen, .neonColorBlue {
   --interval: 1s;
@@ -1273,7 +1276,8 @@ body.lightMode {
   }
   p,
   label {
-    font-size: 2em;
+    font-size: 1.5em;
+    padding-bottom: 10px;
   }
   h1 {
     font-size: 4em;
@@ -1282,7 +1286,7 @@ body.lightMode {
     font-size: 3em;
   }
   h3 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .common-wrapper {
     padding: 0 35px;
@@ -1331,7 +1335,7 @@ body.lightMode {
     padding: 20px 0 60px;
   }
   .aboutMe__skills {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
   }
   .aboutMe__skills .skill-list {
     padding: 40px;
@@ -1359,7 +1363,7 @@ body.lightMode {
   .work {
     -ms-flex-preferred-size: 430px;
         flex-basis: 430px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
   .work__description {
     -ms-flex-preferred-size: 400px;
@@ -1522,7 +1526,7 @@ body.lightMode {
     font-size: 2em;
   }
   .swipe {
-    padding-bottom: 100px;
+    padding-bottom: 120px;
   }
   .slide-text {
     font-size: 1em;
@@ -1554,8 +1558,7 @@ body.lightMode {
     max-width: 500px;
   }
   .ml-main__title {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
   }
   .ml-main__title h1 {
     width: 40%;
@@ -1565,9 +1568,6 @@ body.lightMode {
   .ml-main__title h2 {
     width: 35%;
     font-size: 2em;
-  }
-  .swipe {
-    padding-bottom: 120px;
   }
   .swipe .button-background2 {
     font-size: 1em;

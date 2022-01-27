@@ -1,4 +1,3 @@
-$padding1440up: 0 50px;
 $maxWidth1440up: 1500px;
 $widthPercent1440up: 85%;
 
@@ -15,8 +14,7 @@ $widthPercent1440up: 85%;
 
 .ml-main {
   &__title {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: $basePadding 0;
 
     & h1 {
       width: 40%;
@@ -32,8 +30,6 @@ $widthPercent1440up: 85%;
 }
 
 .swipe {
-  padding-bottom: 120px;
-
   & .button-background2 {
     font-size: 1em;
   }

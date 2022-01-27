@@ -115,7 +115,7 @@
     font-family: $neonFontFamily;
 
     & > a > span {
-      padding-left: 10px;
+      padding-left: $baseVerySmallPadding;
     }
   }
 }

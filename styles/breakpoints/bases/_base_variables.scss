@@ -4,18 +4,35 @@
 
 /* base */
 $baseWrapperPadding: 0 15px;
+$baseDivPadding: 90px;
 $baseHeaderWrapperPadding: 5px 15px 0;
 $baseLogoPadding: 4px 8px;
 $basePadding: 40px;
 $baseSmallPadding: 20px;
+$baseVerySmallPadding: 10px;
 $baseLabelPadding: 0px 0px 5px 5px;
-$baseAnchorPaddingTop: 70px;
+$baseAnchorPadding: 70px;
 $baseContactPaddingBottom: 160px;
+$faLinkPadding: 15px;
 
 /* 600up */
 $basePadding600up: 70px;
 $baseSmallPadding600up: 30px;
 $padding600up: 0 $baseSmallPadding600up;
+
+/* 768up */
+$basePadding768up: 90px;
+$paddingBottom768up: 60px;
+$labelPadding768up: 10px;
+$anchorPadding768up: 150px;
+$padding768up: 0 35px;
+
+/* 1024up */
+$padding1024up: 0 $basePadding;
+$swipePadding1024up: 120px;
+
+/* 1440up */
+$padding1440up: 0 50px;
 
 /* color */
 $baseTextColor: #dee6ff;
@@ -151,6 +168,7 @@ $h1FontSizeFor600up: 3em;
 $h2FontSizeFor600up: 2em;
 
 /* 768up */
+$labelFontSizeFor768up: 1.5em;
 $h1FontSizeFor768up: 4em;
 $h2FontSizeFor768up: 3em;
-$h3FontSizeFor768up: 2.5em;
+$h3FontSizeFor768up: 2em;

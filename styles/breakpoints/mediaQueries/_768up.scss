@@ -1,5 +1,4 @@
-$padding768up: 0 35px;
-$paddingBottom768up: 60px;
+// $paddingBottom768up: 60px;
 $maxWidth768up: 900px;
 
 body {
@@ -8,7 +7,8 @@ body {
 
 p,
 label {
-  font-size: 2em;
+  font-size: $labelFontSizeFor768up;
+  padding-bottom: $labelPadding768up;
 }
 
 h1 {
@@ -57,7 +57,7 @@ h3 {
 .ml-main {
   &__title {
     width: 100%;
-    padding-bottom: 90px;
+    padding-bottom: $basePadding768up;
 
     & h1 {
       width: 70%;
@@ -87,14 +87,14 @@ h3 {
   }
 
   &__discription {
-    padding: 20px 0 $paddingBottom768up;
+    padding: $baseSmallPadding 0 $paddingBottom768up;
   }
 
   &__skills {
-    padding-bottom: 80px;
+    padding-bottom: $basePadding768up;
 
     & .skill-list {
-      padding: 40px;
+      padding: $basePadding;
     }
 
     & .skillSet {
@@ -126,7 +126,7 @@ h3 {
 
 .work {
   flex-basis: 430px;
-  margin-bottom: 80px;
+  margin-bottom: $basePadding768up;
 
   &__description {
     flex-basis: 400px;
@@ -163,6 +163,5 @@ h3 {
 
 /* anchor */
 a.anchor {
-  padding-top: 150px;
-  // margin-top: -150px;
+  padding-top: $anchorPadding768up;
 }
