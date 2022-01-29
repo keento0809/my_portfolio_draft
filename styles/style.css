@@ -1004,8 +1004,9 @@ a.anchor {
 }
 
 .work__description > p {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+  font-family: Sriracha;
 }
 
 .learnMore {
