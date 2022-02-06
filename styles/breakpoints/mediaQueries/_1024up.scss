@@ -1,8 +1,9 @@
 // $padding1024up: 0 $basePadding;
-$widthPercent1024up: 90%;
+$widthPercent1024up: 70%;
 $marginBase1024up: 0 auto;
 $maxWidth1024up: 1100px;
 $cLightMode: #eee1ac;
+$lineHeight1024up: 2em;
 
 h2 {
   font-size: 3em;
@@ -11,6 +12,7 @@ h2 {
 p,
 label {
   font-size: 2em;
+  line-height: $lineHeight1024up;
 }
 
 .common-wrapper {
@@ -150,6 +152,10 @@ label {
   & h2 {
     max-width: 500px;
   }
+}
+
+.contactMe__list > li {
+  padding-bottom: 80px;
 }
 
 .aboutMe__wrapper,
