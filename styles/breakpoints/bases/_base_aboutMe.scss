@@ -24,7 +24,7 @@
   &__discription {
     width: 95%;
     margin: $baseCenteredMargin;
-    padding: 15px 0 $basePadding;
+    padding: 15px 0 $baseLargePadding;
     font-family: $baseFontFamily;
     text-align: left;
     border: none;
@@ -32,6 +32,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    line-height: $baseLineHeight;
+    overflow-wrap: $baseOverflowWrap;
 
     & h2,
     & p {
@@ -44,13 +46,17 @@
       text-align: center;
     }
 
+    & p {
+      font-size: 1.2em;
+    }
+
     & span {
       display: inline-block;
     }
   }
 
   &__skills {
-    padding-bottom: $basePadding;
+    padding-bottom: $baseLargePadding;
     text-align: center;
     border: none;
 
@@ -74,7 +80,7 @@
     & .skillSet {
       width: 90%;
       margin: $baseCenteredMargin;
-      padding-top: $basePadding;
+      padding-top: $baseLargePadding;
       text-align: left;
       overflow-wrap: break-word;
 

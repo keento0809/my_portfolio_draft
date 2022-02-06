@@ -9,6 +9,8 @@
 /* margin */
 /* base */
 /* 768up */
+/* overflow-wrap */
+/* line-height */
 /* color */
 .x-sign, .neonColorYellow, .neonColorPink, .neonColorGreen, .neonColorBlue {
   --interval: 1s;
@@ -793,7 +795,7 @@ a.anchor {
 .aboutMe__discription {
   width: 95%;
   margin: 0 auto;
-  padding: 15px 0 40px;
+  padding: 15px 0 80px;
   font-family: "Exo 2", serif;
   text-align: left;
   border: none;
@@ -808,6 +810,8 @@ a.anchor {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  line-height: 3em;
+  overflow-wrap: break-word;
 }
 
 .aboutMe__discription h2,
@@ -821,12 +825,16 @@ a.anchor {
   text-align: center;
 }
 
+.aboutMe__discription p {
+  font-size: 1.2em;
+}
+
 .aboutMe__discription span {
   display: inline-block;
 }
 
 .aboutMe__skills {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   text-align: center;
   border: none;
 }
@@ -856,7 +864,7 @@ a.anchor {
 .aboutMe__skills .skillSet {
   width: 90%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 80px;
   text-align: left;
   overflow-wrap: break-word;
 }
@@ -940,7 +948,7 @@ a.anchor {
 
 .work {
   height: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .work__image {

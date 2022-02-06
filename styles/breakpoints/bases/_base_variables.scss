@@ -8,6 +8,7 @@ $baseDivPadding: 90px;
 $baseHeaderWrapperPadding: 5px 15px 0;
 $baseLogoPadding: 4px 8px;
 $basePadding: 40px;
+$baseLargePadding: 80px;
 $baseSmallPadding: 20px;
 $baseVerySmallPadding: 10px;
 $baseLabelPadding: 0px 0px 5px 5px;
@@ -41,11 +42,17 @@ $baseMarginAuto: auto;
 $baseCenteredMargin: 0 auto;
 $baseHamburgerMenuMargin: 4px;
 $baseMlMainMargin: 90px;
-$baseWorkMargin: 40px;
+$baseWorkMargin: 80px;
 $baseWorkListMargin: 20px;
 
 /* 768up */
 $hamburgerMenuMargin768up: 6px;
+
+/* overflow-wrap */
+$baseOverflowWrap: break-word;
+
+/* line-height */
+$baseLineHeight: 3em;
 
 /* color */
 $baseTextColor: #dee6ff;
