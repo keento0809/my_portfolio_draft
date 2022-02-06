@@ -49,7 +49,7 @@ h3 {
 .aboutMe {
   &__skills {
     & h3 {
-      padding-bottom: $baseSmallPadding600up;
+      padding-bottom: $basePadding;
     }
 
     & .skill-list {
@@ -58,19 +58,6 @@ h3 {
   }
 }
 
-.title-sub {
-  & img {
-    width: 250px;
-    height: 250px;
-  }
-}
-
 .myWork {
   padding-bottom: $baseDivPadding;
-}
-
-.work {
-  &__links {
-    width: 50%;
-  }
 }

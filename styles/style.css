@@ -870,7 +870,7 @@ a.anchor {
 }
 
 .aboutMe__skills .skillSet ul {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .aboutMe__skills .skillSet ul h3 {
@@ -1265,20 +1265,13 @@ body.lightMode {
     padding-bottom: 70px;
   }
   .aboutMe__skills h3 {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   .aboutMe__skills .skill-list {
     padding: 30px;
   }
-  .title-sub img {
-    width: 250px;
-    height: 250px;
-  }
   .myWork {
     padding-bottom: 90px;
-  }
-  .work__links {
-    width: 50%;
   }
 }
 
@@ -1298,7 +1291,7 @@ body.lightMode {
     font-size: 2.5em;
   }
   h3 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .common-wrapper {
     padding: 0 35px;
@@ -1308,16 +1301,16 @@ body.lightMode {
     font-size: 2em;
   }
   .ml-header {
-    min-height: 90px;
+    min-height: 70px;
   }
   .ml-header__brand-logo > a {
     padding: 4px 9px;
-    font-size: 1.5em;
+    font-size: 1em;
     border-radius: 12px;
   }
   .ml-header .toggle-btn-container .bar {
-    width: 45px;
-    height: 5px;
+    width: 40px;
+    height: 4px;
     margin-bottom: 6px;
   }
   .ml-main__title {
@@ -1369,10 +1362,6 @@ body.lightMode {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .title-sub img {
-    width: 350px;
-    height: 350px;
-  }
   .title-sub h2 {
     font-size: 2em;
     max-width: 305px;
@@ -1389,6 +1378,11 @@ body.lightMode {
   }
   .work__links {
     padding-bottom: 60px;
+  }
+  .myWork__contents,
+  .contact__form {
+    width: 80%;
+    margin: 0 auto;
   }
   .w-linkList .fa-link,
   .fab,
@@ -1415,6 +1409,9 @@ body.lightMode {
   .input-f::placeholder,
   .textarea-f::placeholder {
     font-size: 24px;
+  }
+  .contactMe__list > li {
+    padding-bottom: 80px;
   }
   .submit__btn {
     width: 220px;
