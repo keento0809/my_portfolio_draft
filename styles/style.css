@@ -897,8 +897,8 @@ a.anchor {
 
 .title-sub img {
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  width: 90%;
+  height: auto;
   border-radius: 12px;
 }
 
@@ -1284,10 +1284,10 @@ body.lightMode {
     padding-bottom: 10px;
   }
   h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   h3 {
     font-size: 2em;
@@ -1321,6 +1321,9 @@ body.lightMode {
     font-size: 3em;
     padding-bottom: 0;
   }
+  .ml-main__title h1 span {
+    font-size: 2em;
+  }
   .ml-main__title h2 {
     width: 55%;
     font-size: 2em;
@@ -1336,6 +1339,8 @@ body.lightMode {
     padding-bottom: 60px;
   }
   .aboutMe__discription {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px 0 60px;
   }
   .aboutMe__skills {

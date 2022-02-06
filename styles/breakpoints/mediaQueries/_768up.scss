@@ -63,6 +63,10 @@ h3 {
       width: 70%;
       font-size: 3em;
       padding-bottom: 0;
+
+      & span {
+        font-size: 2em;
+      }
     }
 
     & h2 {
@@ -87,6 +91,8 @@ h3 {
   }
 
   &__discription {
+    width: 80%;
+    margin: 0 auto;
     padding: $baseSmallPadding 0 $paddingBottom768up;
   }
 
