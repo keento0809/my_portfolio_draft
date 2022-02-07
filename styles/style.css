@@ -696,9 +696,9 @@ a.anchor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .ml-main__title {
@@ -719,7 +719,6 @@ a.anchor {
 }
 
 .ml-main__title > h2 {
-  width: 75%;
   font-family: "Exo 2", serif;
 }
 
@@ -1259,10 +1258,6 @@ body.lightMode {
     font-size: 2em;
     padding-bottom: 0;
   }
-  .ml-main__title h2 {
-    width: 70%;
-    margin-right: auto;
-  }
   .swipe {
     padding-bottom: 70px;
   }
@@ -1327,11 +1322,9 @@ body.lightMode {
     padding-bottom: 0;
   }
   .ml-main__title h1 span {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   .ml-main__title h2 {
-    width: 55%;
-    max-width: 384px;
     font-size: 2em;
   }
   .slide-text {
@@ -1519,8 +1512,6 @@ body.lightMode {
     font-size: 2.5em;
   }
   .ml-main__title h2 {
-    width: 45%;
-    max-width: 420px;
     font-size: 2em;
   }
   .swipe {
@@ -1569,7 +1560,6 @@ body.lightMode {
     padding-bottom: 0;
   }
   .ml-main__title h2 {
-    width: 35%;
     font-size: 2em;
   }
   .title-sub > img {
