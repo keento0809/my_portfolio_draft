@@ -76,6 +76,10 @@ body {
   height: 100%;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 :focus {
   outline: none;
 }
@@ -86,6 +90,7 @@ body {
 }
 
 body {
+  min-height: -webkit-fill-available;
   font-family: $baseFormalFontFamily;
   background: $baseBackgroundColor;
   color: $baseTextColor;

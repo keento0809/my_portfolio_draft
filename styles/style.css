@@ -149,6 +149,10 @@ body {
   height: 100%;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 :focus {
   outline: none;
 }
@@ -160,6 +164,7 @@ body {
 }
 
 body {
+  min-height: -webkit-fill-available;
   font-family: "Exo 2", serif;
   background: #120e0c;
   color: #dee6ff;
@@ -672,7 +677,7 @@ a.anchor {
 
 /* main section */
 .ml-main {
-  height: 95vh;
+  height: 100vh;
   margin-bottom: 90px;
   color: #dee6ff;
 }
