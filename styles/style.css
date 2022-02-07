@@ -209,10 +209,6 @@ a {
   color: inherit;
 }
 
-#global-container {
-  height: 100%;
-}
-
 .common-wrapper {
   padding: 0 15px;
   max-width: 410px;
