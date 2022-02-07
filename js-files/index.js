@@ -5,7 +5,8 @@ import { checkHeight } from "./main.js";
 // Get DOM
 const body = document.querySelector("body");
 body.style.height = document.body.scrollHeight + "px";
-console.log(body.style.height);
+let allHeight = body.style.height;
+console.log(allHeight);
 // Back to Top Button
 // const btt = document.querySelector("#backTopBtn");
 // page link triggers (links to each sections)

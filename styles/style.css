@@ -497,7 +497,7 @@ a.anchor {
 }
 
 .contents-list > li {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: "Bad Script", cursive;
 }
 
@@ -951,7 +951,7 @@ a.anchor {
 .work__image {
   width: 100%;
   height: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .work__image > img {
@@ -1005,7 +1005,7 @@ a.anchor {
 }
 
 .work-h2 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .work__description > p {

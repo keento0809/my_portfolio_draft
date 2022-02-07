@@ -34,7 +34,7 @@
   &__image {
     width: 100%;
     height: 100%;
-    padding-bottom: $basePadding;
+    padding-bottom: $baseSmallPadding;
 
     & > img {
       display: inline-block;
@@ -74,7 +74,7 @@
 }
 
 .work-h2 {
-  padding-bottom: $baseSmallPadding;
+  padding-bottom: $basePadding;
 }
 
 .work__description > p {
