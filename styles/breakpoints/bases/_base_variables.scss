@@ -54,6 +54,8 @@ $baseOverflowWrap: break-word;
 /* line-height */
 $baseLineHeight: 3em;
 
+/* max-width */
+
 /* color */
 $baseTextColor: #dee6ff;
 $colorWhite: #fff;
@@ -188,8 +190,12 @@ $h1FontSizeFor600up: 3em;
 $h2FontSizeFor600up: 2em;
 
 /* 768up */
-$labelFontSizeFor768up: 1.5em;
+$labelFontSizeFor768up: 1.2em;
 $coverFontSize768up: 1.5em;
 $h1FontSizeFor768up: 3em;
 $h2FontSizeFor768up: 2.5em;
 $h3FontSizeFor768up: 1.5em;
+
+/* 1024up */
+$labelFontSizeFor1024up: 1.5em;
+$h2FontSizeFor1024up: 2em;

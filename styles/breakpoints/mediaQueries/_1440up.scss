@@ -1,5 +1,5 @@
 $maxWidth1440up: 1500px;
-$widthPercent1440up: 85%;
+$widthPercent1440up: 70%;
 
 .common-wrapper {
   padding: $padding1440up;
@@ -17,7 +17,8 @@ $widthPercent1440up: 85%;
     padding: $basePadding 0;
 
     & h1 {
-      width: 40%;
+      width: 30%;
+      max-width: 359px;
       font-size: 2.5em;
       padding-bottom: 0;
     }
@@ -27,6 +28,10 @@ $widthPercent1440up: 85%;
       font-size: 2em;
     }
   }
+}
+
+.title-sub > img {
+  width: 50%;
 }
 
 .swipe {
@@ -41,7 +46,12 @@ $widthPercent1440up: 85%;
 }
 
 .aboutMe__wrapper,
-.myWork__wrapper,
 .contact__wrapper {
   width: $widthPercent1440up;
+  max-width: 1125px;
+}
+
+.myWork__wrapper {
+  width: 50%;
+  max-width: 741px;
 }

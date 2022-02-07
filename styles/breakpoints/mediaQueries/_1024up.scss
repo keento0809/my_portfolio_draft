@@ -4,13 +4,9 @@ $marginBase1024up: 0 auto;
 $maxWidth1024up: 1100px;
 $cLightMode: #eee1ac;
 
-h2 {
-  font-size: 2.5em;
-}
-
 p,
 label {
-  font-size: 2em;
+  font-size: $labelFontSizeFor1024up;
   line-height: $baseLineHeight;
 }
 
@@ -61,18 +57,14 @@ label {
     flex-direction: column;
     text-align: center;
     font-size: 1.15em;
-
-    & > .fas {
-      font-size: 2em;
-    }
   }
 }
 
 .n-common::before {
-  font-family: $fontAwesomeFree;
-  font-weight: 900;
-  font-size: 1.2em;
-  padding-bottom: 5px;
+  // font-family: $fontAwesomeFree;
+  // font-weight: 900;
+  // font-size: 1.2em;
+  // padding-bottom: 5px;
 }
 
 .n-common::after {
@@ -130,7 +122,7 @@ label {
     & h2 {
       width: 45%;
       max-width: 420px;
-      font-size: 2em;
+      font-size: $h2FontSizeFor1024up;
     }
   }
 }
@@ -144,10 +136,8 @@ label {
 }
 
 .aboutMe__discription {
-  font-size: 1em;
-
   & h2 {
-    font-size: 2em;
+    font-size: $h2FontSizeFor1024up;
   }
 }
 
@@ -158,7 +148,7 @@ label {
 }
 
 .contactMe__list > li {
-  padding-bottom: 80px;
+  padding-bottom: $baseLargePadding;
 }
 
 .work-h2 {
@@ -172,8 +162,8 @@ label {
 }
 
 .aboutMe__wrapper,
-.myWork__contents,
-.contact__form {
+.myWork__wrapper,
+.contact__wrapper {
   max-width: 820px;
 }
 
