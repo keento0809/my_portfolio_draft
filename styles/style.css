@@ -1298,7 +1298,7 @@ body.lightMode {
     max-width: 900px;
   }
   .contents-list > li {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .ml-header {
     min-height: 70px;
@@ -1339,11 +1339,6 @@ body.lightMode {
   .aboutMe__title {
     padding-bottom: 60px;
   }
-  .aboutMe__discription {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0 60px;
-  }
   .aboutMe__skills {
     padding-bottom: 90px;
   }
@@ -1379,6 +1374,7 @@ body.lightMode {
   .work__links {
     padding-bottom: 60px;
   }
+  .aboutMe__wrapper,
   .myWork__contents,
   .contact__form {
     width: 80%;
@@ -1387,7 +1383,7 @@ body.lightMode {
   .w-linkList .fa-link,
   .fab,
   .cover__header .fa-times {
-    font-size: 3em;
+    font-size: 2em;
   }
   .input-f,
   .textarea-f {
@@ -1442,7 +1438,7 @@ body.lightMode {
     visibility: hidden;
   }
   .ml-header {
-    min-height: 100px;
+    min-height: 80px;
   }
   .ml-header__wrapper {
     height: 100%;
@@ -1455,8 +1451,13 @@ body.lightMode {
     font-size: 1.2em;
   }
   .ml-header__header-nav {
-    display: block;
-    max-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 500px;
     width: 100%;
     height: 100%;
   }
@@ -1495,19 +1496,7 @@ body.lightMode {
   }
   .n-common::after {
     font-family: "Bad Script", cursive;
-    font-size: 0.9em;
-  }
-  .nav-first::before {
-    content: "\f007";
-  }
-  .nav-second::before {
-    content: "\f108";
-  }
-  .nav-third::before {
-    content: "\f1d8";
-  }
-  .nav-forth::before {
-    content: "\f15b";
+    font-size: 1em;
   }
   .nav-first::after {
     content: "ABOUT ME";
@@ -1531,7 +1520,7 @@ body.lightMode {
     padding-top: 10px;
   }
   .ml-main__title h1 {
-    width: 50%;
+    width: 40%;
     max-width: 480px;
     font-size: 2.5em;
   }
