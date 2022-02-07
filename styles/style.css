@@ -719,7 +719,7 @@ a.anchor {
 }
 
 .ml-main__title > h2 {
-  width: 90%;
+  width: 80%;
   font-family: "Exo 2", serif;
 }
 
@@ -929,7 +929,7 @@ a.anchor {
 }
 
 .myWork__wrapper {
-  width: 100%;
+  width: 80%;
   height: 100%;
   max-width: 410px;
   margin: 0 auto;
@@ -973,7 +973,7 @@ a.anchor {
 }
 
 .work__links {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
