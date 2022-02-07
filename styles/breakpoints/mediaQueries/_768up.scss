@@ -9,6 +9,7 @@ p,
 label {
   font-size: $labelFontSizeFor768up;
   padding-bottom: $labelPadding768up;
+  line-height: $baseLineHeight;
 }
 
 h1 {
@@ -82,12 +83,16 @@ h3 {
 
 .learnMore,
 .skillSet > ul > li {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .aboutMe {
   &__title {
     padding-bottom: $paddingBottom768up;
+  }
+
+  &__discription > p {
+    font-size: 1.2em;
   }
 
   &__skills {
@@ -138,6 +143,7 @@ h3 {
 .contact__form {
   width: 80%;
   margin: $baseCenteredMargin;
+  max-width: 615px;
 }
 
 .w-linkList .fa-link,
