@@ -27,7 +27,7 @@ h3 {
 
 .ml-main {
   &__title {
-    padding-bottom: $basePadding600up;
+    // padding-bottom: $basePadding600up;
 
     & h1 {
       width: 50%;
@@ -44,6 +44,10 @@ h3 {
 
 .swipe {
   padding-bottom: $basePadding600up;
+
+  & .button-background2 {
+    padding: 8px $basePadding;
+  }
 }
 
 .aboutMe {

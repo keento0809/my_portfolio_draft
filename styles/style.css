@@ -1250,9 +1250,6 @@ body.lightMode {
     padding: 0 30px;
     max-width: 600px;
   }
-  .ml-main__title {
-    padding-bottom: 70px;
-  }
   .ml-main__title h1 {
     width: 50%;
     font-size: 2em;
@@ -1260,6 +1257,9 @@ body.lightMode {
   }
   .swipe {
     padding-bottom: 70px;
+  }
+  .swipe .button-background2 {
+    padding: 8px 40px;
   }
   .aboutMe__skills h3 {
     padding-bottom: 40px;
@@ -1319,10 +1319,9 @@ body.lightMode {
   }
   .ml-main__title {
     width: 100%;
-    padding-bottom: 90px;
   }
   .ml-main__title h1 {
-    width: 70%;
+    width: 48%;
     max-width: 520px;
     font-size: 3em;
     padding-bottom: 0;

@@ -58,10 +58,10 @@ h3 {
 .ml-main {
   &__title {
     width: 100%;
-    padding-bottom: $basePadding768up;
+    // padding-bottom: $basePadding768up;
 
     & h1 {
-      width: 70%;
+      width: 48%;
       max-width: 520px;
       font-size: 3em;
       padding-bottom: 0;
