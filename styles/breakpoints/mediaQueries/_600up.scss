@@ -61,3 +61,11 @@ h3 {
 .myWork {
   padding-bottom: $baseDivPadding;
 }
+
+.work__links {
+  width: 70%;
+}
+
+.w-linkList > li:nth-child(2) {
+  padding-left: 20px;
+}
