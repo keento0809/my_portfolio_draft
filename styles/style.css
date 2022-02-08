@@ -752,7 +752,8 @@ a.anchor {
 }
 
 .swipe .button-background2 {
-  padding: 8px 40px;
+  padding: 8px 30px;
+  font-size: 0.8em;
   border-radius: 12px;
   font-family: "Bad Script", cursive;
   text-transform: uppercase;
