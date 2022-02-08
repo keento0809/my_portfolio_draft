@@ -51,7 +51,7 @@
   }
 
   &__links {
-    width: 70%;
+    width: 80%;
     margin: $baseCenteredMargin;
     display: flex;
     padding-bottom: $basePadding;
@@ -96,5 +96,5 @@
 
 .w-linkList > li:nth-child(2) {
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 5px;
 }

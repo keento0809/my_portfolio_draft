@@ -167,6 +167,11 @@ label {
   max-width: 820px;
 }
 
+.work {
+  &__links {
+    width: 50%;
+  }
+}
 // .social-media-list {
 //   width: 75%;
 // }
