@@ -22,7 +22,7 @@
   }
 
   &__discription {
-    width: 95%;
+    width: 90%;
     margin: $baseCenteredMargin;
     padding: 15px 0 $baseLargePadding;
     font-family: $baseFontFamily;
@@ -47,7 +47,8 @@
     }
 
     & p {
-      font-size: 1.2em;
+      font-size: 0.8em;
+      letter-spacing: 2px;
     }
 
     & span {
@@ -81,7 +82,7 @@
       width: 90%;
       margin: $baseCenteredMargin;
       padding-top: $baseLargePadding;
-      text-align: left;
+      text-align: center;
       overflow-wrap: break-word;
 
       & ul {
