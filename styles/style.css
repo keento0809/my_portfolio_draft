@@ -704,7 +704,7 @@ a.anchor {
 }
 
 .ml-main__title > h1 {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   font-size: 2em;
   font-family: "Exo 2", serif;
@@ -716,7 +716,7 @@ a.anchor {
   font-size: 2em;
   font-family: "Bad Script", cursive;
   display: inline-block;
-  letter-spacing: -3px;
+  letter-spacing: -6px;
 }
 
 .ml-main__title > h2 {
