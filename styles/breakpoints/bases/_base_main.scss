@@ -21,17 +21,18 @@
     margin: 0 auto;
 
     & > h1 {
-      // width: 82%;
+      width: 90%;
+      margin: 0 auto;
       font-size: 2em;
       font-family: $baseFontFamily;
       padding-bottom: $baseSmallPadding;
-      letter-spacing: 2px;
+      letter-spacing: -1px;
 
       & span {
         font-size: 2em;
         font-family: $neonFontFamily;
         display: inline-block;
-        letter-spacing: -1px;
+        letter-spacing: -3px;
       }
     }
 

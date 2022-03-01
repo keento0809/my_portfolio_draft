@@ -704,17 +704,19 @@ a.anchor {
 }
 
 .ml-main__title > h1 {
+  width: 90%;
+  margin: 0 auto;
   font-size: 2em;
   font-family: "Exo 2", serif;
   padding-bottom: 20px;
-  letter-spacing: 2px;
+  letter-spacing: -1px;
 }
 
 .ml-main__title > h1 span {
   font-size: 2em;
   font-family: "Bad Script", cursive;
   display: inline-block;
-  letter-spacing: -1px;
+  letter-spacing: -3px;
 }
 
 .ml-main__title > h2 {
@@ -793,7 +795,7 @@ a.anchor {
   font-family: "Bad Script", cursive;
   text-align: center;
   padding-bottom: 40px;
-  letter-spacing: -1px;
+  letter-spacing: -3px;
 }
 
 .aboutMe__discription {
