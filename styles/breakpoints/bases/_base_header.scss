@@ -6,7 +6,7 @@
 }
 
 .ml-header {
-  min-height: 55px;
+  min-height: 40px;
   transition: all 0.4s ease;
   display: flex;
   justify-content: center;
@@ -32,8 +32,8 @@
     background: inherit;
 
     & > a {
-      border: $borderBase;
-      border-radius: $baseSmallBorderRadius;
+      // border: $borderBase;
+      // border-radius: $baseSmallBorderRadius;
     }
   }
 

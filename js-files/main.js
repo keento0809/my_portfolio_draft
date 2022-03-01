@@ -15,3 +15,7 @@ var person = {
   job: "student",
   hungry: true,
 };
+
+for (var prop in person) {
+  console.log(person[prop]);
+}
