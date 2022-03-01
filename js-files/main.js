@@ -7,3 +7,11 @@ export const checkHeight = () => {
     mainH2.classList.add(".changeAnotherFontSize");
   }
 };
+
+var person = {
+  firstName: "KENTO",
+  lastName: "HONDA",
+  age: 29,
+  job: "student",
+  hungry: true,
+};
