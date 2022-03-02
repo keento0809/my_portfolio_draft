@@ -8,6 +8,7 @@ $baseDivPadding: 90px;
 $baseHeaderWrapperPadding: 5px 15px 0;
 $baseLogoPadding: 4px 8px;
 $basePadding: 40px;
+$baseExtraLargePadding: 120px;
 $baseLargePadding: 80px;
 $baseSmallPadding: 20px;
 $baseVerySmallPadding: 10px;
@@ -200,3 +201,16 @@ $h3FontSizeFor768up: 1.5em;
 /* 1024up */
 $labelFontSizeFor1024up: 1.5em;
 $h2FontSizeFor1024up: 2em;
+
+/* letter-spacing */
+$baseLetterSpacing: -1px;
+$baseLetterSpacingForMainTitle: -6px;
+$baseLetterSpacingForNeonTitle: -3px;
+
+/* Custom class */
+.titleStyles {
+  font-family: $neonFontFamily;
+  text-align: center;
+  padding-bottom: $basePadding;
+  letter-spacing: $baseLetterSpacingForNeonTitle;
+}

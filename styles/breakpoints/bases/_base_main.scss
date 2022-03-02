@@ -15,7 +15,7 @@
   }
 
   &__title {
-    padding-bottom: $baseLargePadding;
+    padding-bottom: $baseExtraLargePadding;
     text-align: center;
     width: 90%;
     margin: 0 auto;
@@ -26,20 +26,20 @@
       font-size: 2em;
       font-family: $baseFontFamily;
       padding-bottom: $baseSmallPadding;
-      letter-spacing: -1px;
+      letter-spacing: $baseLetterSpacing;
 
       & span {
         font-size: 2em;
         font-family: $neonFontFamily;
         display: inline-block;
-        letter-spacing: -6px;
+        letter-spacing: $baseLetterSpacingForMainTitle;
       }
     }
 
     & > h2 {
       // width: 75%;
       font-family: $baseFontFamily;
-      letter-spacing: -1px;
+      letter-spacing: $baseLetterSpacing;
       line-height: 2em;
 
       & span {

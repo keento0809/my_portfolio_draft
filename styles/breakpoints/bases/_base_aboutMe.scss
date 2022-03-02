@@ -14,12 +14,12 @@
   &__title {
     padding-bottom: $basePadding;
 
-    & h1 {
-      font-family: $neonFontFamily;
-      text-align: center;
-      padding-bottom: $basePadding;
-      letter-spacing: -3px;
-    }
+    // & h1 {
+    //   font-family: $neonFontFamily;
+    //   text-align: center;
+    //   padding-bottom: $basePadding;
+    //   letter-spacing: $baseLetterSpacingForNeonTitle;
+    // }
   }
 
   &__discription {
@@ -40,7 +40,7 @@
     & p {
       padding-bottom: $basePadding;
       font-family: $baseFontFamily;
-      letter-spacing: -1px;
+      letter-spacing: $baseLetterSpacing;
     }
 
     & h2 {

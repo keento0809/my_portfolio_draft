@@ -94,6 +94,7 @@
 /* 600up */
 /* 768up */
 /* 1024up */
+/* letter-spacing */
 /* neon color */
 .gas, .neonBorderYellow,
 .neonBorderGreen, .neonBorderPink {
@@ -694,7 +695,7 @@ a.anchor {
 }
 
 .ml-main__title {
-  padding-bottom: 80px;
+  padding-bottom: 120px;
   text-align: center;
   width: 90%;
   margin: 0 auto;
@@ -931,6 +932,7 @@ a.anchor {
   font-family: "Bad Script", cursive;
   text-align: center;
   padding-bottom: 40px;
+  letter-spacing: -3px;
 }
 
 .myWork__wrapper {
@@ -1056,6 +1058,7 @@ a.anchor {
   font-family: "Bad Script", cursive;
   text-align: center;
   padding-bottom: 40px;
+  letter-spacing: -3px;
 }
 
 .contact__form {

@@ -10,6 +10,7 @@
       font-family: $neonFontFamily;
       text-align: center;
       padding-bottom: $basePadding;
+      letter-spacing: $baseLetterSpacingForNeonTitle;
     }
   }
 
@@ -75,6 +76,7 @@
 
 .work-h2 {
   padding-bottom: $basePadding;
+  letter-spacing: $baseLetterSpacing;
 }
 
 .work__description > p {
@@ -88,6 +90,7 @@
   padding: 2px $baseVerySmallPadding;
   border-radius: $baseSmallBorderRadius;
   font-family: $anotherNeonFontFamily;
+  letter-spacing: $baseLetterSpacing;
 }
 
 .fa-link {
