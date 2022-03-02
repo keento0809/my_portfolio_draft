@@ -330,7 +330,7 @@ a.anchor {
 }
 
 .cover__header {
-  height: 10vh;
+  min-height: 40px;
 }
 
 .cover__header .common-wrapper {
@@ -340,7 +340,7 @@ a.anchor {
 .cover__header .fa-times {
   display: block;
   text-align: right;
-  line-height: 10vh;
+  line-height: 51px;
   cursor: pointer;
   -webkit-animation-name: kf-contents-appear;
           animation-name: kf-contents-appear;
