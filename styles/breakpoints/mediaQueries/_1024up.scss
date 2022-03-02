@@ -50,6 +50,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: $subNeonFontFamily;
 
   & > li > a {
     display: block;
@@ -70,6 +71,8 @@ label {
 .n-common::after {
   font-family: $neonFontFamily;
   font-size: 1em;
+  letter-spacing: -2px;
+  font-family: $subNeonFontFamily;
 }
 
 .nav-first::before {

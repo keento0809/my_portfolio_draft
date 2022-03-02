@@ -95,7 +95,7 @@ body {
   background: $baseBackgroundColor;
   color: $baseTextColor;
   margin: 0;
-  letter-spacing: 0.5px;
+  letter-spacing: $baseLetterSpacing;
 }
 
 ul,

@@ -14,12 +14,12 @@
   &__title {
     padding-bottom: $basePadding;
 
-    // & h1 {
-    //   font-family: $neonFontFamily;
-    //   text-align: center;
-    //   padding-bottom: $basePadding;
-    //   letter-spacing: $baseLetterSpacingForNeonTitle;
-    // }
+    & h1 {
+      font-family: $neonFontFamily;
+      text-align: center;
+      padding-bottom: $basePadding;
+      letter-spacing: $baseLetterSpacingForNeonTitle;
+    }
   }
 
   &__discription {
@@ -64,6 +64,7 @@
     padding-bottom: $baseLargePadding;
     text-align: center;
     border: none;
+    letter-spacing: $baseLetterSpacing;
 
     & h3 {
       padding-bottom: $basePadding;
@@ -85,7 +86,7 @@
     }
 
     & .skillSet {
-      width: 90%;
+      width: 95%;
       margin: $baseCenteredMargin;
       padding-top: $baseLargePadding;
       text-align: center;
@@ -93,11 +94,13 @@
 
       & ul {
         padding-bottom: $baseLargePadding;
+        text-align: left;
         // width: 90%;
         // margin: $baseCenteredMargin;
 
         & h3 {
           padding-bottom: $baseSmallPadding;
+          text-align: center;
         }
 
         & > li {
