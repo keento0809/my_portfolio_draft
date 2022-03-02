@@ -67,10 +67,12 @@
 
     & h3 {
       padding-bottom: $basePadding;
+      letter-spacing: $baseLetterSpacing;
     }
 
     & h2 {
       font-family: $neonFontFamily;
+      letter-spacing: $baseLetterSpacing;
     }
 
     & .skill-list {

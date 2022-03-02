@@ -49,6 +49,10 @@
   &__description {
     text-align: center;
     padding-bottom: $basePadding;
+
+    & h2 {
+      letter-spacing: $baseLetterSpacing;
+    }
   }
 
   &__links {
