@@ -451,9 +451,9 @@ a.anchor {
 
 .cover-slide__contents .social-media-list {
   width: 55%;
-  -webkit-box-flex: 1.2;
-      -ms-flex-positive: 1.2;
-          flex-grow: 1.2;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -488,9 +488,9 @@ a.anchor {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -499,6 +499,7 @@ a.anchor {
 .contents-list > li {
   font-size: 1.2em;
   font-family: "Bad Script", cursive;
+  padding-bottom: 3em;
 }
 
 .contents-list > li > a > span {
