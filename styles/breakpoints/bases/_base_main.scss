@@ -18,11 +18,11 @@
     padding-bottom: $baseExtraLargePadding;
     text-align: center;
     width: 90%;
-    margin: 0 auto;
+    margin: $baseCenteredMargin;
 
     & > h1 {
       width: 80%;
-      margin: 0 auto;
+      margin: $baseCenteredMargin;
       font-size: 2em;
       font-family: $baseFontFamily;
       padding-bottom: $baseSmallPadding;
