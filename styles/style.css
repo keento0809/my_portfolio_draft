@@ -794,7 +794,7 @@ a.anchor {
   font-family: "Bad Script", cursive;
   text-align: center;
   padding-bottom: 40px;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
 }
 
 .aboutMe__discription {
@@ -883,12 +883,11 @@ a.anchor {
 
 .aboutMe__skills .skillSet ul {
   padding-bottom: 80px;
-  text-align: left;
+  text-align: center;
 }
 
 .aboutMe__skills .skillSet ul h3 {
   padding-bottom: 20px;
-  text-align: center;
 }
 
 .aboutMe__skills .skillSet ul > li {
@@ -938,7 +937,7 @@ a.anchor {
   font-family: "Bad Script", cursive;
   text-align: center;
   padding-bottom: 40px;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
 }
 
 .myWork__wrapper {
@@ -1071,7 +1070,7 @@ a.anchor {
   font-family: "Bad Script", cursive;
   text-align: center;
   padding-bottom: 40px;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
 }
 
 .contact__form {
