@@ -5,7 +5,7 @@
 
   &__wrapper {
     width: 100%;
-    min-height: 100vh;
+    height: calc(100vh - 51px);
     max-width: $maxWidthBase;
     margin: $baseCenteredMargin;
     display: flex;

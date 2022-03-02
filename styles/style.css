@@ -675,7 +675,7 @@ a.anchor {
 
 .ml-main__wrapper {
   width: 100%;
-  min-height: 100vh;
+  height: calc(100vh - 51px);
   max-width: 410px;
   margin: 0 auto;
   display: -webkit-box;
@@ -796,7 +796,7 @@ a.anchor {
 }
 
 .aboutMe__discription {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 15px 0 80px;
   font-family: "Exo 2", serif;
@@ -839,6 +839,8 @@ a.anchor {
 }
 
 .aboutMe__skills {
+  width: 85%;
+  margin: 0 auto;
   padding-bottom: 80px;
   text-align: center;
   border: none;

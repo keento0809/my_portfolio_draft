@@ -23,7 +23,7 @@
   }
 
   &__discription {
-    width: 90%;
+    width: 80%;
     margin: $baseCenteredMargin;
     padding: 15px 0 $baseLargePadding;
     font-family: $baseFontFamily;
@@ -59,6 +59,8 @@
   }
 
   &__skills {
+    width: 85%;
+    margin: $baseCenteredMargin;
     padding-bottom: $baseLargePadding;
     text-align: center;
     border: none;
