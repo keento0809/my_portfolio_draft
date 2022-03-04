@@ -148,6 +148,7 @@
 
 html {
   height: -webkit-fill-available;
+  -webkit-overflow-scrolling: touch;
 }
 
 :focus {
