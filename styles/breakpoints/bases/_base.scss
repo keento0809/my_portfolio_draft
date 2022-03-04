@@ -1,3 +1,5 @@
+// @import "mixin";
+
 $cBase: #231e1b;
 // $cBaseBackground: linear-gradient(to right, #192a66, #120e0c);
 $cTestBase: #120e0c;
@@ -140,10 +142,6 @@ a {
   color: inherit;
 }
 
-// #global-container {
-//   height: 100%;
-// }
-
 .common-wrapper {
   padding: $baseWrapperPadding;
   max-width: $maxWidthBase;
@@ -151,6 +149,48 @@ a {
 
 .differentBg {
   background: $anotherBackgroundColor;
+}
+
+.downarrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2em;
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+  // justify-content: flex-start;
+  // max-width: 50px;
+
+  &__image {
+    width: 8px;
+    fill: red;
+    // transform: translateY(-20%);
+    @include animation(
+      $name: kf-downArrow,
+      $iteration-count: infinite,
+      $duration: 2s,
+      $timing-function: linear
+    );
+  }
+
+  &__scrolltext {
+    font-family: $subNeonFontFamily;
+    font-size: 1.2em;
+  }
+}
+
+@keyframes kf-downArrow {
+  0%,
+  50%,
+  100% {
+    transform: translateY(-10%);
+  }
+  30% {
+    transform: none;
+  }
 }
 
 /* BackTop button section */
