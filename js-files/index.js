@@ -1,6 +1,7 @@
 import { header, toggleButton } from "./header.js";
 import { menuBtn, crossBtn } from "./header.js";
 import { checkHeight } from "./main.js";
+// import scroll from "./scroll";
 
 // Get DOM
 const body = document.querySelector("body");
