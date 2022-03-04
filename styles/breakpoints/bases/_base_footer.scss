@@ -1,0 +1,18 @@
+footer {
+  padding: 2em 0;
+}
+
+.footer {
+  &__wrapper {
+    margin: $baseCenteredMargin;
+    text-align: center;
+  }
+
+  &__description {
+    line-height: 16px;
+  }
+}
+
+.copyright {
+  font-family: $subNeonFontFamily;
+}

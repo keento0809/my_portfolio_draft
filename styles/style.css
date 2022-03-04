@@ -1202,6 +1202,23 @@ textarea::placeholder {
           justify-content: space-between;
 }
 
+footer {
+  padding: 2em 0;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__description {
+  line-height: 16px;
+}
+
+.copyright {
+  font-family: Sriracha;
+}
+
 /* neon colors */
 .x-sign, .neonColorYellow, .neonColorPink, .neonColorGreen, .neonColorBlue {
   --interval: 1s;
