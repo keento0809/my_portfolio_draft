@@ -922,13 +922,13 @@ a.anchor {
   letter-spacing: -1px;
 }
 
-.aboutMe__skills h3 {
-  padding-bottom: 40px;
-  letter-spacing: -1px;
-}
-
 .aboutMe__skills h2 {
   font-family: "Bad Script", cursive;
+  letter-spacing: -3px;
+}
+
+.aboutMe__skills h3 {
+  padding-bottom: 40px;
   letter-spacing: -1px;
 }
 

@@ -66,13 +66,13 @@
     border: none;
     letter-spacing: $baseLetterSpacing;
 
-    & h3 {
-      padding-bottom: $basePadding;
-      letter-spacing: $baseLetterSpacing;
-    }
-
     & h2 {
       font-family: $neonFontFamily;
+      letter-spacing: $baseLetterSpacingForSubTitle;
+    }
+
+    & h3 {
+      padding-bottom: $basePadding;
       letter-spacing: $baseLetterSpacing;
     }
 
